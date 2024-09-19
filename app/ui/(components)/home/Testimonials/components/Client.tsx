@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Flex } from '@mantine/core';
-import AvatarImage from '@/public/svg/Avatar-Image.svg'
+import AvatarImage from '@/public/svg/avatar-image.svg'
 import Stars from './Stars';
 
 type Author = {
