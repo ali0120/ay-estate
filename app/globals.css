@@ -1,27 +1,126 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import "@mantine/core/styles.css";
+@font-face {
+    font-family: "Playball";
+    src: url("./../public/fonts/Playball-Regular.woff2") format("woff2"), url("./../public/fonts/Playball-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("./../public/fonts/Roboto-Regular.woff2") format("woff2"), url("./../public/fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JakartaMedium";
+    src: url("./../public/fonts/PlusJakartaSans-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JakartaSemiBold";
+    src: url("./../public/fonts/PlusJakartaSans-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url("./../public/fonts/Sora-Regular.woff2") format("woff2"), url("./../public/fonts/Sora-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Medium";
+    src: url("./../public/fonts/Sora-Medium.woff2") format("woff2"), url("./../public/fonts/Sora-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SemiBold";
+    src: url("./../public/fonts/Sora-SemiBold.woff2") format("woff2"), url("./../public/fonts/Sora-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url("./../public/fonts/Sora-Bold.woff2") format("woff2"), url("./../public/fonts/Sora-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: "Regular", sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.ErrorMessageStyle {
+    color: #b11e1e;
+    font-size: 12px;
+    min-height: 25px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 16px;
+}
+
+svg:not(.avatar) circle {
+    fill: currentColor;
+}
+
+svg.yellow_path path {
+    stroke: #b7e08a;
+}
+
+svg.gray_stroke path {
+    stroke: #c4c8cc;
+}
+
+svg.active rect {
+    fill: #1e4c2f;
+}
+
+svg.active path {
+    stroke: #fff;
+}
+
+svg.not_active rect {
+    fill: #fff;
+}
+
+svg.not_active path {
+    stroke: #0B0F0E;
+}
+
+svg.icon_liked path {
+    fill: #FFA439;
+    stroke: #FFA439;
+}
+
+button.switch_view svg.active {
+    stroke: #fff;
+}
+
+@media (max-width: 767px) {
+    svg.mobile_color path {
+        stroke: #3860e2;
+    }
+    svg.mobile_YellowGreen path {
+        stroke: #b7e08a;
+    }
 }
