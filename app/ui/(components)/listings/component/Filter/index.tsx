@@ -24,28 +24,28 @@ const Filter = () => {
     }
 
     const queryString = params.toString();
-    router.push(`/listings?${queryString}`,{ scroll: false });
+    router.push(`/listings?${queryString}`, { scroll: false });
   };
 
 
   return (
-    <Box w={278} p={24} className='border-[1px] rounded-[12px] border-BrightGray h-fit' >
+    <Box className='w-[278px] p-[24px] border-[1px] rounded-[12px] border-BrightGray h-fit' >
       <h6 className='text-[20px] font-soraSemiBold leading-[28px]' >Filter Option</h6>
-      <Divider mt={16} mb={24} />
-      <UnstyledButton w={'100%'} onClick={toggleBestFilter} className='text-[16px] font-bold ' >
-        <Flex align={'center'} justify={'space-between'}>
-          <h4>Best Filter</h4>
+      <Divider className='mt-[16px] mb-[24px]' />
+      <UnstyledButton onClick={toggleBestFilter} className=' w-full text-[16px] font-bold ' >
+        <Box component='span' className='flex items-center justify-between w-full'>
+          <strong >Best Filter</strong>
           <ArrowUpIcon className={`transition-transform ${!bestFilterOpened ? 'rotate-180' : 'rotate-0'}`} />
-        </Flex>
+        </Box>
       </UnstyledButton>
-      <Collapse in={bestFilterOpened} mt={12} mb={24}>
-        <Flex direction={'column'} gap={13} >
+      <Collapse in={bestFilterOpened} className='mt-[12px] mb-[24px]'>
+        <Flex className='flex-col gap-[13px]'>
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "rating", "4-stars")}
-            label={<Flex gap={4}>
+            label={<Box component='span' className='flex gap-[4px]'>
               <StarIcon />
-              <h4>4 stars or upper</h4>
-            </Flex>}
+              <span>4 stars or upper</span>
+            </Box>}
             classNames={{
               label: 'text-RomanSilver text-[16px] font-soraRegular',
               input: 'rounded-[6px] border-2 checked:!bg-ForestGreen checked:border-ForestGreen'
@@ -76,15 +76,15 @@ const Filter = () => {
           />
         </Flex>
       </Collapse>
-      <Divider my={24} />
-      <UnstyledButton w={'100%'} onClick={toggleLocation} className='text-[16px] font-bold ' >
-        <Flex align={'center'} justify={'space-between'}>
-          <h4>Location</h4>
+      <Divider className='my-[24px]' />
+      <UnstyledButton onClick={toggleLocation} className='text-[16px] font-bold  w-full' >
+        <Box component='span' className='flex items-center justify-between'>
+          <strong >Location</strong>
           <ArrowUpIcon className={`transition-transform ${!locationOpened ? 'rotate-180' : 'rotate-0'}`} />
-        </Flex>
+        </Box>
       </UnstyledButton>
-      <Collapse in={locationOpened} mt={12} mb={24}>
-        <Flex direction={'column'} gap={13} >
+      <Collapse in={locationOpened} className='mt-[12px] mb-[24px]'>
+        <Flex className='flex-col gap-[13px]' >
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "location", "bandung")}
             label={"Bandung"}
@@ -138,22 +138,22 @@ const Filter = () => {
         </Flex>
       </Collapse>
 
-      <Divider my={24} />
-      <UnstyledButton w={'100%'} onClick={toggleCategory} className='text-[16px] font-bold ' >
-        <Flex align={'center'} justify={'space-between'}>
-          <h4>Category</h4>
+      <Divider className='my-[24px]' />
+      <UnstyledButton onClick={toggleCategory} className='text-[16px] font-bold w-full ' >
+        <Box component='span' className='flex items-center justify-between'>
+          <strong >Category</strong>
           <ArrowUpIcon className={`transition-transform ${!categoryOpened ? 'rotate-180' : 'rotate-0'}`} />
-        </Flex>
+        </Box>
       </UnstyledButton>
-      <Collapse in={categoryOpened} mt={12} mb={24}>
-        <Flex direction={'column'} gap={13} >
+      <Collapse in={categoryOpened} className='mt-[12px] mb-[24px]'>
+        <Flex className='flex-col gap-[13px]' >
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "category", "house")}
             label={
-              <Flex justify={'space-between'}>
-                <h4>House</h4>
+              <Box component='span' className='flex justify-between'>
+                <span>House</span>
                 <ArrowUpIcon className='gray_stroke' />
-              </Flex>
+              </Box>
             }
             classNames={{
               labelWrapper: 'w-full',
@@ -163,10 +163,10 @@ const Filter = () => {
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "category", "villa")}
             label={
-              <Flex justify={'space-between'}>
-                <h4>Villa</h4>
+              <Box component='span' className='flex justify-between'>
+                <span>Villa</span>
                 <ArrowUpIcon className='gray_stroke' />
-              </Flex>
+              </Box>
             }
             classNames={{
               labelWrapper: 'w-full',
@@ -177,10 +177,10 @@ const Filter = () => {
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "category", "apartment")}
             label={
-              <Flex justify={'space-between'}>
-                <h4>Apartment</h4>
+              <Box component='span' className='flex justify-between'>
+                <span>Apartment</span>
                 <ArrowUpIcon className='gray_stroke' />
-              </Flex>
+              </Box>
             }
             classNames={{
               labelWrapper: 'w-full',
@@ -191,10 +191,10 @@ const Filter = () => {
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "category", "hotel")}
             label={
-              <Flex justify={'space-between'}>
-                <h4>Hotel</h4>
+              <Box component='span' className='flex justify-between'>
+                <span>Hotel</span>
                 <ArrowUpIcon className='gray_stroke' />
-              </Flex>
+              </Box>
             }
             classNames={{
               labelWrapper: 'w-full',
@@ -205,10 +205,10 @@ const Filter = () => {
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "category", "real-estate")}
             label={
-              <Flex justify={'space-between'}>
-                <h4>Real Estate</h4>
+              <Box component='span' className='flex justify-between'>
+                <span>Real Estate</span>
                 <ArrowUpIcon className='gray_stroke' />
-              </Flex>
+              </Box>
             }
             classNames={{
               labelWrapper: 'w-full',
@@ -223,15 +223,15 @@ const Filter = () => {
       </Collapse>
 
       <Divider my={24} />
-      <UnstyledButton w={'100%'} onClick={togglePrice} className='text-[16px] font-bold ' >
-        <Flex align={'center'} justify={'space-between'}>
-          <h4>Price Range</h4>
+      <UnstyledButton onClick={togglePrice} className='text-[16px] font-bold w-full' >
+        <Box component='span' className='flex items-center justify-between'>
+          <strong >Price Range</strong>
           <ArrowUpIcon className={`transition-transform ${!priceOpened ? 'rotate-180' : 'rotate-0'}`} />
-        </Flex>
+        </Box>
       </UnstyledButton>
-      <Collapse in={priceOpened} mt={12} mb={24}>
-        <Flex direction={'column'} gap={13} >
-          <Flex align={'center'} >
+      <Collapse in={priceOpened} className='mt-[12px] mb-[24px]'>
+        <Flex className='flex-col gap-[13px]' >
+          <Flex className='items-center' >
             <Select
               rightSection={<ArrowUpIcon className='rotate-180' />}
               w={125}
@@ -252,7 +252,7 @@ const Filter = () => {
               }}
             />
           </Flex>
-          <Flex align={'center'} >
+          <Flex className='items-center' >
             <Select
               rightSection={<ArrowUpIcon className='rotate-180' />}
               w={125}

@@ -20,11 +20,11 @@ function CheckBox({ name, registerOptions,label, ...rest }: IProps) {
 				control={control}
 				rules={registerOptions}
 				render={({ field: { onChange, value } }) => (
-					<Checkbox {...rest} checked={value || false} onChange={onChange} label={     <p className='text-[12px] md:text-[16px] leading-[18.2px] md:leading-[20.8px] font-soraMedium md:font-soraBold mb-[12px]'>
+					<Checkbox {...rest} checked={value || false} onChange={onChange} label={     <span className='text-[12px] md:text-[16px] leading-[18.2px] md:leading-[20.8px] font-soraMedium md:font-soraBold mb-[12px]'>
                         {label}
                         {((typeof registerOptions?.required === 'object' && registerOptions?.required.value) ||
                             (typeof registerOptions?.required === 'string' && registerOptions?.required)) && <span className='text-red-700'>*</span>}
-                    </p>} />
+                    </span>} />
 				)}
 			/>
 			

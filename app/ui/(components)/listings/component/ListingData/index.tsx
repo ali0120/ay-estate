@@ -34,19 +34,18 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                 {properties.map((property) => {
                     const isLiked = liked[property.id] || false;
                     return (
-                        <Box key={property.id} pb={{ base: 0, sm: 17 }} >
+                        <Box key={property.id} className='md:pb-[17px]'>
                             <Box pos={"relative"}>
                                 <Link href={`listings/${property.details.type}`} >
                                     <BackgroundImage
                                         src={property.image?.src}
                                         radius={12}
-                                        h={{ base: 130, sm: 400 }}
                                         className="!h-[130px] md:!h-[400px]"
                                     >
                                     </BackgroundImage>
                                 </Link>
                                 <Box className="text-White absolute w-full p-[12px] md:p-[24px] top-0">
-                                    <Flex justify={'space-between'} align={"center"}>
+                                    <Flex className='justify-between items-center'>
                                         <UnstyledButton className='text-[8px] md:text-[14px] text-White font-soraSemiBold
                                          bg-[#111111BF] py-[2px] md:py-[8px] px-[4px] md:px-[20px] rounded-[24px]'>
                                             Featured
@@ -62,28 +61,28 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                                 <h3 className='text-[12px] md:text-[22px] font-soraSemiBold leading-[18px] md:leading-[33px] whitespace-nowrap overflow-hidden text-ellipsis' >{property.price}</h3>
                                 <p className='text-[10px] md:text-[18px] font-soraSemiBold leading-[15px] md:leading-[27px] mt-[8px] mb-[4px]' >{property.title}</p>
                                 <span className='text-[8px] md:text-[14px] font-soraRegular leading-[21px] mb-[8px] text-[#333333]' >{property.location}</span>
-                                <Flex gap={{ base: 4, sm: 14 }} align={'center'} wrap={'wrap'} >
-                                    <Flex gap={{ base: 2, sm: 8 }} align={'center'}>
+                                <Flex className='gap-[4px] md:gap-[14px] items-center flex-wrap'>
+                                    <Flex className='gap-[2px] md:gap-[8px] items-center'>
                                         <MhomeIcon className='block md:hidden' />
                                         <HomeIcon className='hidden md:block' />
                                         <span className='capitalize text-[10px] md:text-[14px] font-soraRegular text-[#A9A9A9] ' >{property.details.type}</span>
                                     </Flex>
-                                    <Flex gap={8} align={'center'}>
+                                    <Flex className='gap-[8px] items-center'>
                                         <MbathIcon className='block md:hidden' />
                                         <BathIcon className='hidden md:block' />
                                         <span className='text-[10px] md:text-[14px] font-soraRegular text-[#A9A9A9] ' >{property.details.baths}</span>
                                     </Flex>
-                                    <Flex gap={8} align={'center'}>
+                                    <Flex className='gap-[8px] items-center'>
                                         <MbedIcon className='block md:hidden' />
                                         <BedIcon className='hidden md:block' />
                                         <span className='text-[10px] md:text-[14px] font-soraRegular text-[#A9A9A9] ' >{property.details.beds}</span>
                                     </Flex>
-                                    <Flex gap={8} align={'center'}>
+                                    <Flex className='gap-[8px] items-center'>
                                         <MareaIcon className='block md:hidden' />
                                         <AreaIcon className='hidden md:block' />
                                         <span className='text-[10px] md:text-[14px] font-soraRegular text-[#A9A9A9] ' >{property.details.area}</span>
                                     </Flex>
-                                    <Flex gap={8} align={'center'}>
+                                    <Flex className='gap-[8px] items-center'>
                                         <MbedIcon className='block md:hidden' />
                                         <BedIcon className='hidden md:block' />
                                         <span className='text-[10px] md:text-[14px] font-soraRegular text-[#A9A9A9] ' >{property.details.beds}</span>
@@ -94,7 +93,7 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                     )
                 })}
             </Box>
-            <Flex justify='center' py={{ base: 33, md: 66 }}>
+            <Flex className='justify-center py-[33px] md:py-[66px]'>
                 <Pagination
                     total={64}
                     boundaries={1}

@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Content = () => {
     return (
-        <Flex gap={48} wrap={{ base: "wrap", md: 'nowrap' }} >
+        <Flex className='gap-[48px] flex-wrap md:flex-nowrap'>
             {contentdata.map((item, index: number) => {
                 return (
                     <div key={index} className='md:w-[46%] lg:w-[30%] text-center' >

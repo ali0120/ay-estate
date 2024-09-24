@@ -4,7 +4,7 @@ import { statsData } from '../data/statsData'
 
 const Stats = () => {
     return (
-        <Flex justify={'space-between'} gap={{ base: 32, lg: 60 }} wrap={"wrap"} >
+        <Flex className='justify-between gap-[32px] lg:gap-[60px] flex-wrap'>
             {statsData.map((item, index) => {
                 return (
                     <Box key={index} className='border-l-2 border-l-white pl-[32px]' >

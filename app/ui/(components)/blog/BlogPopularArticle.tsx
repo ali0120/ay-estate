@@ -19,17 +19,17 @@ const BlogPopularArticle = () => {
 
     return (
         <section className='bg-White' >
-            <Box px={{ base: 20, md: 100 }} pt={{ base: 30, md: 0 }} pb={{ base: 75, md: 100 }}>
-                <Flex align={'center'} justify={'space-between'} mb={{ base: 30, md: 50 }}>
+            <Box className='px-[20px] md:px-[100px] pt-[30px] md:pt-0 pb-[75px] md:pb-[100px]'>
+                <Flex align={'center'} justify={'space-between'}  className='mb-[30px] md:mb-[50px]'>
                     <div className='w-[70%]' >
                         <h2 className='text-[16px] lg:text-[32px] text-DarkJungleGreentwo font-soraBold'>Popular Articles</h2>
                         <p className='text-[12px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[8px] lg:mt-[12px]' >We provide blog that help start your career on AyEstate</p>
                     </div>
                     <Flex justify={'flex-end'} className='w-[30%]' >
-                        <Button h={{base:30,sm:47}} variant='default' px={{ base: 12, sm: 16 }} py={{ base: 7.2, sm: 12 }} className='text-[14px] md:text-[18px] text-ChineseBlack font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'>View All</Button>
+                        <Button variant='default'className='h-[30px] md:h-[47px] px-[12px] md:px-[16px] text-[14px] md:text-[18px] text-ChineseBlack font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'>View All</Button>
                     </Flex>
                 </Flex>
-                <Flex gap={30} direction={{ base: 'column', sm: 'row' }} visibleFrom='sm'>
+                <Flex visibleFrom='sm' className='gap-[30px] flex-col md:flex-row'>
                     {popularArticles.map((article: IBlogArticle) => {
                         return (
                             <BackgroundImage
@@ -41,7 +41,7 @@ const BlogPopularArticle = () => {
                                 pos={"relative"}
                             >
                                 <Box className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
-                                    <Flex gap={10} align={"center"} className="text-[12px] lg:text-[18px] font-soraRegular md:font-soraSemiBold opacity-[70%] lg:opacity-1">
+                                    <Flex align={"center"} className="text-[12px] gap-[10px] lg:text-[18px] font-soraRegular md:font-soraSemiBold opacity-[70%] lg:opacity-1">
                                         <p>{article.date}</p>
                                         <EllipseIcon height={4} width={4} />
                                         <p>{article.category.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>
@@ -55,7 +55,7 @@ const BlogPopularArticle = () => {
                         )
                     })}
                 </Flex>
-                <Flex gap={30} direction={{ base: 'column', sm: 'row' }} hiddenFrom='sm'>
+                <Flex hiddenFrom='sm' className='gap-[30px] flex-col md:flex-row'>
                     <Carousel
                         withIndicators
                         height={317}
@@ -77,7 +77,7 @@ const BlogPopularArticle = () => {
                                         pos={"relative"}
                                     >
                                         <Box className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
-                                            <Flex gap={10} align={"center"} className="text-[12px] lg:text-[18px] font-soraRegular md:font-soraRegular opacity-[70%] lg:opacity-1">
+                                            <Flex align={"center"} className="text-[12px] gap-[10px] lg:text-[18px] font-soraRegular md:font-soraRegular opacity-[70%] lg:opacity-1">
                                                 <p>{article.date}</p>
                                                 <EllipseIcon height={4} width={4} />
                                                 <p>{article.category.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>

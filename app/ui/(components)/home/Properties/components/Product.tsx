@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Product = () => {
     return (
-        <Flex wrap={'wrap'} columnGap={{ base: 24, md: 32 }} rowGap={{ base: 32, md: 64 }} justify={'center'}>
+        <Flex className='flex-wrap gap-x-[24px] md:gap-x-[32px] gap-y-[32px] md:gap-y-[64px] justify-center'>
             {productData.map((item, index) => {
                 return (
                     <div key={index} className='text-center w-[46%] md:w-auto' >
@@ -15,13 +15,13 @@ const Product = () => {
                         <h2 className='pt-[8px] pb-[16px] text-[20px] font-soraSemiBold leading-[30px]'>
                             <NumberFormatter prefix="$ " value={item.price} thousandSeparator />
                         </h2>
-                        <Button variant='default' py={8} px={{ base: 32, md: 101 }} className='text-[16px] leading-[24px] font-soraRegular !border-YellowGreen md:!border-Black ' >
+                        <Button variant='default' className='h-[37px] md:h-[40px] py-[8px] px-[32px] md:px-[101px] text-[16px] leading-[24px] font-soraRegular !border-YellowGreen md:!border-Black ' >
                             View Details
                         </Button>
                     </div>
                 )
             })}
-            <Button h={{base:48,md:56}} hiddenFrom="sm" py={12} px={18.5} className='text-[16px] leading-[24px] font-soraSemiBold mt-[16px]' >
+            <Button hiddenFrom="sm" className='h-[48px] md:h-[56px] py-[12px] px-[18.5px] text-[16px] leading-[24px] font-soraSemiBold mt-[16px]' >
                 View All
             </Button>
         </Flex>

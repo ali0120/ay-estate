@@ -14,15 +14,12 @@ import PhoneGoogleIcon from '@/public/svg/google-icon.svg'
 const OurClients = () => {
     return (
         <section className='bg-EerieBlack text-White relative'>
-            <Box pb={{ base: '20px', md: '80px' }} px={{ base: '20px', md: '120px' }} >
-                <Divider pb={{ base: 16, md: 60 }} color='rgba(255, 255, 255, 0.1)' />
-                <p className=' w-[80%] m-auto lg:w-full text-center text-[12px] lg:text-[18px] leading-[18px] lg:leading-[28px] font-soraRegular text-Vodka mb-[24px]' >We’ve built with the most growth company around the world</p>
+            <Box className='px-[20px] md:px-[120px] pb-[20px] md:pb-[80px]'>
+                <Divider color='rgba(255, 255, 255, 0.1)' className='pb-[16px] md:pb-[60px]' />
+                <h2 className=' w-[80%] m-auto lg:w-full text-center text-[12px] lg:text-[18px] leading-[18px] lg:leading-[28px] font-soraRegular text-Vodka mb-[24px]' >We’ve built with the most growth company around the world</h2>
                 <Flex
                     visibleFrom='sm'
-                    gap={{ base: 19, md: 50 }}
-                    wrap={'wrap'}
-                    align="center"
-                    justify="center"
+                    className='flex-wrap items-center gap-[19px] md:gap-[50px] justify-center'
                 >
                     <FaceBookIcon />
                     <NetflixIcon />
@@ -33,28 +30,24 @@ const OurClients = () => {
                 </Flex>
                 <Flex
                     hiddenFrom='sm'
-                    gap={{ base: 19, md: 50 }}
-                    rowGap={0}
-                    wrap={'wrap'}
-                    align="center"
-                    justify={"center"}
+                    className='flex-wrap items-center justify-center gap-[19px] md:gap-[50px] gap-y-0'
                 >
-                    <Box py={{ base: 24, md: 40 }} px={{ base: 10, md: 23 }}>
+                    <Box className='py-[24px] md:py-[40px] px-[10px] md:px-[23px]'>
                         <PhoneFaceBookIcon />
                     </Box>
-                    <Box py={{ base: 24, md: 40 }} px={{ base: 10, md: 23 }}>
+                    <Box className='py-[24px] md:py-[40px] px-[10px] md:px-[23px]'>
                         <PhoneNetflixIcon />
 
                     </Box>
-                    <Box py={{ base: 24, md: 40 }} px={{ base: 10, md: 23 }}>
+                    <Box className='py-[24px] md:py-[40px] px-[10px] md:px-[23px]'>
                         <PhoneAmazonIcon />
 
                     </Box>
-                    <Box py={{ base: 24, md: 40 }} px={{ base: 10, md: 23 }}>
+                    <Box className='py-[24px] md:py-[40px] px-[10px] md:px-[23px]'>
                         <PhoneYoutubeIcon />
 
                     </Box>
-                    <Box py={{ base: 24, md: 40 }} px={{ base: 10, md: 23 }}>
+                    <Box className='py-[24px] md:py-[40px] px-[10px] md:px-[23px]'>
                         <PhoneGoogleIcon />
                     </Box>
                 </Flex>

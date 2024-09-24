@@ -33,7 +33,7 @@ const ArticlesListings = () => {
 
     return (
         <section className='bg-White' >
-            <Box px={{ base: 20, md: 100 }} pt={{ base: 20, md: 65 }}>
+            <Box className='px-[20px] md:px-[100px] pt-[20px] md:pt-[65px]'>
                 <Flex gap={29} wrap={'wrap'} >
                     {popularArticles?.articles?.map((article: IBlogArticle) => {
                         return (
@@ -41,7 +41,7 @@ const ArticlesListings = () => {
                         )
                     })}
                 </Flex>
-                <Flex justify='center' pt={50} pb={{ base: 50, md: 100 }}>
+                <Flex className='pb-[50px] md:pb-[100px] pt-[50px] justify-center'>
                     <Pagination
                         total={popularArticles.totalPages}
                         boundaries={3}
