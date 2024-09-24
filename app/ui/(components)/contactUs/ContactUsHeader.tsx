@@ -7,7 +7,7 @@ import CenteredTextBlock from '../CenteredTextBlock'
 const ContactUsHeader = () => {
     return (
         <section className='bg-White' >
-            <Box pt={{ base: 30, md: 120 }} pb={{ base: 16, md: 100 }} px={{ base: 20, md: 100 }}>
+            <Box className='px-[20px] md:px-[100px] pt-[30px] md:pt-[120px] pb-[16px] md:pb-[100px]'>
                 <CenteredTextBlock
                     heading="Excellent Customer Service"
                     paragraph="If you have any questions you can report them below with the following information, so that it is easy for us to reply to your message."

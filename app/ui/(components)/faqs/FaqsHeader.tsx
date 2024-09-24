@@ -7,17 +7,17 @@ const FaqsHeader = () => {
     const isDesktop = useMediaQuery('(min-width: 56.25em)');
     return (
         <section className='bg-White' >
-            <Box pt={{ base: 30, md: 120 }} px={{ base: 20, md: 100 }}>
+            <Box className='px-[20px] md:px-[100px] pt-[30px] md:pt-[120px]'>
                 <div className="text-center mx-auto">
                     <h1 className='text-[24px] lg:text-[44px] font-soraBold text-YankeesBlue leading-[31.2px] lg:leading-[57.2px] capitalize' >Helping you is our priority</h1>
-                    <Paper pt={{ base: 16, md: 50 }} shadow="xs" radius={16} className='lg:max-w-[70%] m-auto'>
+                    <Paper shadow="xs" className='lg:max-w-[70%] m-auto mt-[16px] md:mt-[50px] rounded-[16px] '>
                         <TextInput
                             placeholder="Search question"
                             radius={16}
                             leftSection={<IconSearch stroke={1.5} />}
                             leftSectionWidth={80}
                             rightSectionWidth={170}
-                            rightSection={isDesktop ? <Button h={56} py={19} px={53} className='text-ChineseBlack font-soraSemiBold mr-[6px]' >Search</Button> : null}
+                            rightSection={isDesktop ? <Button className=' h-[56px] px-[53px] text-ChineseBlack font-soraSemiBold mr-[6px]' >Search</Button> : null}
                             classNames={{
                                 input: '!px-[65px] h-[52px] lg:h-[68px] font-soraSemiBold !bg-White lg:!pr-[180px]',
                             }}

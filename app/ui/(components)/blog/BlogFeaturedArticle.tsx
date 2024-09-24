@@ -24,8 +24,8 @@ const BlogFeaturedArticle = () => {
 
     return (
         <section className='bg-White' >
-            <Box p={{ base: 20, md: 100 }} pt={{ base: 50, md: 100 }}>
-            <Flex gap={30} direction={{ base: 'column', sm: 'row' }}>
+            <Box className='p-[20px] md:p-[100px] pt-[50px] md:pt-[100px]'>
+            <Flex className='gap-[30px] flex-col md:flex-row'>
                     {firstArticle && (
                         <BackgroundImage
                             src={firstArticle.image?.src} // Image of the first article
@@ -35,7 +35,7 @@ const BlogFeaturedArticle = () => {
                             pos={"relative"}
                         >
                             <Box className="text-White absolute w-full p-[16px] lg:p-[24px] bottom-0">
-                                <Flex gap={10} align={"center"} className="text-[12px] lg:text-[18px] font-soraRegular md:font-soraSemiBold opacity-[70%] lg:opacity-1">
+                                <Flex className="text-[12px] gap-[10px] items-center lg:text-[18px] font-soraRegular md:font-soraSemiBold opacity-[70%] lg:opacity-1">
                                     <p>{firstArticle.date}</p>
                                     <EllipseIcon height={4} width={4} />
                                     <p>{firstArticle.category.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>
@@ -46,12 +46,12 @@ const BlogFeaturedArticle = () => {
                             </Box>
                         </BackgroundImage>
                     )}
-                    <Flex direction={'column'} gap={{ base: 20, md: 30 }} className="md:w-[50%]">
+                    <Flex className="md:w-[50%] flex-col gap-[20px] md:gap-[30px]">
                         {remainingArticles?.map((article: IBlogArticle) => (
-                            <Flex key={article.id} align={"center"} gap={{ base: 12, md: 24 }}>
+                            <Flex key={article.id} className='items-center gap-[12px] md:gap-[24px]'>
                                 <Image src={article.image.src} width={190} height={176} alt={article.category} className='w-[30%] lg:w-auto lg:h-[176px]' />
                                 <div>
-                                    <Flex gap={12} align="center" className="text-[12px] lg:text-[16px] text-RomanSilver font-soraRegular md:font-soraSemiBold" >
+                                    <Flex className="items-center gap-[12px] text-[12px] lg:text-[16px] text-RomanSilver font-soraRegular md:font-soraSemiBold" >
                                         <p>{article.date}</p>
                                         <EllipseIcon height={4} width={4} />
                                         <p>{article.category.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p> {/* Category */}

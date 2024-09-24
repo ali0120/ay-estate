@@ -12,8 +12,8 @@ interface ListingContentProps {
 const ListingContent: React.FC<ListingContentProps> = ({ type, opened, close }) => {
   return (
     <section className='bg-White' >
-      <Box px={{ base: 20, md: 100 }}>
-        <Flex gap={40}>
+      <Box className='px-[20px] md:px-[100px]'>
+        <Flex className='gap-[40px]'>
           <Drawer opened={opened} onClose={close} withCloseButton={false} p={0} size={312} hiddenFrom='md'>
             <Filter />
           </Drawer>

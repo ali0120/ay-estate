@@ -16,11 +16,11 @@ export function Header() {
 
     return (
         <div className='w-full'>
-            <Group justify="space-between" h="100%">
+            <Group className='h-full justify-between' >
                 <Link href="/" >
                     <h2 className='font-playball text-[32px] capitalize' >AyEstate</h2>
                 </Link>
-                <Group h="100%" gap={50} visibleFrom="md">
+                <Group visibleFrom="md" className='h-full gap-[50px]'>
                     <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Home
                     </Link>
@@ -37,9 +37,7 @@ export function Header() {
                         About Us
                     </Link>
                 </Group>
-                <Link href={'/contact-us'}>
-                    <Button h={56} visibleFrom="md" className='font-soraSemiBold text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
-                </Link>
+                <Button component={Link} href={'/contact-us'} visibleFrom="md" className='h-[56px] font-soraSemiBold text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
                 <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" />
             </Group>
 
@@ -58,7 +56,6 @@ export function Header() {
             >
                 <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
                     <Divider my="sm" />
-
                     <Flex
                         px={'20px'}
                         py={'md'}
@@ -83,9 +80,7 @@ export function Header() {
                             About Us
                         </Link>
                     </Flex>
-                    <Link href={'/contact-us'} onClick={closeDrawer}>
-                        <Button h={56} mt={'sm'} className='font-soraSemiBold w-full max-w-[95%] m-auto block text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
-                    </Link>
+                    <Button component={Link} href={'/contact-us'} onClick={closeDrawer} className=' h-[56px] mt-[30px] font-soraSemiBold w-full max-w-[95%] m-auto block text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
                 </ScrollArea>
             </Drawer>
         </div>

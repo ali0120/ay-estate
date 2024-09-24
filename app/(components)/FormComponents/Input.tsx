@@ -53,12 +53,13 @@ function Input({
         <div className={className}>
             <label>
                 {label && (
-                    <p className='text-[14px] md:text-[16px] leading-[18.2px] md:leading-[20.8px] font-soraBold mb-[12px]'>
+                    <span className='text-[14px] md:text-[16px] leading-[18.2px] md:leading-[20.8px] font-soraBold mb-[12px]'>
                         {label}
                         {((typeof registerOptions?.required === 'object' && registerOptions?.required.value) ||
                             (typeof registerOptions?.required === 'string' && registerOptions?.required)) && <span className='text-red-700'>*</span>}
-                    </p>
+                    </span>
                 )}
+              </label>
                 <MantineInput
                     {...rest}
                     type={type}
@@ -73,7 +74,6 @@ function Input({
                 {iconPlaceholder && (
                     <span className={`icon ${label ? 'label' : 'no_label'}`}>{iconPlaceholder}</span>
                 )}
-            </label>
             {!!errors && !!errors[name] && !value && (
                 <div className="ErrorMessageStyle">
                     <ErrorMessage errors={errors} name={name} render={({ message }) => <p>{message}</p>} />

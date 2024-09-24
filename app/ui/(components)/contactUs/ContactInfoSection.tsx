@@ -6,9 +6,9 @@ import SupportIcon from '@/public/svg/24-support.svg'
 const ContactInfoSection = () => {
   return (
     <section className='bg-White text-YankeesBlue relative'>
-      <Box pb={{ base: '20px', md: '100px' }} px={{ base: '20px', md: '100px' }} >
+      <Box className='px-[20px] md:px-[100px] pb-[20px] md:pb-[100px]'>
         <div className="grid md:grid-cols-3 gap-[20px] md:gap-[18px] lg:gap-[48px]">
-          <Flex direction={'column'} className='text-center py-[16px] lg:py-[34px] px-[24px] md:px-[0] lg:px-[24px] '>
+          <Flex className='flex-col text-center py-[16px] lg:py-[34px] px-[24px] md:px-[0] lg:px-[24px] '>
             <Box className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
               <SmsIcon color="#F9F9F9" className='mx-auto mobile_YellowGreen' />
             </Box>
@@ -18,7 +18,7 @@ const ContactInfoSection = () => {
               Leave a Messages
             </Button>
           </Flex>
-          <Flex direction={'column'} className='text-center py-[16px] lg:py-[34px] px-[24px] md:px-[0] lg:px-[24px] '>
+          <Flex className='flex-col text-center py-[16px] lg:py-[34px] px-[24px] md:px-[0] lg:px-[24px] '>
           <Box className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
             <LocationIcon color="#F9F9F9" className='mx-auto mobile_YellowGreen' />
           </Box>
@@ -28,7 +28,7 @@ const ContactInfoSection = () => {
               Get Directions
             </Button>
           </Flex>
-          <Flex direction={'column'} className='text-center py-[16px] lg:py-[34px] px-[24px] md:px-[0] lg:px-[24px] '>
+          <Flex className='flex-col text-center py-[16px] lg:py-[34px] px-[24px] md:px-[0] lg:px-[24px] '>
             <Box className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
               <SupportIcon color="#F9F9F9" className='mx-auto mobile_YellowGreen' />
             </Box>

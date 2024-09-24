@@ -28,13 +28,13 @@ function Textarea({
 		<div className={className}>
 			<label>
 				{label && (
-					<p className='text-[14px] md:text-[16px] leading-[18.2px] md:leading-[20.8px] font-soraBold mb-[12px]'>
+					<span className='text-[14px] md:text-[16px] leading-[18.2px] md:leading-[20.8px] font-soraBold mb-[12px]'>
 						{label} {registerOptions?.required && <span className='text-red-700'>*</span>}
-					</p>
+					</span>
 				)}
+			</label>
 				<MantineTextArea
 					{...rest} placeholder={placeholder} {...register(name, registerOptions)} />
-			</label>
 			{!!errors && !!errors[name] && (
 				<div className="ErrorMessageStyle">
 					<ErrorMessage errors={errors} name={name} render={({ message }) => <p>{message}</p>} />

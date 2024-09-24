@@ -4,7 +4,7 @@ import { Flex } from '@mantine/core'
 
 const Services = () => {
     return (
-        <Flex justify={'space-between'} gap={{ base: 36, md: 48 }} wrap={{ base: "wrap", md: 'nowrap' }} >
+        <Flex justify={'space-between'} className='gap-[36px] md:gap-[48px] flex-wrap md:flex-nowrap'  >
             {servicesdata.map((item, index: number) => {
                 return (
                     <div key={index} className='md:w-[46%] lg:w-[30%]' >

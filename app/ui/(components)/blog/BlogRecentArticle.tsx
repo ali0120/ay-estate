@@ -19,19 +19,19 @@ const BlogRecentArticle = () => {
 
     return (
         <section className='bg-White' >
-            <Box px={{ base: 20, md: 100 }} pb={{ base: 100, md: 100 }}>
-                <Flex align={'center'} justify={'space-between'} mb={{ base: 30, md: 50 }}>
+            <Box className='px-[20px] md:px-[100px] pb-[100px]'>
+                <Flex align={'center'} justify={'space-between'} className='pb-[30px] md:pb-[50px]'>
                     <div className='w-[70%]' >
                         <h2 className='text-[16px] lg:text-[32px] text-DarkJungleGreentwo font-soraBold'>Recent Articles</h2>
                         <p className='text-[12px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[8px] lg:mt-[12px]' >Newest update article from AyEstate</p>
                     </div>
                     <Flex justify={'flex-end'} className='w-[30%]' >
-                        <Button h={{base:30,sm:47}} variant='default' px={{ base: 12, sm: 16 }} py={{ base: 7.2, sm: 12 }} className='text-[14px] md:text-[18px] text-ChineseBlack font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'
+                        <Button variant='default'className='h-[30px] md:h-[47px] px-[12px] md:px-[16px] text-[14px] md:text-[18px] text-ChineseBlack font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'
                             onClick={() => router.push('/blog/recent-articles')}
                         >View All</Button>
                     </Flex>
                 </Flex>
-                <Flex gap={{ base: 20, md: 29 }} wrap={'wrap'} >
+                <Flex wrap={'wrap'} className='gap-[20px] md:gap-[29px]' >
                     {popularArticles?.articles?.slice(0, 3).map((article: IBlogArticle) => {
                         return (
                             <ArticleCard key={article.id} article={article} />

@@ -13,12 +13,12 @@ interface IArticleCard {
 const ArticleCard: FC<IArticleCard> = ({ article, withParagrapg }) => {
 
     return (
-        <Flex direction={'column'} gap={{ base: 16, md: 24 }} w={{base:'100%',sm:'45%',lg:'394px'}}>
+        <Flex direction={'column'} className='w-full md:w-[45%] lg:w-[394px] gap-[16px] md:gap-[24px]'>
             <Link href={`/blog/recent-articles/${article.id}`}>
                 <Image src={article.image.src} width={394} height={300} alt={article.category} className='h-[260px] lg:h-full' />
             </Link>
             <div>
-                <Flex gap={12} align={'center'} className="text-[12px] lg:text-[18px] font-soraRegular md:font-soraSemiBold text-RomanSilver" >
+                <Flex  align={'center'} className="text-[12px] gap-[12px] lg:text-[18px] font-soraRegular md:font-soraSemiBold text-RomanSilver" >
                     <p>{article.date}</p>
                     <EllipseIcon height={4} width={4} fill={"#D4D7DF"} />
                     <p>{article.category?.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>

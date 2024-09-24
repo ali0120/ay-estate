@@ -22,7 +22,7 @@ const Testimonials = () => {
                 {clientsData.map((item, index) => {
                     return (
                         <Carousel.Slide key={index}>
-                            <Client review={item.review} author={item.author} rating={item.rating} />
+                            <Client review={item.review} Avatar={item.avatar} author={item.author} rating={item.rating} />
                         </Carousel.Slide>
                     )
                 })}

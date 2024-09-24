@@ -15,25 +15,25 @@ const BlogHeader = () => {
     const isDesktop = useMediaQuery('(min-width: 56.25em)');
     return (
         <section className='bg-White' >
-            <Box pt={{ base: 30, md: 120 }} px={{ base: 20, md: 100 }}>
+            <Box className='px-[20px] md:px-[100px] pt-[30px] md:pt-[120px]'>
                 <div className="text-center mx-auto">
                     <h1 className='text-[24px] lg:text-[44px] font-soraBold text-YankeesBlue leading-[31.2px] lg:leading-[57.2px] capitalize' >Our Blog</h1>
-                    <Paper pt={{ base: 16, md: 50 }} shadow="xs" radius={16} className='lg:max-w-[70%] m-auto'>
+                    <Paper shadow="xs" className='lg:max-w-[70%] m-auto mt-[16px] md:mt-[50px] rounded-[16px]'>
                         <TextInput
                             placeholder="Search article name"
                             radius={16}
                             leftSection={<IconSearch stroke={1.5} />}
                             leftSectionWidth={80}
                             rightSectionWidth={170}
-                            rightSection={isDesktop ? <Button h={{base:48,md:56}} py={19} px={53} className='text-ChineseBlack font-soraSemiBold mr-[6px]' >Search</Button> : null}
+                            rightSection={isDesktop ? <Button className='h-[48px] md:h-[56px] px-[53px] text-ChineseBlack font-soraSemiBold mr-[6px]' >Search</Button> : null}
                             classNames={{
                                 input: '!px-[65px] h-[52px] lg:h-[68px] font-soraSemiBold !bg-White lg:!pr-[180px]',
                             }}
                         />
                     </Paper>
-                    <Flex mt={24} justify={"center"} gap={{base:16,md:30}}>
+                    <Flex className='justify-center gap-[16px] md:gap-[30px] mt-[24px] '>
                         <h3 className='text-[12px] lg:text-[16px] text-RomanSilver font-soraSemiBold'>Suggested:</h3>
-                        <Flex gap={{ base: 16, md: 24 }} wrap={'wrap'} rowGap={5}>
+                        <Flex className='gap-[16px] md:gap-[24px] flex-wrap gap-y-[5px]'>
                             {categories.map(category => (
                                 <Link
                                     key={category.value}

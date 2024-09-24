@@ -8,9 +8,9 @@ import ArticleCard from "./ArticleCard";
 const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
    
     return (
-        <Box pt={{ base: 50, md: 120 }} px={{ base: 20, md: 100 }}>
+        <Box className='px-[20px] md:px-[100px] pt-[50px] md:pt-[120px]'>
             <div className="text-center">
-                <Flex gap={12} align={'center'} justify={'center'} className="text-[12px] lg:text-[16px] text-RomanSilver font-soraRegular md:font-soraSemiBold" >
+                <Flex  align={'center'} justify={'center'} className="text-[12px] gap-[12px] lg:text-[16px] text-RomanSilver font-soraRegular md:font-soraSemiBold" >
                     <p>{article.date}</p>
                     <EllipseIcon height={4} width={4} fill={"#D4D7DF"} />
                     <p>{article.category?.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>
@@ -43,7 +43,7 @@ const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
                                 <ul key={index}>
                                     {block.items?.map((item, itemIndex) => (
                                         <li key={itemIndex}>
-                                            <Flex gap={{ base: 6, md: 10 }} align={'center'}>
+                                            <Flex align={'center'} className='gap-[6px] md:gap-[10px]'>
                                                 <RectangleIcon />
                                                 <h3 className="text-[16px] lg:text-[20px] text-DarkJungleGreentwo font-soraBold leading-[20.8px] lg:leading-[26px] mt-[8px] lg:mt-[21px] mb-[12px] lg:mb-[24px]">{item.heading}</h3>
                                             </Flex>
@@ -57,17 +57,17 @@ const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
                     }
                 })}
             </Box>
-            <Box pt={42} pb={100}>
-                <Flex align={'center'} justify={'space-between'} mb={{ base: 30, md: 50 }}>
+            <Box className='pt-[42px] pb-[100px]'>
+                <Flex align={'center'} justify={'space-between'} className="mb-[30px] md:mb-[50px]">
                     <div className='w-[70%]' >
                         <h2 className='text-[16px] lg:text-[32px] text-DarkJungleGreentwo font-soraBold'>Recent Articles</h2>
                         <p className='text-[12px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[8px] lg:mt-[12px]' >Newest update article from AyEstate</p>
                     </div>
                     <Flex justify={'flex-end'} className='w-[30%]' >
-                        <Button variant='default' px={16} py={12} className='text-[14px] lg:text-[18px] !border-none lg:!border-ChineseBlack lg:!border-solid lg:!text-ChineseBlack font-soraSemiBold !text-YellowGreen'>View All</Button>
+                        <Button variant='default' className=' px-[16px] py-[12px] text-[14px] lg:text-[18px] !border-none lg:!border-ChineseBlack lg:!border-solid lg:!text-ChineseBlack font-soraSemiBold !text-YellowGreen'>View All</Button>
                     </Flex>
                 </Flex>
-                <Flex gap={29} wrap={'wrap'} >
+                <Flex wrap={'wrap'} className='gap-[29px]'>
                     {article.recentArticles?.map((article: IBlogArticle) => {
                         return (
                             <ArticleCard key={article.id} article={article} />

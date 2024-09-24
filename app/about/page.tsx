@@ -1,5 +1,5 @@
-import OurTeam from '../ui/(components)/about/OurTeam'
 import AboutHeader from '../ui/(components)/about/AboutHeader'
+import OurTeam from '../ui/(components)/about/OurTeam'
 import Achievement from '../ui/(components)/about/Achievement'
 import OurClients from '../ui/(components)/about/OurClients'
 import CTASection from '../ui/(components)/home/CTASection'
