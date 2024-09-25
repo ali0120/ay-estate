@@ -34,7 +34,7 @@ const Filter = () => {
       <Divider className='mt-[16px] mb-[24px]' />
       <UnstyledButton onClick={toggleBestFilter} className=' w-full text-[16px] font-bold ' >
         <Box component='span' className='flex items-center justify-between w-full'>
-          <strong >Best Filter</strong>
+          <strong className='text-[16px] font-soraBold' >Best Filter</strong>
           <ArrowUpIcon className={`transition-transform ${!bestFilterOpened ? 'rotate-180' : 'rotate-0'}`} />
         </Box>
       </UnstyledButton>
@@ -44,7 +44,7 @@ const Filter = () => {
             onChange={(e) => handleCheckboxChange(e.target.checked, "rating", "4-stars")}
             label={<Box component='span' className='flex gap-[4px]'>
               <StarIcon />
-              <span>4 stars or upper</span>
+              <span className='text-[16px] font-soraRegular'>4 stars or upper</span>
             </Box>}
             classNames={{
               label: 'text-RomanSilver text-[16px] font-soraRegular',
@@ -79,7 +79,7 @@ const Filter = () => {
       <Divider className='my-[24px]' />
       <UnstyledButton onClick={toggleLocation} className='text-[16px] font-bold  w-full' >
         <Box component='span' className='flex items-center justify-between'>
-          <strong >Location</strong>
+          <strong className='text-[16px] font-soraBold' >Location</strong>
           <ArrowUpIcon className={`transition-transform ${!locationOpened ? 'rotate-180' : 'rotate-0'}`} />
         </Box>
       </UnstyledButton>
@@ -141,7 +141,7 @@ const Filter = () => {
       <Divider className='my-[24px]' />
       <UnstyledButton onClick={toggleCategory} className='text-[16px] font-bold w-full ' >
         <Box component='span' className='flex items-center justify-between'>
-          <strong >Category</strong>
+          <strong className='text-[16px] font-soraBold' >Category</strong>
           <ArrowUpIcon className={`transition-transform ${!categoryOpened ? 'rotate-180' : 'rotate-0'}`} />
         </Box>
       </UnstyledButton>
@@ -225,7 +225,7 @@ const Filter = () => {
       <Divider my={24} />
       <UnstyledButton onClick={togglePrice} className='text-[16px] font-bold w-full' >
         <Box component='span' className='flex items-center justify-between'>
-          <strong >Price Range</strong>
+          <strong className='text-[16px] font-soraBold' >Price Range</strong>
           <ArrowUpIcon className={`transition-transform ${!priceOpened ? 'rotate-180' : 'rotate-0'}`} />
         </Box>
       </UnstyledButton>

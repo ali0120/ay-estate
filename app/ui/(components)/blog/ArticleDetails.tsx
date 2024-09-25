@@ -8,7 +8,7 @@ import ArticleCard from "./ArticleCard";
 const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
    
     return (
-        <Box className='px-[20px] md:px-[100px] pt-[50px] md:pt-[120px]'>
+        <Box className='px-[20px] xl:px-[100px] pt-[50px] lg:pt-[120px]'>
             <div className="text-center">
                 <Flex  align={'center'} justify={'center'} className="text-[12px] gap-[12px] lg:text-[16px] text-RomanSilver font-soraRegular md:font-soraSemiBold" >
                     <p>{article.date}</p>
@@ -19,7 +19,7 @@ const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
                 <p className="text-[14px] lg:text-[18px] text-RomanSilver font-soraRegular leading-[22.4px] lg:leading-[28.8px] mt-[12px] lg:mt-[6px] lg:w-[65%] m-auto" >{article.description}</p>
             </div>
             <Image src={article.image} alt={article.title} width={1240} height={660} className='w-full max-h-[660px] object-cover rounded-[16px] py-[30px] lg:py-[50px]' />
-            <Box className="lg:max-w-[65%] m-auto" >
+            <Box className="lg:max-w-[76.2%] m-auto" >
                 <p className="text-[14px] lg:text-[18px] text-RomanSilver font-soraRegular">{article.intro}</p>
                 {article.additionalIntro ? <p className="text-[14px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[30px] lg:mt-[60px]">{article.additionalIntro}</p> : null}
                 {article.content?.map((block, index) => {
@@ -57,11 +57,11 @@ const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
                     }
                 })}
             </Box>
-            <Box className='pt-[42px] pb-[100px]'>
+            <Box className='pt-[30px] pb-[50px] lg:pt-[42px] lg:pb-[100px]'>
                 <Flex align={'center'} justify={'space-between'} className="mb-[30px] md:mb-[50px]">
                     <div className='w-[70%]' >
-                        <h2 className='text-[16px] lg:text-[32px] text-DarkJungleGreentwo font-soraBold'>Recent Articles</h2>
-                        <p className='text-[12px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[8px] lg:mt-[12px]' >Newest update article from AyEstate</p>
+                        <h2 className='text-[16px] lg:text-[32px] text-DarkJungleGreentwo font-soraBold'>Related Articles</h2>
+                        <p className='hidden md:block text-[12px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[8px] lg:mt-[12px]' >Newest update article from AyEstate</p>
                     </div>
                     <Flex justify={'flex-end'} className='w-[30%]' >
                         <Button variant='default' className=' px-[16px] py-[12px] text-[14px] lg:text-[18px] !border-none lg:!border-ChineseBlack lg:!border-solid lg:!text-ChineseBlack font-soraSemiBold !text-YellowGreen'>View All</Button>

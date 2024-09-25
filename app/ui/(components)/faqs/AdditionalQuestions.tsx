@@ -8,12 +8,12 @@ import CenteredTextBlock from '../CenteredTextBlock'
 const AdditionalQuestions = () => {
     return (
         <section className='bg-White text-YankeesBlue relative'>
-            <Box className='px-[20px] md:px-[100px] pb-[100px] md:pb-[200px] pt-[3px] md:pt-[100px]'>
+            <Box className='px-[20px] xl:px-[100px] pb-[100px] lg:pb-[200px] pt-[3px] lg:pt-[100px]'>
                 <CenteredTextBlock
                     heading="Still Have a question?"
                     paragraph="If you cannot find answer to your question in our FAQ, you can always contact us. We wil answer to you shortly!"
                 />
-                <div className="grid md:grid-cols-3 gap-[48px] md:gap-[18px] lg:gap-[48px] mt-[50px] lg:mt-0">
+                <div className="grid md:grid-cols-3 gap-[48px] md:gap-[18px] lg:gap-[48px] mt-[36px] lg:mt-[44px]">
                     <Flex className='text-center flex-col'>
                         <Box className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
                             <UserIcon color="#F9F9F9" className='mx-auto yellow_path' />

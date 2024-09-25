@@ -26,12 +26,12 @@ interface ListingHeaderProps {
 const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) => {
     return (
         <section className='bg-White' >
-            <Box className='px-[20px] md:px-[100px]'>
-                <Breadcrumbs className='pt-[30px] md:pt-[48px] pb-[18px] md:pb-[32px]' separator={<ArrowRightIcon />} separatorMargin="md">
+            <Box className='px-[20px] xl:px-[100px]'>
+                <Breadcrumbs className='pt-[30px] lg:pt-[48px] pb-[24px] lg:pb-[32px]' separator={<ArrowRightIcon />} separatorMargin="md">
                     {items}
                 </Breadcrumbs>
-                <Flex className='mb-[30px] md:mb-[52px] gap-[20px] flex-col md:flex-row justify-between'>
-                    <div className='lg:w-[50%] ' >
+                <Flex className='mb-[24px] md:mb-[52px] gap-[24px] md:gap-[20px] flex-col md:flex-row justify-between'>
+                    <div className='w-[78.2%] lg:w-[50%] ' >
                         <h2 className='text-[16px] lg:text-[24px] text-DarkJungleGreentwo font-soraBold'>Showing listings properties for “Villa”</h2>
                         <p className='text-[12px] lg:text-[16px] text-RomanSilver font-soraRegular mt-[4px]' >Showing 1 - 60 Properties</p>
                     </div>
@@ -44,15 +44,20 @@ const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) =>
                                 defaultValue='Relevant Products'
                                 classNames={{
                                     input: '!h-[32px] md:!h-[44px] !w-[170px] md:!w-[180px] text-[12px] md:text-[14px] font-soraMedium !bg-transparent !p-[10px] md:!px-[16px] !rounded-[8px] !border-BrightGray md:font-soraSemiBold',
-                                    section:'h-[33px] md:h-[42px]'
+                                    section: 'h-[33px] md:h-[42px]'
                                 }}
                             />
                         </Flex>
                         <Flex className='gap-[4px] md:gap-[8px] items-center'>
-                            <LineIcon />
+                            <Box visibleFrom='md'>
+                                <LineIcon />
+                            </Box>
                             <UnstyledButton onClick={() => open()} hiddenFrom='md'>
                                 <FilterIcon />
                             </UnstyledButton>
+                            <Box hiddenFrom='md'>
+                                <LineIcon />
+                            </Box>
                             <UnstyledButton className={`switch_view p-[6px] rounded-[8px] ${type === 'grid' ? 'bg-[#1E4C2F]' : 'border-[1px] border-solid border-[#E4E9EE]'}`} onClick={() => setType('grid')}>
                                 <GridIcon className={`${type === 'grid' ? 'active' : 'not_active'}`} />
                             </UnstyledButton>

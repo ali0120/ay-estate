@@ -6,8 +6,8 @@ import ChevronRightIcon from '@/public/svg/chevron-right.svg'
 const AmenitiesSection = () => {
     return (
         <section className='bg-White overflow-hidden' >
-            <Box className='px-[20px] md:px-[64px] py-[60px] md:py-[112px]'>
-                <Flex className='items-start gap-[48px] md:gap-[80px] mb-[30px] md:mb-[50px] justify-between flex-wrap'>
+            <Box className='px-[20px] xl:px-[64px] py-[50px] xl:py-[112px]'>
+                <Flex className='items-center gap-[48px] md:gap-[80px] justify-between flex-wrap'>
                     <div className='lg:w-[47.8%]' >
                         <h3 className='capitalize pb-[12px] lg:pb-[16px] text-[16px] leading-[24px] font-soraSemiBold text-Black' >Luxury</h3>
                         <h2 className='text-[36px] lg:text-[48px] leading-[43.2px] lg:leading-[57.6px] text-Black font-soraBold'>Experience the Perfect Blend of Comfort and Style</h2>
@@ -21,8 +21,8 @@ const AmenitiesSection = () => {
                             </Button>
                         </Group>
                     </div>
-                    <Flex className="flex-1 flex-col gap-[32px]" >
-                        <Image src={imageOne} className="lg:w-[605x] lg:h-[605px] object-contain" alt='gallery-one' />
+                    <Flex className="flex-1 flex-col" >
+                        <Image src={imageOne} className="object-contain" alt='gallery-one' />
                     </Flex>
                 </Flex>
             </Box>

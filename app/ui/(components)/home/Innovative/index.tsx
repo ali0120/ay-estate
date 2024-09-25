@@ -5,8 +5,8 @@ import Stats from './components/Stats'
 const Innovative = () => {
     return (
         <section className='bg-ChineseBlack text-White'>
-            <Box className='px-[20px] md:px-[64px] py-[50px] md:py-[80px]'>
-                <Flex className='flex-col md:flex-row gap-[20px] md:gap-[80px] pb-[48px] md:pb-[80px] justify-between'>
+            <Box className='px-[20px] xl:px-[64px] py-[50px] lg:py-[80px]'>
+                <Flex className='flex-col md:flex-row gap-[20px] lg:gap-[80px] pb-[48px] lg:pb-[80px] justify-between'>
                     <div className='md:w-[50%]'>
                         <h3 className='capitalize pb-[12px] lg:pb-[16px] text-[16px] leading-[24px] font-soraSemiBold' >Innovative</h3>
                         <h2 className='font-soraBold text-[32px] lg:text-[48px] leading-[38.4px] lg:leading-[58px]' >Transforming the Real Estate Industry with Excellence</h2>
@@ -16,7 +16,7 @@ const Innovative = () => {
                             At our company, we take pride in our exceptional success rate, having listed thousands of properties, and ensuring client satisfaction is our top priority.
                         </p>
                         <Flex className='justify-center md:justify-start'>
-                            <Button className='h-[48px] md:h-[56px] py-[13px] md:py-[17px] px-[34px] mt-[32px] text-[16px] font-soraSemiBold leading-[21px]' >
+                            <Button className='h-[48px] md:h-[56px] py-[13px] lg:py-[17px] px-[24px] md:px-[34px] mt-[24px] md:mt-[32px] text-[16px] font-soraSemiBold leading-[21px]' >
                                 Learn More
                             </Button>
                         </Flex>
