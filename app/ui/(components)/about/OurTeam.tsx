@@ -10,13 +10,13 @@ import Link from 'next/link'
 const OurTeam = () => {
     return (
         <section className='bg-White' >
-            <Box className='px-[20px] md:px-[64px] md:pt-[100px] pb-[20px] md:pb-[112px]'>
-                <Flex className='text-center flex-col items-center justify-center pb-[15px] md:pb-[80px]' >
+            <Box className='px-[20px] xl:px-[64px] lg:pt-[100px] pb-[20px] lg:pb-[112px]'>
+                <Flex className='text-center flex-col items-center justify-center pb-[15px] lg:pb-[80px]' >
                     <Badge size='xl' color="#F4F2FF" className='h-[48px] px-[16px] text-[16px] leading-[24px] text-ChineseBlack font-soraSemiBold uppercase' >
                         Our team
                     </Badge>
                     <h2 className='text-[28px] lg:text-[36px] text-EerieBlack leading-[36px] lg:leading-[54px] font-soraBold py-[16px] uppercase w-[80%] lg:w-full' >meet our creative team</h2>
-                    <p className='text-[18px] leading-[28px] font-soraRegular' >Magna metus, adipiscing dictumst magna fringilla metus fermentum tristique. Enim vitae purus lectus augue maecenas</p>
+                    <p className='text-[14px] lg:text-[18px] leading-[20px] text-Independence lg:leading-[28px] font-soraRegular' >Magna metus, adipiscing dictumst magna fringilla metus fermentum tristique. Enim vitae purus lectus augue maecenas</p>
                 </Flex>
                 <Flex className='flex-wrap gap-[32px]' visibleFrom='md'>
                     {ourTeamData?.map((item, index) => {

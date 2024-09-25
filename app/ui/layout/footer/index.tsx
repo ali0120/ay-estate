@@ -59,16 +59,16 @@ export function Footer() {
     });
 
     return (
-        <div className='text-RomanSilver pt-[50px] pb-[50px] md:pt-[100px] md:pb-[32px]' >
-            <Flex className='gap-0 md:gap-[50px] flex-col md:flex-row justify-between pb-[31px]'>
+        <div className='text-RomanSilver pt-[50px] pb-[50px] lg:pt-[100px] lg:pb-[32px]' >
+            <Flex className='gap-0 md:gap-[50px] flex-col lg:flex-row justify-between pb-[31px]'>
                 <div>
                     <h2 className='font-playball text-[32px] capitalize text-White' >AyEstate</h2>
-                    <ul className='mt-[32px] flex flex-col gap-[24px] text-[14px] md:text-[18px] font-jakartaMedium ' >
+                    <ul className='mt-[16px] md:mt-[32px] flex flex-col gap-[24px] text-[14px] md:text-[18px] font-jakartaMedium ' >
                         <li>hello.ayestate@example.com <br />(+1) 2345 6789</li>
                         <li>4140 Parker Rd. Allentown, <br />New Mexico 31134</li>
                     </ul>
                 </div>
-                <Divider hiddenFrom='md' className='my-[30px]' />
+                <Divider hiddenFrom='md' color='#2E334B' className='my-[30px]' />
                 <Flex visibleFrom='md' className='gap-[80px]' >{groups}</Flex>
                 <Box hiddenFrom='md'>
                     <div className="grid grid-cols-2 gap-[30px] md:gap-[60px] mb-[30px]">

@@ -32,14 +32,14 @@ const ContactUsForm = () => {
 
   return (
     <section className='bg-White text-DarkJungleGreentwo relative'>
-      <Box className='px-[20px] md:px-[100px] pb-[100px] md:pb-[100px] pt-[100px] md:pt-0'>
+      <Box className='px-[20px] xl:px-[100px] pb-[53px] lg:pb-[100px] pt-[100px] lg:pt-0'>
         <CenteredTextBlock
           heading="Contact our sales team"
           paragraph="Built for every team across your company, Jobify Enterprise boosts productivity with
             upgraded security and account support. Contact us today to unlock:"
         />
         <FormProvider {...methods}>
-          <form onSubmit={handleSubmit(onSubmit)} className='pt-[20px] px-[16px] lg:px-0'
+          <form onSubmit={handleSubmit(onSubmit)} className='pt-[20px] px-[16px] lg:px-0 lg:w-[77.5%] m-auto'
           >
             <Box className='grid md:gap-y-[40px] w-full gap-[20px] grid-cols-1 md:grid-cols-2'>
               <Input name="name" label="Your Name" placeholder="Enter your name" radius={16}
@@ -116,7 +116,7 @@ const ContactUsForm = () => {
                 }}
               />
             </Box>
-            <Flex className='flex-col md:flex-row justify-between gap-[40px] md:gap-[80px] items-center mt-[32px] md:mt-[61px]'>
+            <Flex className='flex-col md:flex-row justify-between gap-[40px] lg:gap-[80px] items-center mt-[32px] md:mt-[61px]'>
               <CheckBox radius={6} name='agree' label="I agree to Loom's Terms of Service and Privacy Policy."
                 registerOptions={{
                   required: {

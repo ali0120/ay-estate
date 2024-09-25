@@ -36,7 +36,7 @@ export default function Layout({ children }: LayoutProps) {
             header={{ height: { base: 74, lg: 100 } }}
         >
             <AppShell.Header bg={headerBgColor} withBorder={false} >
-                <Group className='h-full px-[20px] md:px-[50px] lg:px-[100px]'>
+                <Group className='h-full px-[20px]  xl:px-[100px]'>
                     <Header />
                 </Group>
             </AppShell.Header>
@@ -45,7 +45,7 @@ export default function Layout({ children }: LayoutProps) {
                 {isPartiallyLoading ? <LoadingPartially /> : children}
             </AppShell.Main>
             <AppShell.Footer className='border-none relative bg-ChineseBlack' >
-                <Box className="px-[20px] md:px-[50px] lg:px-[100px]">
+                <Box className="px-[20px]  xl:px-[100px]">
                     <Footer />
                 </Box>
             </AppShell.Footer>

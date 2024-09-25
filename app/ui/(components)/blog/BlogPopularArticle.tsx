@@ -19,9 +19,9 @@ const BlogPopularArticle = () => {
 
     return (
         <section className='bg-White' >
-            <Box className='px-[20px] md:px-[100px] pt-[30px] md:pt-0 pb-[75px] md:pb-[100px]'>
+            <Box className='px-[20px] xl:px-[100px] pt-[30px] lg:pt-0 pb-[75px] lg:pb-[100px]'>
                 <Flex align={'center'} justify={'space-between'}  className='mb-[30px] md:mb-[50px]'>
-                    <div className='w-[70%]' >
+                    <div className='w-[65%] md:w-[70%]' >
                         <h2 className='text-[16px] lg:text-[32px] text-DarkJungleGreentwo font-soraBold'>Popular Articles</h2>
                         <p className='text-[12px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[8px] lg:mt-[12px]' >We provide blog that help start your career on AyEstate</p>
                     </div>
@@ -55,7 +55,7 @@ const BlogPopularArticle = () => {
                         )
                     })}
                 </Flex>
-                <Flex hiddenFrom='sm' className='gap-[30px] flex-col md:flex-row'>
+                <Flex hiddenFrom='sm' className='gap-[30px] flex-col lg:flex-row'>
                     <Carousel
                         withIndicators
                         height={317}

@@ -24,14 +24,14 @@ const BlogFeaturedArticle = () => {
 
     return (
         <section className='bg-White' >
-            <Box className='p-[20px] md:p-[100px] pt-[50px] md:pt-[100px]'>
+            <Box className='p-[20px] xl:p-[100px] pt-[50px] lg:pt-[100px] lg:pb-[100px]'>
             <Flex className='gap-[30px] flex-col md:flex-row'>
                     {firstArticle && (
                         <BackgroundImage
                             src={firstArticle.image?.src} // Image of the first article
                             radius={16}
                             h={588}
-                            className="md:w-[50%] !h-[317px] lg:!h-[588px]"
+                            className="md:w-[57%] !h-[317px] md:!h-[350px] lg:!h-[588px]"
                             pos={"relative"}
                         >
                             <Box className="text-White absolute w-full p-[16px] lg:p-[24px] bottom-0">
@@ -46,7 +46,7 @@ const BlogFeaturedArticle = () => {
                             </Box>
                         </BackgroundImage>
                     )}
-                    <Flex className="md:w-[50%] flex-col gap-[20px] md:gap-[30px]">
+                    <Flex className="md:w-[42.975%] flex-col gap-[20px] md:gap-[30px]">
                         {remainingArticles?.map((article: IBlogArticle) => (
                             <Flex key={article.id} className='items-center gap-[12px] md:gap-[24px]'>
                                 <Image src={article.image.src} width={190} height={176} alt={article.category} className='w-[30%] lg:w-auto lg:h-[176px]' />
