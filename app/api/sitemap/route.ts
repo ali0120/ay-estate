@@ -24,14 +24,12 @@ const generateSitemapXML = (urls: string[]) => {
 export async function GET() {
   const baseUrl = "https://ay-estate-two.vercel.app";
 
-  // Define categories
   const categories = [
     { name: "Success Stories", value: "success-stories" },
     { name: "Invest Strategies", value: "invest-strategies" },
     { name: "Tips", value: "tips" },
   ];
 
-  // Generate category-based URLs
   const categoryUrls = categories.map(
     (category) => `/blog?category=${category.value}`
   );
@@ -40,26 +38,28 @@ export async function GET() {
   const response = await fetch(`${baseUrl}/api/blogRecentArticles`);
   const blogs = await response.json();
 
-  // Extract the paths for each blog
+  if (!Array.isArray(blogs)) {
+    return NextResponse.json({ error: "Invalid blogs data" }, { status: 500 });
+  }
+
   const blogPaths = blogs.map(
     (blog: { id: string }) => `/blog/recent-article/${blog.id}`
   );
+
   const listingsPaths = properties.map(
     (property) => `/listings/${property.details.type}`
   );
 
-  // Include static pages if needed
   const staticPaths = [
     "/",
     "/listings",
     "/blog",
-    "blog/recent-articles",
+    "/blog/recent-articles",
     "/about-us",
     "/contact-us",
     "/faqs",
   ];
 
-  // Combine static and dynamic URLs
   const allUrls = [
     ...staticPaths,
     ...categoryUrls,
