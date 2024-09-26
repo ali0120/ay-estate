@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import {
     dehydrate,
     HydrationBoundary,
@@ -8,6 +9,9 @@ import BlogFeaturedArticle from '../ui/(components)/blog/BlogFeaturedArticle'
 import BlogPopularArticle from '../ui/(components)/blog/BlogPopularArticle'
 import BlogRecentArticle from '../ui/(components)/blog/BlogRecentArticle'
 import { fetchBlogRecentArticles } from '../helper/services/blog.api'
+import { blogPageMetadata } from '../metaDataConfig'
+
+export const metadata: Metadata = blogPageMetadata;
 
 export default async function Home() {
     const queryClient = new QueryClient()

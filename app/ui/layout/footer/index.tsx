@@ -5,7 +5,7 @@ const data = [
         title: 'Pages',
         links: [
             { label: 'Listings', link: '#' },
-            { label: 'About us', link: '/about' },
+            { label: 'About us', link: '/about-us' },
             { label: 'Blog', link: '/blog' }
         ],
     },

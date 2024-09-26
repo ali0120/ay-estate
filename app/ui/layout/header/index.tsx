@@ -33,7 +33,7 @@ export function Header() {
                     <Link href="/blog" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Blog
                     </Link>
-                    <Link href="/about" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
+                    <Link href="/about-us" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         About Us
                     </Link>
                 </Group>
@@ -76,7 +76,7 @@ export function Header() {
                         <Link href="/blog" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Blog
                         </Link>
-                        <Link href="/about" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
+                        <Link href="/about-us" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             About Us
                         </Link>
                     </Flex>
