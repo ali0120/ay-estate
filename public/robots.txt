@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ay-estate-two.vercel.app
+
+# Sitemaps
+Sitemap: https://ay-estate-two.vercel.app/sitemap.xml
+Sitemap: https://ay-estate-two.vercel.app/server-sitemap-index.xml
