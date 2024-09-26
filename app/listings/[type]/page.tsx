@@ -6,7 +6,7 @@ import AmenitiesSection from '@/app/ui/(components)/listingDetail/AmenitiesSecti
 export async function generateMetadata({ params }: { params: { type: string } }): Promise<Metadata> {
   const { type } = params;
 
-  const title = `${capitalize(type)} - AyEstate | Beachfront Property in Bali`;
+  const title = `${capitalize(type)} - AyEstate | Beachfront Property in Bali and More`;
   const description =
     `Explore this luxury ${type} in Bali. Spacious, modern, and equipped with top amenities, this property offers stunning ocean views and ultimate comfort.`;
   const keywords =

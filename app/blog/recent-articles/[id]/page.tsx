@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     const { title, description, author, image } = article;
 
     return {
-        title: `${title} - AyEstate Blog`,
+        title: `${title} - AyEstate Blog | Real Estate Insights`,
         description: description || "Read insightful articles on real estate, investment strategies, and more on AyEstate's blog.",
         keywords: `${title}, Real Estate Blog, Property Investment, ${author}, Real Estate Tips`,
         openGraph: {
-            title: `${title} - AyEstate Blog`,
+            title: `${title} - AyEstate Blog | Real Estate Insights`,
             description: description,
             url: `https://ay-estate-two.vercel.app/blog/recent-articles/${id}`,
             type: "article",
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
         },
         twitter: {
             card: "summary_large_image",
-            title: `${title} - AyEstate Blog`,
+            title: `${title} - AyEstate Blog | Real Estate Insights`,
             description: description,
             images: image || "/png/blog/one.png",
         },

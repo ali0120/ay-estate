@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const homePageMetadata: Metadata = {
-  title: "AyEstate - Discover Your Dream Home",
+  title: "AyEstate - Discover Your Dream Home and Ideal Property",
   description:
     "At AyEstate, we offer exceptional real estate services to help you find, buy, or invest in your dream property with ease and confidence.",
   metadataBase: new URL("https://ay-estate-two.vercel.app/"),
@@ -11,7 +11,7 @@ export const homePageMetadata: Metadata = {
     canonical: "https://ay-estate-two.vercel.app/",
   },
   openGraph: {
-    title: "AyEstate - Discover Your Dream Home",
+    title: "AyEstate - Discover Your Dream Home and Ideal Property",
     description:
       "Explore luxury properties and connect with trusted real estate agents to streamline the process of buying, selling, and investing in real estate.",
     images: "/png/heroImage.png",
@@ -20,7 +20,7 @@ export const homePageMetadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "AyEstate - Discover Your Dream Home",
+    title: "AyEstate - Discover Your Dream Home and Ideal Property",
     description:
       "Find your dream property with AyEstate's trusted agents, featuring luxury villas, modern apartments, and more.",
     images: "/png/heroImage.png",
@@ -28,7 +28,7 @@ export const homePageMetadata: Metadata = {
 };
 
 export const villaListingsMetadata: Metadata = {
-  title: "AyEstate - Villa Listings | Discover Luxury Villas",
+  title: "AyEstate - Villa Listings | Discover Luxury Villas and Homes",
   description:
     "Explore the finest luxury villas at AyEstate. Whether you're looking to rent or buy, our curated listings offer you the best properties in prime locations.",
   metadataBase: new URL("https://ay-estate-two.vercel.app/"),
@@ -38,7 +38,7 @@ export const villaListingsMetadata: Metadata = {
     canonical: "https://ay-estate-two.vercel.app/listings",
   },
   openGraph: {
-    title: "AyEstate - Villa Listings | Discover Luxury Villas",
+    title: "AyEstate - Villa Listings | Discover Luxury Villas and Homes",
     description:
       "Find your dream villa with AyEstate. From modern architecture to serene getaways, we provide a wide range of luxury villa options.",
     images: "/png/product-7.png",
@@ -47,7 +47,7 @@ export const villaListingsMetadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "AyEstate - Villa Listings | Discover Luxury Villas",
+    title: "AyEstate - Villa Listings | Discover Luxury Villas and Homes",
     description:
       "Browse our exclusive collection of luxury villas. Ideal for property buyers and investors looking for high-end homes.",
     images: "/png/product-7.png",
@@ -55,7 +55,7 @@ export const villaListingsMetadata: Metadata = {
 };
 
 export const aboutPageMetadata: Metadata = {
-  title: "About AyEstate - Our Mission, Team & Achievements",
+  title: "About AyEstate - Our Mission, Team & Real Estate Achievements",
   description:
     "Learn about AyEstate, our dedicated team of professionals, and our mission to help you find your dream home. Discover our achievements and industry-leading services.",
   metadataBase: new URL("https://ay-estate-two.vercel.app/"),
@@ -65,7 +65,7 @@ export const aboutPageMetadata: Metadata = {
     canonical: "https://ay-estate-two.vercel.app/about-us",
   },
   openGraph: {
-    title: "About AyEstate - Our Mission, Team & Achievements",
+    title: "About AyEstate - Our Mission, Team & Real Estate Achievements",
     description:
       "At AyEstate, we pride ourselves on offering exceptional real estate services. Meet our creative team and learn about our industry awards and achievements.",
     images: "/png/about_hero.png", // Adjust the image path accordingly
@@ -74,7 +74,7 @@ export const aboutPageMetadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "About AyEstate - Our Mission, Team & Achievements",
+    title: "About AyEstate - Our Mission, Team & Real Estate Achievements",
     description:
       "Meet AyEstate's professional team and discover our award-winning real estate services. Learn more about our mission and achievements.",
     images: "/png/about_hero.png", // Adjust the image path accordingly
@@ -82,7 +82,7 @@ export const aboutPageMetadata: Metadata = {
 };
 
 export const contactPageMetadata: Metadata = {
-  title: "Contact AyEstate - Reach Our Team & Customer Support",
+  title: "Contact AyEstate - Reach Our Team & Expert Customer Support",
   description:
     "Get in touch with AyEstate's team for inquiries, customer support, or sales assistance. Find our office locations and contact information here.",
   metadataBase: new URL("https://ay-estate-two.vercel.app/"),
@@ -92,7 +92,7 @@ export const contactPageMetadata: Metadata = {
     canonical: "https://ay-estate-two.vercel.app/contact-us",
   },
   openGraph: {
-    title: "Contact AyEstate - Reach Our Team & Customer Support",
+    title: "Contact AyEstate - Reach Our Team & Expert Customer Support",
     description:
       "Need help with real estate inquiries? Contact AyEstate's team or visit our office locations for personalized assistance.",
     images: "/png/map.png", // Adjust the image path accordingly
@@ -101,7 +101,7 @@ export const contactPageMetadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Contact AyEstate - Reach Our Team & Customer Support",
+    title: "Contact AyEstate - Reach Our Team & Expert Customer Support",
     description:
       "Reach out to AyEstate's sales team, find customer support, or get help with any real estate inquiries. Contact us today for assistance.",
     images: "/png/map.png", // Adjust the image path accordingly
@@ -136,13 +136,13 @@ export const blogPageMetadata: Metadata = {
 };
 
 export const recentArticlePageMetadata: Metadata = {
-  title: "Recent Articles - AyEstate Blog",
+  title: "Recent Articles - AyEstate Blog | Real Estate Insights",
   description:
     "Explore the latest articles and insights on real estate, investment strategies, and property trends at AyEstate.",
   keywords:
     "Real Estate, Property Investment, Recent Articles, Real Estate Tips, Property Listings, Investment Advice",
   openGraph: {
-    title: "Recent Articles - AyEstate Blog",
+    title: "Recent Articles - AyEstate Blog | Real Estate Insights",
     description:
       "Stay updated with AyEstate's most recent blog posts and articles covering real estate trends, property investment, and more.",
     url: "https://ay-estate-two.vercel.app/blog/recent-articles",
@@ -151,7 +151,7 @@ export const recentArticlePageMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Recent Articles - AyEstate Blog",
+    title: "Recent Articles - AyEstate Blog | Real Estate Insights",
     description:
       "Discover recent articles on real estate trends, tips, and investment opportunities on AyEstate's blog.",
     images: "/png/blog/recent/one.png",
@@ -162,13 +162,13 @@ export const recentArticlePageMetadata: Metadata = {
 };
 
 export const faqPageMetadata: Metadata = {
-  title: "FAQ - AyEstate | Frequently Asked Questions",
+  title: "FAQ - AyEstate | Frequently Asked Questions and Support",
   description:
     "Find answers to frequently asked questions about AyEstate's real estate services, property listings, and investment opportunities.",
   keywords:
     "AyEstate FAQ, Real Estate FAQ, Property Buying Questions, Real Estate Services, Property Investment FAQs, Real Estate Answers",
   openGraph: {
-    title: "FAQ - AyEstate | Frequently Asked Questions",
+    title: "FAQ - AyEstate | Frequently Asked Questions and Support",
     description:
       "Get answers to common questions about real estate, property investments, buying, selling, and more with AyEstate.",
     url: "https://ay-estate-two.vercel.app/faqs",
@@ -177,7 +177,7 @@ export const faqPageMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FAQ - AyEstate | Frequently Asked Questions",
+    title: "FAQ - AyEstate | Frequently Asked Questions and Support",
     description:
       "Explore AyEstate's FAQ section for insights on real estate services, property listings, and investment advice.",
     images: "/png/heroImage.png",
