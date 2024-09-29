@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: { type: string } })
       title,
       description:
         `Discover this luxurious ${type} in Bali featuring modern design, spacious rooms, and breathtaking ocean views. Perfect for your dream vacation or investment.`,
-      url: `https://ay-estate-two.vercel.app/listings/${type}`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/listings/${type}`,
       type: 'website',
       images: imageUrl,
     },
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: { type: string } })
       images: imageUrl,
     },
     alternates: {
-      canonical: `https://ay-estate-two.vercel.app/listings/${type}`,
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/listings/${type}`,
     },
   };
 }

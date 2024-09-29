@@ -1,8 +1,8 @@
 import { properties } from "@/app/ui/(components)/listings/data/properties";
 import { NextResponse } from "next/server";
 
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 const generateSitemapXML = (urls: string[]) => {
-  const baseUrl = "https://ay-estate-two.vercel.app";
   const xmlUrls = urls
     .map(
       (url) => `
@@ -22,7 +22,6 @@ const generateSitemapXML = (urls: string[]) => {
 };
 
 export async function GET() {
-  const baseUrl = "https://ay-estate-two.vercel.app";
 
   const categories = [
     { name: "Success Stories", value: "success-stories" },

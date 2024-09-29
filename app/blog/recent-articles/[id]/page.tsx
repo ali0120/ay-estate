@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
         openGraph: {
             title: `${title} - AyEstate Blog | Real Estate Insights`,
             description: description,
-            url: `https://ay-estate-two.vercel.app/blog/recent-articles/${id}`,
+            url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles/${id}`,
             type: "article",
             images: image || "/png/blog/one.png",
         },
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
             images: image || "/png/blog/one.png",
         },
         alternates: {
-            canonical: `https://ay-estate-two.vercel.app/blog/recent-articles/${id}`,
+            canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles/${id}`,
         },
     };
 }
