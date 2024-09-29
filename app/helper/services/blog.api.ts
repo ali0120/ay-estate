@@ -7,13 +7,15 @@ export async function fetchBlogFeaturedArticles(category?: string) {
 }
 
 export async function fetchBlogPopularArticles() {
-  const response = await fetch(`/api/blogPopularArticles`);
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const response = await fetch(`${baseUrl}/api/blogPopularArticles`);
   const articles = await response.json();
   return articles;
 }
 
 export async function fetchBlogRecentArticles(pageNumber: string = "1") {
-  const response = await fetch(`/api/blogRecentArticles?pn=${pageNumber}`);
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const response = await fetch(`${baseUrl}/api/blogRecentArticles?pn=${pageNumber}`);
   const articles = await response.json();
   return articles;
 }

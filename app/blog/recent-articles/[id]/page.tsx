@@ -1,7 +1,16 @@
 import { Metadata } from "next";
-import { fetchBlogArticleDetails } from "@/app/helper/services/blog.api";
+import { fetchBlogArticleDetails, fetchBlogRecentArticles } from "@/app/helper/services/blog.api";
 import ArticleDetails from "@/app/ui/(components)/blog/ArticleDetails";
 import { notFound } from "next/navigation";
+
+export async function generateStaticParams() {
+    const { articles } = await fetchBlogRecentArticles();
+
+    // Ensure each article has an id property
+    return articles?.map((article: { id: number }) => ({
+        id: article.id.toString()
+    }));
+}
 
 export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
     const { id } = params;
@@ -10,7 +19,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     }
 
     const article = await fetchBlogArticleDetails(id);
-    
+
     if (article.error) {
         notFound();
     }
@@ -45,9 +54,9 @@ const ArticleDetailsPage = async ({ params }: { params: { id: string } }) => {
     if (!id) {
         notFound();
     }
-    
+
     const article = await fetchBlogArticleDetails(id);
-    
+
     if (article.error) {
         notFound();
     }
