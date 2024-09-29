@@ -8,7 +8,7 @@ interface Blog {
   created_at?: string;
 }
 
-const baseUrl = "https://ay-estate-two.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export async function generateSitemaps() {
   // Fetch the total number of blogs

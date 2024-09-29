@@ -4,7 +4,7 @@ interface SitemapParams {
   id: number;
 }
 
-const baseUrl = "https://ay-estate-two.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export async function generateSitemaps() {
   const propertiesPerSitemap = 10;
