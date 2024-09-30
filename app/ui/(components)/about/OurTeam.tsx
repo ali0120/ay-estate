@@ -15,7 +15,7 @@ const OurTeam = () => {
                     <Badge size='xl' color="#F4F2FF" className='h-[48px] px-[16px] text-[16px] leading-[24px] text-ChineseBlack font-soraSemiBold uppercase' >
                         Our team
                     </Badge>
-                    <h2 className='text-[28px] lg:text-[36px] text-EerieBlack leading-[36px] lg:leading-[54px] font-soraBold py-[16px] uppercase w-[80%] lg:w-full' >meet our creative team</h2>
+                    <h1 className='text-[28px] lg:text-[36px] text-EerieBlack leading-[36px] lg:leading-[54px] font-soraBold py-[16px] uppercase w-[80%] lg:w-full' >meet our creative team</h1>
                     <p className='text-[14px] lg:text-[18px] leading-[20px] text-Independence lg:leading-[28px] font-soraRegular' >Magna metus, adipiscing dictumst magna fringilla metus fermentum tristique. Enim vitae purus lectus augue maecenas</p>
                 </Flex>
                 <Flex className='flex-wrap gap-[32px]' visibleFrom='md'>

@@ -8,7 +8,7 @@ const DetailsHeader = () => {
             <Box className='px-[20px] xl:px-[64px] py-[50px] xl:py-[112px]'>
                 <Flex className='gap-[48px] md:gap-[20px] flex-col lg:flex-row justify-between mb-[30px] md:mb-[80px]'>
                     <div className='lg:w-[70%] ' >
-                        <h2 className='text-[40px] lg:text-[56px] leading-[48px] lg:leading-[67.2px] font-soraBold'>Luxury Beach Villa</h2>
+                        <h1 className='text-[40px] lg:text-[56px] leading-[48px] lg:leading-[67.2px] font-soraBold'>Luxury Beach Villa</h1>
                         <p className='text-[16px] lg:text-[18px] leading-[24px] lg:leading-[27px] text-Black font-soraRegular mt-[20px] mb-[24px]' >Experience the ultimate in beachfront luxury with breathtaking ocean views.</p>
                         <Flex className='gap-[8px]'>
                             <Badge className='text-Black h-[29px] rounded-none' color="#EEEEEE">Beachfront</Badge>

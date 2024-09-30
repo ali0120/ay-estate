@@ -2,17 +2,19 @@ import { Box, Flex } from '@mantine/core'
 import UserIcon from '@/public/svg/user.svg'
 import SmsIcon from '@/public/svg/sms.svg'
 import WorldIcon from '@/public/svg/global.svg'
-import CenteredTextBlock from '../CenteredTextBlock'
-
 
 const AdditionalQuestions = () => {
     return (
         <section className='bg-White text-YankeesBlue relative'>
             <Box className='px-[20px] xl:px-[100px] pb-[100px] lg:pb-[200px] pt-[3px] lg:pt-[100px]'>
-                <CenteredTextBlock
-                    heading="Still Have a question?"
-                    paragraph="If you cannot find answer to your question in our FAQ, you can always contact us. We wil answer to you shortly!"
-                />
+                <div className="text-center mx-auto">
+                    <h2 className='text-[24px] lg:text-[44px] font-soraBold text-YankeesBlue leading-[31.2px] lg:leading-[57.2px] capitalize'>
+                        Still Have a question?
+                    </h2>
+                    <p className='text-[14px] lg:text-[18px] font-soraRegular text-RomanSilver leading-[22.4px] lg:leading-[28.8px] lg:w-[62%] lg:m-auto pt-[16px] lg:pt-[30px] pb-[30px]'>
+                        If you cannot find answer to your question in our FAQ, you can always contact us. We wil answer to you shortly!
+                    </p>
+                </div>
                 <div className="grid md:grid-cols-3 gap-[48px] md:gap-[18px] lg:gap-[48px] mt-[36px] lg:mt-[44px]">
                     <Flex className='text-center flex-col'>
                         <Box className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
