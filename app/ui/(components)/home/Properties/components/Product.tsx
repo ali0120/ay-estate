@@ -12,9 +12,9 @@ const Product = () => {
                         <Image src={item.image} alt={item.title} />
                         <h3 className='text-[16px] lg:text-[18px] font-soraSemiBold leading-[24px] lg:leading-[27px] mt-[16px] text-nowrap'>{item.title}</h3>
                         <span className='text-[14px] leading-[21px] font-soraRegular text-center' >{item.description}</span>
-                        <h2 className='pt-[8px] pb-[16px] text-[20px] font-soraSemiBold leading-[30px]'>
+                        <h4 className='pt-[8px] pb-[16px] text-[20px] font-soraSemiBold leading-[30px]'>
                             <NumberFormatter prefix="$ " value={item.price} thousandSeparator />
-                        </h2>
+                        </h4>
                         <Button variant='default' className='h-[37px] md:h-[40px] py-[8px] px-[32px] md:px-[101px] text-[16px] leading-[24px] font-soraRegular !border-YellowGreen md:!border-Black ' >
                             View Details
                         </Button>

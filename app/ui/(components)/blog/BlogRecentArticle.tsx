@@ -12,6 +12,7 @@ const BlogRecentArticle = () => {
     const { data: popularArticles, isLoading, error } = useQuery({
         queryKey: ["recentArticles"],
         queryFn: () => fetchBlogRecentArticles(),
+        staleTime: 1000 * 60 * 5, // 5 minutes
     });
 
     if (isLoading) return <LoadingPartially />;

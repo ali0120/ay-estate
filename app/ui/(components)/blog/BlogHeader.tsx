@@ -37,7 +37,7 @@ const BlogHeader = () => {
                             {categories.map(category => (
                                 <Link
                                     key={category.value}
-                                    href={`/blog?category=${encodeURIComponent(category.value)}`}
+                                    href={`/blog/${encodeURIComponent(category.value)}`}
                                     className='text-[12px] lg:text-[16px] text-RoyalBlue font-soraSemiBold'
                                 >
                                     {category.name}
