@@ -21,7 +21,7 @@ const config: Config = {
         BrightGray: "#E4E9EE",
         Vermilion: "#E04124",
         LightSalmon: "#F59A74",
-        White: "#FFFFFF ",
+        White: "#ffffff ",
         Black: "#000000",
         ChineseBlack: "#111111",
         SmokyBlack: "#0B0F0E",
