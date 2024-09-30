@@ -60,7 +60,7 @@ export const aboutPageMetadata: Metadata = {
     "Learn about AyEstate, our dedicated team of professionals, and our mission to help you find your dream home. Discover our achievements and industry-leading services.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
   keywords:
-    "About AyEstate, Real Estate Team, Our Mission, Property Experts, Award-Winning Company, Real Estate Services, Trusted Agents, Company Achievements",
+  "AyEstate, About AyEstate, Real Estate Team, Our Mission, Property Experts, Award-Winning Company, Real Estate Services, Trusted Agents, Company Achievements",
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
   },
@@ -80,6 +80,7 @@ export const aboutPageMetadata: Metadata = {
     images: "/png/about_hero.png", 
   },
 };
+
 export const contactPageMetadata: Metadata = {
   title: "Contact AyEstate: Expert Support",
   description:
@@ -163,13 +164,13 @@ export const recentArticlePageMetadata: Metadata = {
 export const faqPageMetadata: Metadata = {
   title: "AyEstate FAQ: Common Questions Answered",
   description:
-    "Explore AyEstate's FAQ section for comprehensive answers to your questions about real estate services, property listings, investment opportunities, and more. Get the insights you need to make informed decisions in your real estate journey.",
+    "Explore AyEstate's FAQ section for comprehensive answers to your real estate questions, including services, property listings, and investment opportunities. Get the insights you need for your real estate journey.",
   keywords:
     "AyEstate FAQ, Real Estate FAQ, Property Buying Questions, Real Estate Services, Property Investment FAQs, Real Estate Answers",
   openGraph: {
     title: "FAQ - AyEstate | Frequently Asked Questions and Support",
     description:
-      "Get answers to common questions about real estate, property investments, buying, selling, and more with AyEstate.",
+      "Explore AyEstate's FAQ section for comprehensive answers to your real estate questions, including services, property listings, and investment opportunities. Get the insights you need for your real estate journey.",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
     type: "website",
     images: "/png/heroImage.png",
@@ -178,7 +179,7 @@ export const faqPageMetadata: Metadata = {
     card: "summary_large_image",
     title: "FAQ - AyEstate | Frequently Asked Questions and Support",
     description:
-      "Explore AyEstate's FAQ section for insights on real estate services, property listings, and investment advice.",
+      "Explore AyEstate's FAQ section for comprehensive answers to your real estate questions, including services, property listings, and investment opportunities. Get the insights you need for your real estate journey.",
     images: "/png/heroImage.png",
   },
   alternates: {

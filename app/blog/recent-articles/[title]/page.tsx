@@ -23,15 +23,15 @@ export async function generateMetadata({ params }: { params: { title: string } }
         notFound();
     }
 
-    const {description, author, image } = article;
+    const { description, author, image } = article;
 
     return {
-        title: `${title} - AyEstate Blog | Real Estate Insights`,
-        description: description || "Discover why real estate is the smartest investment choice. This article shares 15 compelling reasons to invest in real estate, covering market trends, potential returns, and expert insights to guide your decisions.",
+        title: `${title} - AyEstate Blog`,
+        description: `${description} - Discover why real estate is the smartest investment choice.`,
         keywords: `${refactorTitleToSlug(title)}, Real Estate Blog, Property Investment, ${author}, Real Estate Tips`,
         openGraph: {
             title: `${title} - AyEstate Blog | Real Estate Insights`,
-            description: description || "Discover why real estate is the smartest investment choice. This article shares 15 compelling reasons to invest in real estate.",
+            description: `${description} - Discover why real estate is the smartest investment choice.`,
             url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles/${refactorTitleToSlug(title)}`,
             type: "article",
             images: image || "/png/blog/one.png",
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: { title: string } }
         twitter: {
             card: "summary_large_image",
             title: `${refactorTitleToSlug(title)} - AyEstate Blog | Real Estate Insights`,
-            description: description || "Discover why real estate is the smartest investment choice. This article shares 15 compelling reasons to invest in real estate.",
+            description: `${description} - Discover why real estate is the smartest investment choice.`,
             images: image || "/png/blog/one.png",
         },
         alternates: {

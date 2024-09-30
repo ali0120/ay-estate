@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: { type: string } })
     openGraph: {
       title,
       description:
-        `Discover this luxurious ${type} in Bali featuring modern design, spacious rooms, and breathtaking ocean views. Perfect for your dream vacation or investment.`,
+        `Discover this luxurious ${type} in Bali featuring modern design, spacious rooms, and breathtaking ocean views. Perfect for your dream vacation or investment opportunity that you won’t want to miss.`,
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/listings/${type}`,
       type: 'website',
       images: imageUrl,
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: { type: string } })
       card: 'summary_large_image',
       title,
       description:
-        `Explore this luxury ${type} in Bali. Enjoy modern amenities, spacious living areas, and stunning ocean views. A perfect vacation home or investment.`,
+        `Explore this luxury ${type} in Bali. Enjoy modern amenities, spacious living areas, and stunning ocean views. A perfect vacation home or investment opportunity that you won’t want to miss.`,
       images: imageUrl,
     },
     alternates: {
