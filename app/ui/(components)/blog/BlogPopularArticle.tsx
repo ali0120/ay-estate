@@ -21,13 +21,13 @@ const BlogPopularArticle = () => {
     return (
         <section className='bg-White' >
             <Box className='px-[20px] xl:px-[100px] pt-[30px] lg:pt-0 pb-[75px] lg:pb-[100px]'>
-                <Flex align={'center'} justify={'space-between'}  className='mb-[30px] md:mb-[50px]'>
+                <Flex align={'center'} justify={'space-between'} className='mb-[30px] md:mb-[50px]'>
                     <div className='w-[65%] md:w-[70%]' >
                         <h2 className='text-[16px] lg:text-[32px] text-DarkJungleGreentwo font-soraBold'>Popular Articles</h2>
                         <p className='text-[12px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[8px] lg:mt-[12px]' >We provide blog that help start your career on AyEstate</p>
                     </div>
                     <Flex justify={'flex-end'} className='w-[30%]' >
-                        <Button variant='default'className='h-[30px] md:h-[47px] px-[12px] md:px-[16px] text-[14px] md:text-[18px] text-ChineseBlack font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'>View All</Button>
+                        <Button variant='default' className='h-[30px] md:h-[47px] px-[12px] md:px-[16px] text-[14px] md:text-[18px] text-ChineseBlack font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'>View All</Button>
                     </Flex>
                 </Flex>
                 <Flex visibleFrom='sm' className='gap-[30px] flex-col md:flex-row'>
@@ -58,12 +58,12 @@ const BlogPopularArticle = () => {
                 </Flex>
                 <Flex hiddenFrom='sm' className='gap-[30px] flex-col lg:flex-row'>
                     <Carousel
+                        withControls={false}
                         withIndicators
                         height={317}
                         loop
                         slideGap="5px"
                         classNames={{
-                            controls: 'opacity-0',
                             indicators: '!bottom-[-16px]',
                             indicator: '!h-[8px] !w-[8px] !bg-[#F3F3F3] data-[active]:!bg-[#B7E08A]'
                         }}>

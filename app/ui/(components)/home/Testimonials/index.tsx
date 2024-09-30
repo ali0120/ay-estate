@@ -12,12 +12,10 @@ const Testimonials = () => {
         <section className='pb-[50px] text-center bg-Seashell'>
             <h2 className='text-[24px] lg:text-[48px] font-soraBold leading-[28.8px] lg:leading-[57.6px] pb-[24px] pt-[50px] lg:py-[50px]' >Customer Testimonials</h2>
             <Carousel
+                withControls={false}
                 plugins={[autoplay.current]}
                 onMouseEnter={autoplay.current.stop}
                 onMouseLeave={autoplay.current.reset}
-                classNames={{
-                    controls: 'opacity-0'
-                }}
             >
                 {clientsData.map((item, index) => {
                     return (
