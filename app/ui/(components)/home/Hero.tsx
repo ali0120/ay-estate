@@ -20,7 +20,11 @@ const Hero = () => {
                         </Flex>
                     </Box>
                     <Box className='w-full lg:w-1/2'>
-                        <Image className='w-full lg:h-[500px]  object-cover rounded-[16px]' src={HeroImage} alt='hero image' />
+                        <Image className='w-full lg:h-[500px]  object-cover rounded-[16px]'
+                            width={904}
+                            height={500}
+                            priority
+                            src={HeroImage} alt='hero image' />
                     </Box>
                 </Flex>
             </Box>

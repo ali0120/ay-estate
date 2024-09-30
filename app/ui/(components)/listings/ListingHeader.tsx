@@ -52,16 +52,16 @@ const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) =>
                             <Box visibleFrom='md'>
                                 <LineIcon />
                             </Box>
-                            <UnstyledButton onClick={() => open()} hiddenFrom='md'>
+                            <UnstyledButton aria-label="Open filter options" onClick={() => open()} hiddenFrom='md'>
                                 <FilterIcon />
                             </UnstyledButton>
                             <Box hiddenFrom='md'>
                                 <LineIcon />
                             </Box>
-                            <UnstyledButton className={`switch_view p-[6px] rounded-[8px] ${type === 'grid' ? 'bg-[#1E4C2F]' : 'border-[1px] border-solid border-[#E4E9EE]'}`} onClick={() => setType('grid')}>
+                            <UnstyledButton aria-label="Switch to grid view" className={`switch_view p-[6px] rounded-[8px] ${type === 'grid' ? 'bg-[#1E4C2F]' : 'border-[1px] border-solid border-[#E4E9EE]'}`} onClick={() => setType('grid')}>
                                 <GridIcon className={`${type === 'grid' ? 'active' : 'not_active'}`} />
                             </UnstyledButton>
-                            <UnstyledButton className={`switch_view p-[6px] rounded-[8px] ${type === 'flex' ? 'bg-[#1E4C2F]' : 'border-[1px] border-solid border-[#E4E9EE]'}`} onClick={() => setType('flex')}>
+                            <UnstyledButton aria-label="Switch to flex view" className={`switch_view p-[6px] rounded-[8px] ${type === 'flex' ? 'bg-[#1E4C2F]' : 'border-[1px] border-solid border-[#E4E9EE]'}`} onClick={() => setType('flex')}>
                                 <ColumnIcon className={`${type === 'flex' ? 'active' : 'not_active'}`} />
                             </UnstyledButton>
                         </Flex>
