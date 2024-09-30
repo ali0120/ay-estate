@@ -30,6 +30,8 @@ export default function RootLayout({
     "email": "hello.ayestate@example.com",
     "url": process.env.NEXT_PUBLIC_BASE_URL,
     "sameAs": [
+      "https://www.linkedin.com/ay-estate",
+      "https://www.youtube.com/ay-estate",
       "https://www.facebook.com/ay-estate",
       "https://www.twitter.com/ay-estate",
       "https://www.instagram.com/ay-estate",
