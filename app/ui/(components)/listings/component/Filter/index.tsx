@@ -32,7 +32,7 @@ const Filter = () => {
     <Box className='w-[278px] p-[24px] border-[1px] rounded-[12px] border-BrightGray h-fit' >
       <h6 className='text-[20px] font-soraSemiBold leading-[28px]' >Filter Option</h6>
       <Divider className='mt-[16px] mb-[24px]' />
-      <UnstyledButton onClick={toggleBestFilter} className=' w-full text-[16px] font-bold ' >
+      <UnstyledButton aria-label={bestFilterOpened ? "Close best filter" : "Open best filter"} onClick={toggleBestFilter} className=' w-full text-[16px] font-bold ' >
         <Box component='span' className='flex items-center justify-between w-full'>
           <strong className='text-[16px] font-soraBold' >Best Filter</strong>
           <ArrowUpIcon className={`transition-transform ${!bestFilterOpened ? 'rotate-180' : 'rotate-0'}`} />
@@ -77,7 +77,7 @@ const Filter = () => {
         </Flex>
       </Collapse>
       <Divider className='my-[24px]' />
-      <UnstyledButton onClick={toggleLocation} className='text-[16px] font-bold  w-full' >
+      <UnstyledButton aria-label={locationOpened ? "Close location options" : "Open location options"} onClick={toggleLocation} className='text-[16px] font-bold  w-full' >
         <Box component='span' className='flex items-center justify-between'>
           <strong className='text-[16px] font-soraBold' >Location</strong>
           <ArrowUpIcon className={`transition-transform ${!locationOpened ? 'rotate-180' : 'rotate-0'}`} />
@@ -132,14 +132,14 @@ const Filter = () => {
               input: 'rounded-[6px] border-2 checked:!bg-ForestGreen checked:border-ForestGreen'
             }}
           />
-          <UnstyledButton className='text-[16px] font-soraMedium text-ForestGreen' >
+          <UnstyledButton aria-label="Show all locations" className='text-[16px] font-soraMedium text-ForestGreen' >
             Show All
           </UnstyledButton>
         </Flex>
       </Collapse>
 
       <Divider className='my-[24px]' />
-      <UnstyledButton onClick={toggleCategory} className='text-[16px] font-bold w-full ' >
+      <UnstyledButton aria-label={categoryOpened ? "Close category options" : "Open category options"} onClick={toggleCategory} className='text-[16px] font-bold w-full ' >
         <Box component='span' className='flex items-center justify-between'>
           <strong className='text-[16px] font-soraBold' >Category</strong>
           <ArrowUpIcon className={`transition-transform ${!categoryOpened ? 'rotate-180' : 'rotate-0'}`} />
@@ -216,14 +216,14 @@ const Filter = () => {
               input: 'rounded-[6px] border-2 checked:!bg-ForestGreen checked:border-ForestGreen'
             }}
           />
-          <UnstyledButton className='text-[16px] font-soraMedium text-ForestGreen' >
+          <UnstyledButton aria-label="Show all categories" className='text-[16px] font-soraMedium text-ForestGreen' >
             Show All Categories
           </UnstyledButton>
         </Flex>
       </Collapse>
 
       <Divider my={24} />
-      <UnstyledButton onClick={togglePrice} className='text-[16px] font-bold w-full' >
+      <UnstyledButton aria-label={priceOpened ? "Close price range options" : "Open price range options"} onClick={togglePrice} className='text-[16px] font-bold w-full' >
         <Box component='span' className='flex items-center justify-between'>
           <strong className='text-[16px] font-soraBold' >Price Range</strong>
           <ArrowUpIcon className={`transition-transform ${!priceOpened ? 'rotate-180' : 'rotate-0'}`} />
@@ -273,13 +273,13 @@ const Filter = () => {
               }}
             />
           </Flex>
-          <UnstyledButton className='text-[16px] text-SmokyBlack border-BrightGray border-[1px] border-solid rounded-[12px] w-fit px-[16px] py-[11px]' >
+          <UnstyledButton aria-label="$0 to $5,000 price range" className='text-[16px] text-SmokyBlack border-BrightGray border-[1px] border-solid rounded-[12px] w-fit px-[16px] py-[11px]' >
             $0 - $5,000
           </UnstyledButton>
-          <UnstyledButton className='text-[16px] text-SmokyBlack border-BrightGray border-[1px] border-solid rounded-[12px] w-fit px-[16px] py-[11px]' >
+          <UnstyledButton aria-label="$5,000 to $50,000 price range" className='text-[16px] text-SmokyBlack border-BrightGray border-[1px] border-solid rounded-[12px] w-fit px-[16px] py-[11px]' >
             $5,000 - $50,000
           </UnstyledButton>
-          <UnstyledButton className='text-[16px] text-SmokyBlack border-BrightGray border-[1px] border-solid rounded-[12px] w-fit px-[16px] py-[11px]' >
+          <UnstyledButton aria-label="Above $50,000 price range" className='text-[16px] text-SmokyBlack border-BrightGray border-[1px] border-solid rounded-[12px] w-fit px-[16px] py-[11px]' >
             $50,000
           </UnstyledButton>
         </Flex>

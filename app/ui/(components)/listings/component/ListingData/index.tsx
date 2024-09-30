@@ -46,11 +46,11 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                                 </Link>
                                 <Box className="text-White absolute w-full px-[8px] py-[12px] lg:px-[24px] lg:py-[16px] top-0">
                                     <Flex className='justify-between items-center'>
-                                        <UnstyledButton className='text-[8px] md:text-[14px] text-White font-soraSemiBold
+                                        <UnstyledButton  aria-label="Featured property" className='text-[8px] md:text-[14px] text-White font-soraSemiBold
                                          bg-[#111111BF] py-[2px] lg:py-[8px] px-[4px] md:px-[20px] rounded-[24px]'>
                                             Featured
                                         </UnstyledButton>
-                                        <UnstyledButton onClick={() => handleLikeClick(property.id)} className='bg-[#FFFFFFBF] rounded-full p-[4px] md:p-[8px]'>
+                                        <UnstyledButton aria-label={isLiked ? 'Unlike this property' : 'Like this property'} onClick={() => handleLikeClick(property.id)} className='bg-[#FFFFFFBF] rounded-full p-[4px] md:p-[8px]'>
                                             <LikeIcon className={`block md:hidden ${isLiked ? 'icon_liked' : 'icon'}`} />
                                             <HeartIcon className={`hidden md:block ${isLiked ? 'icon_liked' : 'icon'}`} />
                                         </UnstyledButton>
