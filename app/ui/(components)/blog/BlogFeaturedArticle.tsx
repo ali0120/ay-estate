@@ -2,18 +2,19 @@
 import { BackgroundImage, Box, Flex } from '@mantine/core'
 import EllipseIcon from '@/public/svg/Ellipse.svg'
 import { useQuery } from '@tanstack/react-query';
-import { useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { fetchBlogFeaturedArticles } from '@/app/helper/services/blog.api';
 import LoadingPartially from '../../loading';
 import Image from 'next/image';
 import { IBlogArticle } from '@/app/helper/interfaces/blog.interface';
 
 const BlogFeaturedArticle = () => {
-    const searchParams = useSearchParams();
-
+    const pathname = usePathname();
+    const segments = pathname.split('/');
+    const lastSegment = segments.length > 2 ? segments.pop() : 'success-stories';
     const { data: featuredArticles, isLoading, error } = useQuery({
-        queryKey: ["featuredArticles", searchParams.toString()],
-        queryFn: () => fetchBlogFeaturedArticles(searchParams.get("category") || ''),
+        queryKey: ["featuredArticles", lastSegment],
+        queryFn: () => fetchBlogFeaturedArticles(lastSegment),
     });
 
     if (isLoading) return <LoadingPartially />;

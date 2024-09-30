@@ -27,11 +27,11 @@ export async function generateMetadata({ params }: { params: { title: string } }
 
     return {
         title: `${title} - AyEstate Blog | Real Estate Insights`,
-        description: description || "Read insightful articles on real estate, investment strategies, and more on AyEstate's blog.",
+        description: description || "Discover why real estate is the smartest investment choice. This article shares 15 compelling reasons to invest in real estate, covering market trends, potential returns, and expert insights to guide your decisions.",
         keywords: `${refactorTitleToSlug(title)}, Real Estate Blog, Property Investment, ${author}, Real Estate Tips`,
         openGraph: {
             title: `${title} - AyEstate Blog | Real Estate Insights`,
-            description: description,
+            description: description || "Discover why real estate is the smartest investment choice. This article shares 15 compelling reasons to invest in real estate.",
             url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles/${refactorTitleToSlug(title)}`,
             type: "article",
             images: image || "/png/blog/one.png",
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: { title: string } }
         twitter: {
             card: "summary_large_image",
             title: `${refactorTitleToSlug(title)} - AyEstate Blog | Real Estate Insights`,
-            description: description,
+            description: description || "Discover why real estate is the smartest investment choice. This article shares 15 compelling reasons to invest in real estate.",
             images: image || "/png/blog/one.png",
         },
         alternates: {
