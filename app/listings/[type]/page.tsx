@@ -2,6 +2,13 @@ import { Metadata } from 'next';
 import DetailsHeader from '@/app/ui/(components)/listingDetail/DetailsHeader'
 import ImageGallery from '@/app/ui/(components)/listingDetail/ImageGallery'
 import AmenitiesSection from '@/app/ui/(components)/listingDetail/AmenitiesSection'
+import { properties } from '@/app/ui/(components)/listings/data/properties';
+
+export async function generateStaticParams() {
+  return properties?.map((property) => ({
+    type: property.details.type
+  }));
+}
 
 export async function generateMetadata({ params }: { params: { type: string } }): Promise<Metadata> {
   const { type } = params;
