@@ -6,7 +6,6 @@ import Select from '@/app/(components)/FormComponents/Select';
 import Textarea from '@/app/(components)/FormComponents/TextArea';
 import { Box, Button, Flex } from '@mantine/core'
 import { Controller, FormProvider, useForm } from 'react-hook-form'
-import CenteredTextBlock from '../CenteredTextBlock';
 
 type FormData = {
   name: string;
@@ -33,11 +32,15 @@ const ContactUsForm = () => {
   return (
     <section className='bg-White text-DarkJungleGreentwo relative'>
       <Box className='px-[20px] xl:px-[100px] pb-[53px] lg:pb-[100px] pt-[100px] lg:pt-0'>
-        <CenteredTextBlock
-          heading="Contact our sales team"
-          paragraph="Built for every team across your company, Jobify Enterprise boosts productivity with
-            upgraded security and account support. Contact us today to unlock:"
-        />
+        <div className="text-center mx-auto">
+          <h2 className='text-[24px] lg:text-[44px] font-soraBold text-YankeesBlue leading-[31.2px] lg:leading-[57.2px] capitalize'>
+            Contact our sales team
+          </h2>
+          <p className='text-[14px] lg:text-[18px] font-soraRegular text-RomanSilver leading-[22.4px] lg:leading-[28.8px] lg:w-[62%] lg:m-auto pt-[16px] lg:pt-[30px] pb-[30px]'>
+            Built for every team across your company, Jobify Enterprise boosts productivity with
+            upgraded security and account support. Contact us today to unlock:
+          </p>
+        </div>
         <FormProvider {...methods}>
           <form onSubmit={handleSubmit(onSubmit)} className='pt-[20px] px-[16px] lg:px-0 lg:w-[77.5%] m-auto'
           >
@@ -125,7 +128,7 @@ const ContactUsForm = () => {
                   },
                 }}
               />
-              <Button  type="submit" className='h-[48px] md:h-[52px] px-[23px] w-full md:w-auto text-[12px] lg:text-[16px] font-soraBold lg:font-soraSemiBold leading-[15.6px] lg:leading-[21px]' >
+              <Button type="submit" className='h-[48px] md:h-[52px] px-[23px] w-full md:w-auto text-[12px] lg:text-[16px] font-soraBold lg:font-soraSemiBold leading-[15.6px] lg:leading-[21px]' >
                 Contact Sales
               </Button>
             </Flex>

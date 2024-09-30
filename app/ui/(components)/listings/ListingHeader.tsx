@@ -32,7 +32,7 @@ const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) =>
                 </Breadcrumbs>
                 <Flex className='mb-[24px] md:mb-[52px] gap-[24px] md:gap-[20px] flex-col md:flex-row justify-between'>
                     <div className='w-[78.2%] lg:w-[50%] ' >
-                        <h2 className='text-[16px] lg:text-[24px] text-DarkJungleGreentwo font-soraBold'>Showing listings properties for “Villa”</h2>
+                        <h1 className='text-[16px] lg:text-[24px] text-DarkJungleGreentwo font-soraBold'>Showing listings properties for “Villa”</h1>
                         <p className='text-[12px] lg:text-[16px] text-RomanSilver font-soraRegular mt-[4px]' >Showing 1 - 60 Properties</p>
                     </div>
                     <Flex className='w-full lg:w-[50%] justify-between md:justify-end items-center gap-[15px] md:gap-[24px]'>
