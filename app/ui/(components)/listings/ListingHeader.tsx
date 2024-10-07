@@ -12,7 +12,7 @@ const items = [
     { title: 'Real Estate', href: '#' },
     { title: 'Villa', href: '#' },
 ].map((item, index) => (
-    <Link href={item.href} key={index} className="text-[16px] font-soraRegular text-ForestGreen">
+    <Link rel="alternate" hrefLang="en" href={item.href} key={index} className="text-[16px] font-soraRegular text-ForestGreen">
         {item.title}
     </Link>
 ));

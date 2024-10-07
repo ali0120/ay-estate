@@ -17,23 +17,23 @@ export function Header() {
     return (
         <div className='w-full'>
             <Group className='h-full justify-between' >
-                <Link href="/" >
+                <Link rel="alternate" hrefLang="en" href="/" >
                     <h2 className='font-playball text-[32px] capitalize' >AyEstate</h2>
                 </Link>
                 <Group visibleFrom="md" className='h-full gap-[50px]'>
-                    <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
+                    <Link rel="alternate" hrefLang="en" href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Home
                     </Link>
-                    <Link href="/listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
+                    <Link rel="alternate" hrefLang="en" href="/listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Listings
                     </Link>
-                    <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
+                    <Link rel="alternate" hrefLang="en" href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Company
                     </Link>
-                    <Link href="/blog" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
+                    <Link rel="alternate" hrefLang="en" href="/blog" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Blog
                     </Link>
-                    <Link href="/about-us" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
+                    <Link rel="alternate" hrefLang="en" href="/about-us" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         About Us
                     </Link>
                 </Group>
@@ -47,7 +47,7 @@ export function Header() {
                 size="100%"
                 padding="md"
                 title={
-                    <Link href="/" onClick={closeDrawer} >
+                    <Link rel="alternate" hrefLang="en" href="/" onClick={closeDrawer} >
                         <h2 className='font-playball text-[32px] capitalize' >AyEstate</h2>
                     </Link>
                 }
@@ -64,23 +64,23 @@ export function Header() {
                         align="flex-start"
                         direction="column"
                     >
-                        <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
+                        <Link rel="alternate" hrefLang="en" href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Home
                         </Link>
-                        <Link href="/listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
+                        <Link rel="alternate" hrefLang="en" href="/listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Listings
                         </Link>
-                        <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
+                        <Link rel="alternate" hrefLang="en" href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Company
                         </Link>
-                        <Link href="/blog" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
+                        <Link rel="alternate" hrefLang="en" href="/blog" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Blog
                         </Link>
-                        <Link href="/about-us" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
+                        <Link rel="alternate" hrefLang="en" href="/about-us" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             About Us
                         </Link>
                     </Flex>
-                    <Button component={Link} href={'/contact-us'} onClick={closeDrawer} className=' h-[56px] mt-[30px] font-soraSemiBold w-full max-w-[95%] m-auto block text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
+                    <Button component={Link} href={'/contact-us'} hrefLang="en" onClick={closeDrawer} className=' h-[56px] mt-[30px] font-soraSemiBold w-full max-w-[95%] m-auto block text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
                 </ScrollArea>
             </Drawer>
         </div>
