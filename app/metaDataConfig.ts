@@ -63,7 +63,7 @@ export const villaListingsMetadata: Metadata = {
 };
 
 export const aboutPageMetadata: Metadata = {
-  title: "About AyEstate: Our Mission & Team",
+  title: "About AyEstate: Your Trusted Experts in Real Estate Solutions",
   description:
     "Learn about AyEstate, our dedicated team, and our mission to help you find your dream home. Explore our achievements and industry-leading services.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
@@ -77,7 +77,7 @@ export const aboutPageMetadata: Metadata = {
     },
   },
   openGraph: {
-    title: "About AyEstate: Our Mission & Team",
+    title: "About AyEstate: Your Trusted Experts in Real Estate Solutions",
     description:
       "Learn about AyEstate, our dedicated team, and our mission to help you find your dream home. Explore our achievements and industry-leading services.",
     images: "/png/about_hero.png",
@@ -86,7 +86,7 @@ export const aboutPageMetadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "About AyEstate: Our Mission & Team",
+    title: "About AyEstate: Your Trusted Experts in Real Estate Solutions",
     description:
       "Learn about AyEstate, our dedicated team, and our mission to help you find your dream home. Explore our achievements and industry-leading services.",
     images: "/png/about_hero.png",
@@ -94,7 +94,7 @@ export const aboutPageMetadata: Metadata = {
 };
 
 export const contactPageMetadata: Metadata = {
-  title: "Contact AyEstate: Expert Support",
+  title: "Contact AyEstate: Expert Support & Real Estate Inquiries",
   description:
     "Contact AyEstate for inquiries, support, or sales assistance. Our team is ready to help. Visit us or reach out through the contact details provided.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
@@ -108,7 +108,7 @@ export const contactPageMetadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Contact AyEstate: Expert Support",
+    title: "Contact AyEstate: Expert Support & Real Estate Inquiries",
     description:
       "Contact AyEstate for inquiries, support, or sales assistance. Our team is ready to help. Visit us or reach out through the contact details provided.",
     images: "/png/map.png",
@@ -117,7 +117,7 @@ export const contactPageMetadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Contact AyEstate: Expert Support",
+    title: "Contact AyEstate: Expert Support & Real Estate Inquiries",
     description:
       "Contact AyEstate for inquiries, support, or sales assistance. Our team is ready to help. Visit us or reach out through the contact details provided.",
     images: "/png/map.png",
@@ -186,13 +186,13 @@ export const recentArticlePageMetadata: Metadata = {
 };
 
 export const faqPageMetadata: Metadata = {
-  title: "AyEstate FAQ: Common Questions Answered",
+  title: "AyEstate FAQ: Real Estate Services & Investment Answers",
   description:
     "Explore AyEstate's FAQ section for answers to your real estate questions, including services, listings, and investment opportunities.",
   keywords:
     "AyEstate FAQ, Real Estate FAQ, Property Buying Questions, Real Estate Services, Property Investment FAQs, Real Estate Answers",
   openGraph: {
-    title: "FAQ - AyEstate | Frequently Asked Questions and Support",
+    title: "AyEstate FAQ: Real Estate Services & Investment Answers",
     description:
       "Explore AyEstate's FAQ section for answers to your real estate questions, including services, listings, and investment opportunities.",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
@@ -201,7 +201,7 @@ export const faqPageMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FAQ - AyEstate | Frequently Asked Questions and Support",
+    title: "AyEstate FAQ: Real Estate Services & Investment Answers",
     description:
       "Explore AyEstate's FAQ section for answers to your real estate questions, including services, listings, and investment opportunities.",
     images: "/png/heroImage.png",
