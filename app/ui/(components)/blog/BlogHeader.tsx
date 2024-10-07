@@ -32,7 +32,7 @@ const BlogHeader = () => {
                         />
                     </Paper>
                     <Flex className='justify-center gap-[16px] md:gap-[30px] mt-[24px] '>
-                        <h3 className='text-[12px] lg:text-[16px] text-RomanSilver font-soraSemiBold'>Suggested:</h3>
+                        <h2 className='text-[12px] lg:text-[16px] text-RomanSilver font-soraSemiBold'>Suggested:</h2>
                         <Flex className='gap-[16px] md:gap-[24px] flex-wrap gap-y-[5px]'>
                             {categories.map(category => (
                                 <Link
