@@ -40,6 +40,8 @@ export function Footer() {
     const groups = data.map((group) => {
         const links = group.links.map((link, index) => (
             <Link
+                rel="alternate"
+                hrefLang="en"
                 key={index}
                 href={link.link}
                 className='font-jakartaMedium text-[14px] md:text-[18px] leading-[22.4px] md:leading-[32.4px]'

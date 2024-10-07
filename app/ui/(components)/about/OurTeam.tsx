@@ -27,13 +27,13 @@ const OurTeam = () => {
                                 <h4 className='text-[18px] leading-[27px] font-soraRegular '>{item.title}</h4>
                                 <p className='text-[16px] pt-[16px] pb-[24px] leading-[24px] font-soraRegular '>{item.description}</p>
                                 <Flex className='items-center gap-[14px]'>
-                                    <Link href={item.links.linkedin}>
+                                    <Link rel="alternate" hrefLang="en" href={item.links.linkedin}>
                                         <LinkedInIcon />
                                     </Link>
-                                    <Link href={item.links.twitter}>
+                                    <Link rel="alternate" hrefLang="en" href={item.links.twitter}>
                                         <XIcon />
                                     </Link>
-                                    <Link href={item.links.dribble}>
+                                    <Link rel="alternate" hrefLang="en" href={item.links.dribble}>
                                         <DribbleIcon />
                                     </Link>
                                 </Flex>

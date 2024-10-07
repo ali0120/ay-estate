@@ -36,6 +36,8 @@ const BlogHeader = () => {
                         <Flex className='gap-[16px] md:gap-[24px] flex-wrap gap-y-[5px]'>
                             {categories.map(category => (
                                 <Link
+                                    rel="alternate"
+                                    hrefLang="en"
                                     key={category.value}
                                     href={`/blog/${encodeURIComponent(category.value)}`}
                                     className='text-[12px] lg:text-[16px] text-RoyalBlue font-soraSemiBold'
