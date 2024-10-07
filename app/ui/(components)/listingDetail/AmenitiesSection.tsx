@@ -9,8 +9,8 @@ const AmenitiesSection = () => {
             <Box className='px-[20px] xl:px-[64px] py-[50px] xl:py-[112px]'>
                 <Flex className='items-center gap-[48px] md:gap-[80px] justify-between flex-wrap'>
                     <div className='lg:w-[47.8%]' >
-                        <h3 className='capitalize pb-[12px] lg:pb-[16px] text-[16px] leading-[24px] font-soraSemiBold text-Black' >Luxury</h3>
-                        <h2 className='text-[36px] lg:text-[48px] leading-[43.2px] lg:leading-[57.6px] text-Black font-soraBold'>Experience the Perfect Blend of Comfort and Style</h2>
+                        <h2 className='capitalize pb-[12px] lg:pb-[16px] text-[16px] leading-[24px] font-soraSemiBold text-Black' >Luxury</h2>
+                        <h3 className='text-[36px] lg:text-[48px] leading-[43.2px] lg:leading-[57.6px] text-Black font-soraBold'>Experience the Perfect Blend of Comfort and Style</h3>
                         <p className='text-[16px] lg:text-[18px] text-Black leading-[24px] lg:leading-[27px] font-soraRegular my-[20px] lg:my-[24px]'>Welcome to our stunning property! With a beautiful image gallery, immersive virtual tour, and outstanding features, this is the perfect place to call home. Explore the spacious rooms, modern amenities, and convenient location that make this property truly exceptional.</p>
                         <Group className='gap-[24px]'>
                             <Button className='h-[48px] px-[24px] md:px-[34px] text-[16px] font-soraSemiBold leading-[24px]' >
