@@ -64,7 +64,7 @@ export function Footer() {
         <div className='text-RomanSilver pt-[50px] pb-[50px] lg:pt-[100px] lg:pb-[32px]' >
             <Flex className='gap-0 md:gap-[50px] flex-col lg:flex-row justify-between pb-[31px]'>
                 <div>
-                    <h2 className='font-playball text-[32px] capitalize text-White' >AyEstate</h2>
+                    <h3 className='font-playball text-[32px] capitalize text-White' >AyEstate</h3>
                     <ul className='mt-[16px] md:mt-[32px] flex flex-col gap-[24px] text-[14px] md:text-[18px] font-jakartaMedium ' >
                         <li>hello.ayestate@example.com <br />(+1) 2345 6789</li>
                         <li>4140 Parker Rd. Allentown, <br />New Mexico 31134</li>
