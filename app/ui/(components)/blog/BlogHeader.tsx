@@ -40,6 +40,7 @@ const BlogHeader = () => {
                                     hrefLang="en"
                                     key={category.value}
                                     href={`/blog/${encodeURIComponent(category.value)}`}
+                                    title={`Explore ${category.name} category`}
                                     className='text-[12px] lg:text-[16px] text-RoyalBlue font-soraSemiBold'
                                 >
                                     {category.name}
