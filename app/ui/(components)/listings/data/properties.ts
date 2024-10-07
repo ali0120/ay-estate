@@ -1,8 +1,8 @@
-import imageOne from "@/public/png/properties/propertie-one.png";
-import imageTwo from "@/public/png/properties/propertie-two.png";
-import imageThree from "@/public/png/properties/propertie-three.png";
-import imageFour from "@/public/png/properties/propertie-four.png";
-import imageFive from "@/public/png/properties/propertie-five.png";
+import imageOne from "@/public/webp/properties/propertie-one.webp";
+import imageTwo from "@/public/webp/properties/propertie-two.webp";
+import imageThree from "@/public/webp/properties/propertie-three.webp";
+import imageFour from "@/public/webp/properties/propertie-four.webp";
+import imageFive from "@/public/webp/properties/propertie-five.webp";
 
 export const properties = [
   {

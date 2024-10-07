@@ -18,7 +18,7 @@ export const homePageMetadata: Metadata = {
     title: "AyEstate - Discover Your Dream Home and Ideal Property",
     description:
       "At AyEstate, we provide top real estate services to help you find, buy, or invest in your dream property with ease and confidence.",
-    images: "/png/heroImage.png",
+    images: "/webp/heroImage.webp",
     url: process.env.NEXT_PUBLIC_BASE_URL,
     type: "website",
     siteName: "AyEstate",
@@ -28,7 +28,7 @@ export const homePageMetadata: Metadata = {
     title: "AyEstate - Discover Your Dream Home and Ideal Property",
     description:
       "At AyEstate, we provide top real estate services to help you find, buy, or invest in your dream property with ease and confidence.",
-    images: "/png/heroImage.png",
+    images: "/webp/heroImage.webp",
     site: "@AyEstate",
   },
 };
@@ -210,14 +210,14 @@ export const faqPageMetadata: Metadata = {
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
     type: "website",
     siteName: "AyEstate",
-    images: "/png/heroImage.png",
+    images: "/webp/heroImage.webp",
   },
   twitter: {
     card: "summary_large_image",
     title: "AyEstate FAQ: Real Estate Services & Investment Answers",
     description:
       "Explore AyEstate's FAQ section for answers to your real estate questions, including services, listings, and investment opportunities.",
-    images: "/png/heroImage.png",
+    images: "/webp/heroImage.webp",
     site: "@AyEstate",
   },
   alternates: {

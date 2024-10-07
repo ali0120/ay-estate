@@ -47,7 +47,7 @@ export default function RootLayout({
     ],
     "openingHours": "Mo-Sa 08:00-18:00",
     "priceRange": "$$$",
-    "image": `${process.env.NEXT_PUBLIC_BASE_URL}/png/heroImage.png`,
+    "image": `${process.env.NEXT_PUBLIC_BASE_URL}/webp/heroImage.webp`,
   };
   return (
     <html lang="en">

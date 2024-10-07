@@ -1,6 +1,6 @@
-import ContentOne from "@/public/png/content-1.png";
-import ContentTwo from "@/public/png/content-2.png";
-import ContentThree from "@/public/png/content-3.png";
+import ContentOne from "@/public/webp/content-1.webp";
+import ContentTwo from "@/public/webp/content-2.webp";
+import ContentThree from "@/public/webp/content-3.webp";
 
 export const contentdata = [
   {
