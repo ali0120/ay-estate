@@ -24,20 +24,20 @@ export function Header() {
                     <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Home
                     </Link>
-                    <Link href="/listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
+                    <Link href="/listings" title="View our property listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Listings
                     </Link>
                     <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Company
                     </Link>
-                    <Link href="/blog" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
+                    <Link href="/blog" title="Read our latest blog posts"  className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Blog
                     </Link>
-                    <Link href="/about-us" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
+                    <Link href="/about-us" title="Learn more about AyEstate" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         About Us
                     </Link>
                 </Group>
-                <Button component={Link} href={'/contact-us'} visibleFrom="md" className='h-[56px] font-soraSemiBold text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
+                <Button component={Link} href={'/contact-us'} title="Get in touch with us" visibleFrom="md" className='h-[56px] font-soraSemiBold text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
                 <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" />
             </Group>
 
@@ -67,20 +67,20 @@ export function Header() {
                         <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Home
                         </Link>
-                        <Link href="/listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
+                        <Link href="/listings" title="View our property listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Listings
                         </Link>
                         <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Company
                         </Link>
-                        <Link href="/blog" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
+                        <Link href="/blog" title="Read our latest blog posts"  className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Blog
                         </Link>
-                        <Link href="/about-us" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
+                        <Link href="/about-us" title="Learn more about AyEstate" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             About Us
                         </Link>
                     </Flex>
-                    <Button component={Link} href={'/contact-us'} onClick={closeDrawer} className=' h-[56px] mt-[30px] font-soraSemiBold w-full max-w-[95%] m-auto block text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
+                    <Button component={Link} href={'/contact-us'} title="Get in touch with us" onClick={closeDrawer} className=' h-[56px] mt-[30px] font-soraSemiBold w-full max-w-[95%] m-auto block text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
                 </ScrollArea>
             </Drawer>
         </div>

@@ -4,34 +4,34 @@ const data = [
     {
         title: 'Pages',
         links: [
-            { label: 'Listings', link: '#' },
-            { label: 'About us', link: '/about-us' },
-            { label: 'Blog', link: '/blog' }
+            { label: 'Listings', link: '/listings', title: 'View our property listings' },
+            { label: 'About us', link: '/about-us', title: 'Learn more about AyEstate' },
+            { label: 'Blog', link: '/blog', title: 'Read our latest blog posts' }
         ],
     },
     {
         title: 'Support',
         links: [
-            { label: 'Properties', link: '#' },
-            { label: 'FAQ', link: '/faqs' },
-            { label: 'Contact Us', link: '/contact-us' }
+            { label: 'Properties', link: '#', title: 'Browse available properties' },
+            { label: 'FAQ', link: '/faqs', title: 'Frequently Asked Questions' },
+            { label: 'Contact Us', link: '/contact-us', title: 'Get in touch with us' }
         ],
     },
     {
         title: 'Webflow Stuff',
         links: [
-            { label: 'Style Guide', link: '#' },
-            { label: 'Changelog', link: '#' },
-            { label: 'Licensing', link: '#' },
-            { label: 'Instructions', link: '#' },
+            { label: 'Style Guide', link: '#', title: 'View the style guide' },
+            { label: 'Changelog', link: '#', title: 'Read the changelog' },
+            { label: 'Licensing', link: '#', title: 'View licensing information' },
+            { label: 'Instructions', link: '#', title: 'Find instructions' },
         ],
     },
     {
         title: 'Platform',
         links: [
-            { label: 'Official Website', link: '#' },
-            { label: 'Play Store', link: '#' },
-            { label: 'App Store', link: '#' }
+            { label: 'Official Website', link: '#', title: 'Visit the official website' },
+            { label: 'Play Store', link: '#', title: 'Download from Play Store' },
+            { label: 'App Store', link: '#', title: 'Download from App Store' }
         ],
     },
 ];
@@ -44,6 +44,7 @@ export function Footer() {
                 hrefLang="en"
                 key={index}
                 href={link.link}
+                title={link.title}
                 className='font-jakartaMedium text-[14px] md:text-[18px] leading-[22.4px] md:leading-[32.4px]'
             >
                 {link.label}
