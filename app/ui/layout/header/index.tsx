@@ -18,7 +18,7 @@ export function Header() {
         <div className='w-full'>
             <Group className='h-full justify-between' >
                 <Link href="/" >
-                    <h2 className='font-playball text-[32px] capitalize' >AyEstate</h2>
+                    <span className='font-playball text-[32px] capitalize' >AyEstate</span>
                 </Link>
                 <Group visibleFrom="md" className='h-full gap-[50px]'>
                     <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
@@ -48,7 +48,7 @@ export function Header() {
                 padding="md"
                 title={
                     <Link href="/" onClick={closeDrawer} >
-                        <h2 className='font-playball text-[32px] capitalize' >AyEstate</h2>
+                        <span  className='font-playball text-[32px] capitalize' >AyEstate</span>
                     </Link>
                 }
                 hiddenFrom="md"

@@ -21,6 +21,7 @@ export const homePageMetadata: Metadata = {
     images: "/png/heroImage.png",
     url: process.env.NEXT_PUBLIC_BASE_URL,
     type: "website",
+    siteName: "AyEstate",
   },
   twitter: {
     card: "summary",
@@ -28,6 +29,7 @@ export const homePageMetadata: Metadata = {
     description:
       "At AyEstate, we provide top real estate services to help you find, buy, or invest in your dream property with ease and confidence.",
     images: "/png/heroImage.png",
+    site: "@AyEstate",
   },
 };
 
@@ -52,6 +54,7 @@ export const villaListingsMetadata: Metadata = {
     images: "/png/product-7.png",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/listings`,
     type: "website",
+    siteName: "AyEstate",
   },
   twitter: {
     card: "summary",
@@ -59,6 +62,7 @@ export const villaListingsMetadata: Metadata = {
     description:
       "Explore the finest luxury villas at AyEstate. Whether you're looking to rent or buy, our curated listings offer you the best properties in prime locations.",
     images: "/png/product-7.png",
+    site: "@AyEstate",
   },
 };
 
@@ -83,6 +87,7 @@ export const aboutPageMetadata: Metadata = {
     images: "/png/about_hero.png",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
     type: "website",
+    siteName: "AyEstate",
   },
   twitter: {
     card: "summary",
@@ -90,6 +95,7 @@ export const aboutPageMetadata: Metadata = {
     description:
       "Learn about AyEstate, our dedicated team, and our mission to help you find your dream home. Explore our achievements and industry-leading services.",
     images: "/png/about_hero.png",
+    site: "@AyEstate",
   },
 };
 
@@ -114,6 +120,7 @@ export const contactPageMetadata: Metadata = {
     images: "/png/map.png",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
     type: "website",
+    siteName: "AyEstate",
   },
   twitter: {
     card: "summary",
@@ -121,6 +128,7 @@ export const contactPageMetadata: Metadata = {
     description:
       "Contact AyEstate for inquiries, support, or sales assistance. Our team is ready to help. Visit us or reach out through the contact details provided.",
     images: "/png/map.png",
+    site: "@AyEstate",
   },
 };
 
@@ -145,6 +153,7 @@ export const blogPageMetadata: Metadata = {
     images: "/png/blog/one.png",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
     type: "website",
+    siteName: "AyEstate",
   },
   twitter: {
     card: "summary",
@@ -152,6 +161,7 @@ export const blogPageMetadata: Metadata = {
     description:
       "Stay updated with AyEstate's blog for real estate tips, market trends, investment strategies, and success stories to guide your property journey.",
     images: "/png/blog/one.png",
+    site: "@AyEstate",
   },
 };
 
@@ -167,6 +177,7 @@ export const recentArticlePageMetadata: Metadata = {
       "Discover real estate trends, investment strategies, and expert advice at AyEstate. Stay informed and make smarter property decisions.",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles`,
     type: "website",
+    siteName: "AyEstate",
     images: "/png/blog/recent/one.png",
   },
   twitter: {
@@ -175,6 +186,7 @@ export const recentArticlePageMetadata: Metadata = {
     description:
       "Discover real estate trends, investment strategies, and expert advice at AyEstate. Stay informed and make smarter property decisions.",
     images: "/png/blog/recent/one.png",
+    site: "@AyEstate",
   },
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles`,
@@ -197,6 +209,7 @@ export const faqPageMetadata: Metadata = {
       "Explore AyEstate's FAQ section for answers to your real estate questions, including services, listings, and investment opportunities.",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
     type: "website",
+    siteName: "AyEstate",
     images: "/png/heroImage.png",
   },
   twitter: {
@@ -205,6 +218,7 @@ export const faqPageMetadata: Metadata = {
     description:
       "Explore AyEstate's FAQ section for answers to your real estate questions, including services, listings, and investment opportunities.",
     images: "/png/heroImage.png",
+    site: "@AyEstate",
   },
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
