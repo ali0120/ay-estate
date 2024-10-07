@@ -15,7 +15,7 @@ const ArticleCard: FC<IArticleCard> = ({ article, withParagrapg }) => {
 
     return (
         <Flex direction={'column'} className='w-full md:w-[45%] lg:w-[394px] gap-[16px] md:gap-[24px]'>
-            <Link rel="alternate" hrefLang="en" href={`/blog/recent-articles/${refactorTitleToSlug(article.title)}`}>
+            <Link href={`/blog/recent-articles/${refactorTitleToSlug(article.title)}`}>
                 <Image src={article.image.src} width={394} height={300} alt={article.category} className='h-[260px] lg:h-full' />
             </Link>
             <div>

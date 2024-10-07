@@ -9,6 +9,9 @@ export const homePageMetadata: Metadata = {
     "Real Estate, Property Buying, Property Valuation, Real Estate Investment, Dream Home, Luxury Homes, Modern Apartments, Trusted Agents, Real Estate Deals, Property Listings",
   alternates: {
     canonical: process.env.NEXT_PUBLIC_BASE_URL,
+    languages: {
+      en: process.env.NEXT_PUBLIC_BASE_URL,
+    },
   },
   openGraph: {
     title: "AyEstate - Discover Your Dream Home and Ideal Property",
@@ -36,6 +39,9 @@ export const villaListingsMetadata: Metadata = {
     "Villa Listings, Luxury Villas, Real Estate, Property Rentals, Dream Villas, Modern Villas, High-End Villas, Property Investment, Villa for Sale, Villa for Rent",
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/listings`,
+    languages: {
+      en: `${process.env.NEXT_PUBLIC_BASE_URL}/listings`,
+    },
   },
   openGraph: {
     title: "AyEstate - Villa Listings | Discover Luxury Villas and Homes",
@@ -60,15 +66,18 @@ export const aboutPageMetadata: Metadata = {
     "Learn about AyEstate, our dedicated team, and our mission to help you find your dream home. Explore our achievements and industry-leading services.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
   keywords:
-  "AyEstate, About AyEstate, Real Estate Team, Our Mission, Property Experts, Award-Winning Company, Real Estate Services, Trusted Agents, Company Achievements",
+    "AyEstate, About AyEstate, Real Estate Team, Our Mission, Property Experts, Award-Winning Company, Real Estate Services, Trusted Agents, Company Achievements",
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
+    languages: {
+      en: `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
+    },
   },
   openGraph: {
     title: "About AyEstate: Our Mission & Team",
     description:
       "Learn about AyEstate, our dedicated team, and our mission to help you find your dream home. Explore our achievements and industry-leading services.",
-    images: "/png/about_hero.png", 
+    images: "/png/about_hero.png",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
     type: "website",
   },
@@ -77,7 +86,7 @@ export const aboutPageMetadata: Metadata = {
     title: "About AyEstate: Our Mission & Team",
     description:
       "Learn about AyEstate, our dedicated team, and our mission to help you find your dream home. Explore our achievements and industry-leading services.",
-    images: "/png/about_hero.png", 
+    images: "/png/about_hero.png",
   },
 };
 
@@ -90,12 +99,15 @@ export const contactPageMetadata: Metadata = {
     "Contact AyEstate, Customer Support, Real Estate Inquiries, Office Location, Sales Team, Real Estate Assistance, Get in Touch",
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
+    languages: {
+      en: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
+    },
   },
   openGraph: {
     title: "Contact AyEstate: Expert Support",
     description:
       "Contact AyEstate for inquiries, support, or sales assistance. Our team is ready to help. Visit us or reach out through the contact details provided.",
-    images: "/png/map.png", 
+    images: "/png/map.png",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
     type: "website",
   },
@@ -104,7 +116,7 @@ export const contactPageMetadata: Metadata = {
     title: "Contact AyEstate: Expert Support",
     description:
       "Contact AyEstate for inquiries, support, or sales assistance. Our team is ready to help. Visit us or reach out through the contact details provided.",
-    images: "/png/map.png", 
+    images: "/png/map.png",
   },
 };
 
@@ -117,12 +129,15 @@ export const blogPageMetadata: Metadata = {
     "Real Estate Blog, Property Investment, Market Trends, Real Estate Tips, Success Stories, Property Listings, Luxury Homes, Real Estate News, Buying Homes, Selling Homes",
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
+    languages: {
+      en: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
+    },
   },
   openGraph: {
     title: "AyEstate Blog - Real Estate Tips, Market Trends & Success Stories",
     description:
       "Stay updated with AyEstate's blog for real estate tips, market trends, investment strategies, and success stories to guide your property journey.",
-    images: "/png/blog/one.png", 
+    images: "/png/blog/one.png",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
     type: "website",
   },
@@ -158,6 +173,9 @@ export const recentArticlePageMetadata: Metadata = {
   },
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles`,
+    languages: {
+      en: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles`,
+    },
   },
 };
 
@@ -184,5 +202,8 @@ export const faqPageMetadata: Metadata = {
   },
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
+    languages: {
+      en: `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
+    },
   },
 };

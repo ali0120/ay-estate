@@ -42,6 +42,9 @@ export async function generateMetadata({ params }: { params: { type: string } })
     },
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/listings/${type}`,
+      languages: {
+        en: `${process.env.NEXT_PUBLIC_BASE_URL}/listings/${type}`,
+      },
     },
   };
 }
