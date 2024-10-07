@@ -10,7 +10,7 @@ const Content = () => {
                 return (
                     <div key={index} className='md:w-[46%] xl:w-[33.333%] text-center' >
                         <Image src={item.image} alt='content-image' className='w-full' />
-                        <h4 className='text-[24px] md:text-[32px] font-soraBold pt-[24px] pb-[20px] lg:pb-[24px] leading-[33.6px] lg:leading-[41.6px]' >{item.title}</h4>
+                        <h3 className='text-[24px] md:text-[32px] font-soraBold pt-[24px] pb-[20px] lg:pb-[24px] leading-[33.6px] lg:leading-[41.6px]' >{item.title}</h3>
                         <p className='text-[16px] font-soraRegular leading-[24px]' >{item.description}</p>
                     </div>
                 )
