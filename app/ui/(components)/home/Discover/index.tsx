@@ -9,8 +9,8 @@ const Discover = () => {
             <Box className='px-[20px] xl:px-[64px] pt-[50px] lg:pt-[80px] pb-[50px] lg:pb-0'>
                 <Flex className='pb-[48px] lg:pb-[80px] flex-col md:flex-row gap-[20px] lg:gap-[80px] justify-between' >
                     <div className='md:w-[50%]'>
-                        <h3 className='capitalize pb-[12px] lg:pb-[16px] text-[16px] leading-[24px] font-soraSemiBold text-Black' >discover</h3>
-                        <h2 className='font-soraBold text-[32px] lg:text-[48px] text-Black leading-[38.4px] lg:leading-[58px]' >Find Your Dream Property with Us</h2>
+                        <h2 className='capitalize pb-[12px] lg:pb-[16px] text-[16px] leading-[24px] font-soraSemiBold text-Black' >discover</h2>
+                        <h3 className='font-soraBold text-[32px] lg:text-[48px] text-Black leading-[38.4px] lg:leading-[58px]' >Find Your Dream Property with Us</h3>
                     </div>
                     <p className='md:w-[50%] text-[14px] md:text-[18px] text-Black font-soraRegular leading-[21px] md:leading-[27px]' >
                         At our real estate agency, we offer a range of services to help you with your property needs.
