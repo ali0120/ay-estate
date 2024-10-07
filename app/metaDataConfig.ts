@@ -11,6 +11,7 @@ export const homePageMetadata: Metadata = {
     canonical: process.env.NEXT_PUBLIC_BASE_URL,
     languages: {
       en: process.env.NEXT_PUBLIC_BASE_URL,
+      "x-default": process.env.NEXT_PUBLIC_BASE_URL,
     },
   },
   openGraph: {
@@ -41,6 +42,7 @@ export const villaListingsMetadata: Metadata = {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/listings`,
     languages: {
       en: `${process.env.NEXT_PUBLIC_BASE_URL}/listings`,
+      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/listings`,
     },
   },
   openGraph: {
@@ -71,6 +73,7 @@ export const aboutPageMetadata: Metadata = {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
     languages: {
       en: `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
+      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
     },
   },
   openGraph: {
@@ -101,6 +104,7 @@ export const contactPageMetadata: Metadata = {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
     languages: {
       en: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
+      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
     },
   },
   openGraph: {
@@ -131,6 +135,7 @@ export const blogPageMetadata: Metadata = {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
     languages: {
       en: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
+      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
     },
   },
   openGraph: {
@@ -175,6 +180,7 @@ export const recentArticlePageMetadata: Metadata = {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles`,
     languages: {
       en: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles`,
+      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles`,
     },
   },
 };
@@ -204,6 +210,7 @@ export const faqPageMetadata: Metadata = {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
     languages: {
       en: `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
+      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
     },
   },
 };

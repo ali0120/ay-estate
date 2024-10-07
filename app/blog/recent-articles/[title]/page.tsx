@@ -46,6 +46,7 @@ export async function generateMetadata({ params }: { params: { title: string } }
             canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles/${refactorTitleToSlug(title)}`,
             languages: {
                 en: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles/${refactorTitleToSlug(title)}`,
+                "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles/${refactorTitleToSlug(title)}`,
             },
         },
     };
