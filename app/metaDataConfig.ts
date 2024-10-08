@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const homePageMetadata: Metadata = {
-  title: "AyEstate - Discover Your Dream Home and Ideal Property",
+  title: "Discover Your Dream Home Today | AyEstate",
   description:
     "At AyEstate, we provide top real estate services to help you find, buy, or invest in your dream property with ease and confidence.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
@@ -15,7 +15,7 @@ export const homePageMetadata: Metadata = {
     },
   },
   openGraph: {
-    title: "AyEstate - Discover Your Dream Home and Ideal Property",
+    title: "Discover Your Dream Home Today | AyEstate",
     description:
       "At AyEstate, we provide top real estate services to help you find, buy, or invest in your dream property with ease and confidence.",
     images: "/webp/heroImage.webp",
@@ -25,7 +25,7 @@ export const homePageMetadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "AyEstate - Discover Your Dream Home and Ideal Property",
+    title: "Discover Your Dream Home Today | AyEstate",
     description:
       "At AyEstate, we provide top real estate services to help you find, buy, or invest in your dream property with ease and confidence.",
     images: "/webp/heroImage.webp",
