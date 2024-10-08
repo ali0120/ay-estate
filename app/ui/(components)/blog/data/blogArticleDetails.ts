@@ -1,8 +1,8 @@
-import MainImage from "@/public/png/blog/recent/detail-one.png";
-import DetailImage from "@/public/png/blog/recent/detail-two.png";
-import blogOne from "@/public/png/blog/recent/one.png";
-import blogTwo from "@/public/png/blog/recent/two.png";
-import blogThree from "@/public/png/blog/recent/three.png";
+import MainImage from "@/public/webp/blog/recent/detail-one.webp";
+import DetailImage from "@/public/webp/blog/recent/detail-two.webp";
+import blogOne from "@/public/webp/blog/recent/one.webp";
+import blogTwo from "@/public/webp/blog/recent/two.webp";
+import blogThree from "@/public/webp/blog/recent/three.webp";
 
 export const blogArticleDetails = [
   {

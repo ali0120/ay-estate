@@ -12,6 +12,8 @@ import MhomeIcon from '@/public/svg/m-home.svg'
 import MbathIcon from '@/public/svg/m-bath.svg'
 import MbedIcon from '@/public/svg/m-bed.svg'
 import MareaIcon from '@/public/svg/m-area.svg'
+import '@mantine/core/styles/Pagination.css';
+import '@mantine/core/styles/BackgroundImage.css';
 
 interface ListingContentProps {
     type: string;

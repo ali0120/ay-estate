@@ -1,6 +1,6 @@
-import blogOne from "@/public/png/blog/recent/one.png";
-import blogTwo from "@/public/png/blog/recent/two.png";
-import blogThree from "@/public/png/blog/recent/three.png";
+import blogOne from "@/public/webp/blog/recent/one.webp";
+import blogTwo from "@/public/webp/blog/recent/two.webp";
+import blogThree from "@/public/webp/blog/recent/three.webp";
 
 export const blogRecentArticles = [
   {

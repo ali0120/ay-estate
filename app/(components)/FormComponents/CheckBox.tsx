@@ -2,7 +2,6 @@ import React from 'react';
 import { ErrorMessage } from '@hookform/error-message';
 import { RegisterOptions, useFormContext, Controller } from 'react-hook-form';
 import { Checkbox, CheckboxProps } from '@mantine/core';
-
 interface IProps extends Omit<CheckboxProps, 'value'> {
 	name: string;
 	label: string;

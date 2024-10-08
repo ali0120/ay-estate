@@ -6,6 +6,7 @@ import LineIcon from '@/public/svg/Line.svg';
 import FilterIcon from '@/public/svg/filter.svg';
 import GridIcon from '@/public/svg/gridBox.svg';
 import ColumnIcon from '@/public/svg/columnBox.svg';
+import '@mantine/core/styles/Breadcrumbs.css';
 
 const items = [
     { title: 'Home', href: '#' },

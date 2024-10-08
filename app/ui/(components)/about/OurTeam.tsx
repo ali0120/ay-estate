@@ -6,6 +6,7 @@ import LinkedInIcon from '@/public/svg/LinkedIn.svg'
 import XIcon from '@/public/svg/X.svg'
 import DribbleIcon from '@/public/svg/Dribble.svg'
 import Link from 'next/link'
+import '@mantine/core/styles/Badge.css';
 
 const OurTeam = () => {
     return (

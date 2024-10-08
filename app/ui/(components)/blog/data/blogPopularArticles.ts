@@ -1,5 +1,5 @@
-import blogOne from "@/public/png/blog/popular/one.png";
-import blogTwo from "@/public/png/blog/popular/two.png";
+import blogOne from "@/public/webp/blog/popular/one.webp";
+import blogTwo from "@/public/webp/blog/popular/two.webp";
 export const blogPopularArticles = [
   {
     id: 1,

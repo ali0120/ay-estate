@@ -7,6 +7,7 @@ import { fetchBlogFeaturedArticles } from '@/app/helper/services/blog.api';
 import LoadingPartially from '../../loading';
 import Image from 'next/image';
 import { IBlogArticle } from '@/app/helper/interfaces/blog.interface';
+import '@mantine/core/styles/BackgroundImage.css';
 
 const BlogFeaturedArticle = () => {
     const pathname = usePathname();

@@ -6,6 +6,7 @@ import { useQuery } from '@tanstack/react-query';
 import { useRouter, useSearchParams } from 'next/navigation';
 import LoadingPartially from '../../loading';
 import ArticleCard from '../blog/ArticleCard';
+import '@mantine/core/styles/Pagination.css';
 
 const ArticlesListings = () => {
     const searchParams = useSearchParams();

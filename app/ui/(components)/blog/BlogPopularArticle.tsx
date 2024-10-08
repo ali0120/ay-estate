@@ -7,6 +7,7 @@ import LoadingPartially from '../../loading';
 import { IBlogArticle } from '@/app/helper/interfaces/blog.interface';
 import { fetchBlogPopularArticles } from '@/app/helper/services/blog.api';
 import '@mantine/carousel/styles.css';
+import '@mantine/core/styles/BackgroundImage.css';
 
 const BlogPopularArticle = () => {
     const { data: popularArticles, isLoading, error } = useQuery({

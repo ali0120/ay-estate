@@ -1,5 +1,8 @@
 import { Box, Divider, Flex, Text } from '@mantine/core';
 import Link from 'next/link';
+import '@mantine/core/styles/Divider.css';
+import '@mantine/core/styles/Text.css';
+
 const data = [
     {
         title: 'Pages',
@@ -53,7 +56,7 @@ export function Footer() {
 
         return (
             <div key={group.title}>
-                <Text className='text-White font-jakartaSemiBold text-[16px] md:text-[18px]' >{group.title}</Text>
+                <p className='text-White font-jakartaSemiBold text-[16px] md:text-[18px]' >{group.title}</p>
                 <Flex className='text-[18px] mt-[16px] md:mt-[32px] flex-col gap-[12px]' >
                     {links}
                 </Flex>
@@ -79,7 +82,7 @@ export function Footer() {
                     </div>
                 </Box>
             </Flex>
-            <Text visibleFrom='md' c="white" className='text-center text-[18px] font-soraRegular'>
+            <Text visibleFrom='md' c="white" className='text-center !text-white text-[18px] font-soraRegular'>
                 Copyright © AyEstate | Designed by AY Studio
             </Text>
         </div>

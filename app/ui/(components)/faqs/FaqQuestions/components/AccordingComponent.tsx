@@ -31,7 +31,7 @@ const AccordingComponent = () => {
       {faqData.map((item, index) => (
         <Accordion.Item key={index} value={item.title.replace(/\s+/g, '-')}>
           <Accordion.Control
-            icon={opened === item.title ? <IconMinus /> : <IconPlus />} // Change icon per item
+            icon={opened === item.title.replace(/\s+/g, '-') ? <IconMinus /> : <IconPlus />} // Change icon per item
           >
             {item.title}
           </Accordion.Control>
