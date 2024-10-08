@@ -47,8 +47,8 @@ const OurTeam = () => {
                         return (
                             <Flex key={index} className='flex-col items-start'>
                                 <Image src={item.avatar} alt={item.name} className='rounded-[12px]' />
-                                <h3 className='text-[16px] leading-[24px] font-soraSemiBold mt-[16px]' >{item.name}</h3>
-                                <h4 className='text-[14px] leading-[20px] text-[#534F69] font-soraRegular '>{item.title}</h4>
+                                <h2 className='text-[16px] leading-[24px] font-soraSemiBold mt-[16px]' >{item.name}</h2>
+                                <h3 className='text-[14px] leading-[20px] text-[#534F69] font-soraRegular '>{item.title}</h3>
                             </Flex>
                         )
                     })}
