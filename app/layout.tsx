@@ -41,7 +41,7 @@ export default function RootLayout({
       "https://ay-estate-two.vercel.app/listings",
       "https://ay-estate-two.vercel.app/blog",
       "https://ay-estate-two.vercel.app/about-ayestate-creative-team",
-      "https://ay-estate-two.vercel.app/contact-us",
+      "https://ay-estate-two.vercel.app/contact-ayestate-excellent-customer-service",
       "https://www.zillow.com/", // External link
       "https://www.realtor.com/" // External link
     ],

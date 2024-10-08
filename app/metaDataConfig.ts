@@ -100,33 +100,32 @@ export const aboutPageMetadata: Metadata = {
 };
 
 export const contactPageMetadata: Metadata = {
-  title: "Contact AyEstate: Expert Support & Real Estate Inquiries",
+  title: "Contact Ayestate | Expert Real Estate Support",
   description:
-    "Contact AyEstate for inquiries, support, or sales assistance. Our team is ready to help. Visit us or reach out through the contact details provided.",
+    "Get expert support for your real estate inquiries with AyEstate. Reach out for assistance with sales and services.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
-  keywords:
-    "Contact AyEstate, Customer Support, Real Estate Inquiries, Office Location, Sales Team, Real Estate Assistance, Get in Touch",
+  keywords: "Contact AyEstate, Real Estate Support, Inquiries, Customer Service, Sales Assistance",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-ayestate-excellent-customer-service`,
     languages: {
-      en: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
-      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
+      en: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-ayestate-excellent-customer-service`,
+      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/contact-ayestate-excellent-customer-service`,
     },
   },
   openGraph: {
-    title: "Contact AyEstate: Expert Support & Real Estate Inquiries",
+    title: "Contact Ayestate | Expert Real Estate Support",
     description:
-      "Contact AyEstate for inquiries, support, or sales assistance. Our team is ready to help. Visit us or reach out through the contact details provided.",
+      "Get expert support for your real estate inquiries with AyEstate. Reach out for assistance with sales and services.",
     images: "/png/map.png",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-ayestate-excellent-customer-service`,
     type: "website",
     siteName: "AyEstate",
   },
   twitter: {
     card: "summary",
-    title: "Contact AyEstate: Expert Support & Real Estate Inquiries",
+    title: "Contact Ayestate | Expert Real Estate Support",
     description:
-      "Contact AyEstate for inquiries, support, or sales assistance. Our team is ready to help. Visit us or reach out through the contact details provided.",
+      "Get expert support for your real estate inquiries with AyEstate. Reach out for assistance with sales and services.",
     images: "/png/map.png",
     site: "@AyEstate",
   },

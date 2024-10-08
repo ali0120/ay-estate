@@ -17,7 +17,7 @@ const data = [
         links: [
             { label: 'Properties', link: '#', title: 'Browse available properties' },
             { label: 'FAQ', link: '/faqs', title: 'Frequently Asked Questions' },
-            { label: 'Contact Us', link: '/contact-us', title: 'Get in touch with us' }
+            { label: 'Contact Us', link: '/contact-ayestate-excellent-customer-service', title: 'Get in touch with us' }
         ],
     },
     {
