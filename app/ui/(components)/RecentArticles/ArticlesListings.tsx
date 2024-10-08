@@ -1,7 +1,7 @@
 "use client"
 import { IBlogArticle } from '@/app/helper/interfaces/blog.interface'
 import { fetchBlogRecentArticles } from '@/app/helper/services/blog.api';
-import { Box, Flex, Pagination } from '@mantine/core'
+import { Flex, Pagination } from '@mantine/core'
 import { useQuery } from '@tanstack/react-query';
 import { useRouter, useSearchParams } from 'next/navigation';
 import LoadingPartially from '../../loading';
@@ -34,7 +34,7 @@ const ArticlesListings = () => {
 
     return (
         <section className='bg-White' >
-            <Box className='px-[20px] xl:px-[100px] pt-[20px] lg:pt-[65px]'>
+            <div className='px-[20px] xl:px-[100px] pt-[20px] lg:pt-[65px]'>
                 <Flex gap={29} wrap={'wrap'} >
                     {popularArticles?.articles?.map((article: IBlogArticle) => {
                         return (
@@ -55,7 +55,7 @@ const ArticlesListings = () => {
                         }}
                     />
                 </Flex>
-            </Box>
+            </div>
         </section>
     )
 }

@@ -1,4 +1,4 @@
-import { Box, Breadcrumbs, Flex, Select, UnstyledButton } from '@mantine/core'
+import {  Breadcrumbs, Flex, Select, UnstyledButton } from '@mantine/core'
 import Link from 'next/link';
 import ArrowRightIcon from '@/public/svg/arrow-right.svg'
 import ArrowDownIcon from '@/public/svg/arrow-down.svg';
@@ -27,7 +27,7 @@ interface ListingHeaderProps {
 const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) => {
     return (
         <section className='bg-White' >
-            <Box className='px-[20px] xl:px-[100px]'>
+            <div className='px-[20px] xl:px-[100px]'>
                 <Breadcrumbs className='pt-[30px] lg:pt-[48px] pb-[24px] lg:pb-[32px]' separator={<ArrowRightIcon />} separatorMargin="md">
                     {items}
                 </Breadcrumbs>
@@ -50,15 +50,15 @@ const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) =>
                             />
                         </Flex>
                         <Flex className='gap-[4px] md:gap-[8px] items-center'>
-                            <Box visibleFrom='md'>
+                            <div className="hidden md:block">
                                 <LineIcon />
-                            </Box>
+                            </div>
                             <UnstyledButton aria-label="Open filter options" onClick={() => open()} hiddenFrom='md'>
                                 <FilterIcon />
                             </UnstyledButton>
-                            <Box hiddenFrom='md'>
+                            <div className="block md:hidden">
                                 <LineIcon />
-                            </Box>
+                            </div>
                             <UnstyledButton aria-label="Switch to grid view" className={`switch_view p-[6px] rounded-[8px] ${type === 'grid' ? 'bg-[#1E4C2F]' : 'border-[1px] border-solid border-[#E4E9EE]'}`} onClick={() => setType('grid')}>
                                 <GridIcon className={`${type === 'grid' ? 'active' : 'not_active'}`} />
                             </UnstyledButton>
@@ -68,7 +68,7 @@ const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) =>
                         </Flex>
                     </Flex>
                 </Flex>
-            </Box>
+            </div>
         </section>
     )
 }

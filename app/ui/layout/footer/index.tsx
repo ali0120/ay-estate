@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Text } from '@mantine/core';
+import { Divider, Flex } from '@mantine/core';
 import Link from 'next/link';
 import '@mantine/core/styles/Divider.css';
 import '@mantine/core/styles/Text.css';
@@ -76,15 +76,15 @@ export function Footer() {
                 </div>
                 <Divider hiddenFrom='md' color='#2E334B' className='my-[30px]' />
                 <Flex visibleFrom='md' className='gap-[80px]' >{groups}</Flex>
-                <Box hiddenFrom='md'>
+                <div className="block md:hidden">
                     <div className="grid grid-cols-2 gap-[30px] md:gap-[60px] mb-[30px]">
                         {groups}
                     </div>
-                </Box>
+                </div>
             </Flex>
-            <Text visibleFrom='md' c="white" className='text-center !text-white text-[18px] font-soraRegular'>
+            <p className='text-center hidden md:block !text-white text-[18px] font-soraRegular'>
                 Copyright © AyEstate | Designed by AY Studio
-            </Text>
+            </p>
         </div>
     );
 }

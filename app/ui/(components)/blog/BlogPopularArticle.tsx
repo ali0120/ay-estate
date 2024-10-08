@@ -1,5 +1,5 @@
 "use client"
-import { BackgroundImage, Box, Button, Flex } from '@mantine/core'
+import { BackgroundImage, Button, Flex } from '@mantine/core'
 import { Carousel } from '@mantine/carousel';
 import EllipseIcon from '@/public/svg/Ellipse.svg'
 import { useQuery } from '@tanstack/react-query';
@@ -21,7 +21,7 @@ const BlogPopularArticle = () => {
 
     return (
         <section className='bg-White' >
-            <Box className='px-[20px] xl:px-[100px] pt-[30px] lg:pt-0 pb-[75px] lg:pb-[100px]'>
+            <div className='px-[20px] xl:px-[100px] pt-[30px] lg:pt-0 pb-[75px] lg:pb-[100px]'>
                 <Flex align={'center'} justify={'space-between'} className='mb-[30px] md:mb-[50px]'>
                     <div className='w-[65%] md:w-[70%]' >
                         <h2 className='text-[16px] lg:text-[32px] text-DarkJungleGreentwo font-soraBold'>Popular Articles</h2>
@@ -42,7 +42,7 @@ const BlogPopularArticle = () => {
                                 className="md:w-[50%] !h-[317px] lg:!h-[502px]"
                                 pos={"relative"}
                             >
-                                <Box className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
+                                <div className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
                                     <Flex align={"center"} className="text-[12px] gap-[10px] lg:text-[18px] font-soraRegular md:font-soraSemiBold opacity-[70%] lg:opacity-1">
                                         <p>{article.date}</p>
                                         <EllipseIcon height={4} width={4} />
@@ -52,7 +52,7 @@ const BlogPopularArticle = () => {
                                         {article.title}
                                     </h3>
                                     <p className='text-[12px] lg:text-[18px] mt-[8px] font-soraSemiBold leading-[15.6px] lg:leading-[32.4px] opacity-[70%] whitespace-nowrap overflow-hidden text-ellipsis' >{article.description}</p>
-                                </Box>
+                                </div>
                             </BackgroundImage>
                         )
                     })}
@@ -78,7 +78,7 @@ const BlogPopularArticle = () => {
                                         className="md:w-[50%] !h-[317px] lg:!h-[502px]"
                                         pos={"relative"}
                                     >
-                                        <Box className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
+                                        <div className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
                                             <Flex align={"center"} className="text-[12px] gap-[10px] lg:text-[18px] font-soraRegular md:font-soraRegular opacity-[70%] lg:opacity-1">
                                                 <p>{article.date}</p>
                                                 <EllipseIcon height={4} width={4} />
@@ -88,14 +88,14 @@ const BlogPopularArticle = () => {
                                                 {article.title}
                                             </h3>
                                             <p className='text-[12px] lg:text-[18px] mt-[8px] font-soraRegular md:font-soraSemiBold leading-[15.6px] lg:leading-[32.4px] opacity-[70%] whitespace-nowrap overflow-hidden text-ellipsis' >{article.description}</p>
-                                        </Box>
+                                        </div>
                                     </BackgroundImage>
                                 </Carousel.Slide>
                             )
                         })}
                     </Carousel>
                 </Flex>
-            </Box>
+            </div>
         </section>
     )
 }

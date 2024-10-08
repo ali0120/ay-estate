@@ -4,7 +4,7 @@ import CheckBox from '@/app/(components)/FormComponents/CheckBox';
 import Input from '@/app/(components)/FormComponents/Input';
 import Select from '@/app/(components)/FormComponents/Select';
 import Textarea from '@/app/(components)/FormComponents/TextArea';
-import { Box, Button, Flex } from '@mantine/core'
+import { Button, Flex } from '@mantine/core'
 import { Controller, FormProvider, useForm } from 'react-hook-form'
 
 type FormData = {
@@ -31,7 +31,7 @@ const ContactUsForm = () => {
 
   return (
     <section className='bg-White text-DarkJungleGreentwo relative'>
-      <Box className='px-[20px] xl:px-[100px] pb-[53px] lg:pb-[100px] pt-[100px] lg:pt-0'>
+      <div className='px-[20px] xl:px-[100px] pb-[53px] lg:pb-[100px] pt-[100px] lg:pt-0'>
         <div className="text-center mx-auto">
           <h2 className='text-[24px] lg:text-[44px] font-soraBold text-YankeesBlue leading-[31.2px] lg:leading-[57.2px] capitalize'>
             Contact our sales team
@@ -44,7 +44,7 @@ const ContactUsForm = () => {
         <FormProvider {...methods}>
           <form onSubmit={handleSubmit(onSubmit)} className='pt-[20px] px-[16px] lg:px-0 lg:w-[77.5%] m-auto'
           >
-            <Box className='grid md:gap-y-[40px] w-full gap-[20px] grid-cols-1 md:grid-cols-2'>
+            <div className='grid md:gap-y-[40px] w-full gap-[20px] grid-cols-1 md:grid-cols-2'>
               <Input name="name" label="Your Name" placeholder="Enter your name" radius={16}
                 registerOptions={{
                   required: {
@@ -118,7 +118,7 @@ const ContactUsForm = () => {
                   },
                 }}
               />
-            </Box>
+            </div>
             <Flex className='flex-col md:flex-row justify-between gap-[40px] lg:gap-[80px] items-center mt-[32px] md:mt-[61px]'>
               <CheckBox radius={6} name='agree' label="I agree to Loom's Terms of Service and Privacy Policy."
                 registerOptions={{
@@ -134,7 +134,7 @@ const ContactUsForm = () => {
             </Flex>
           </form>
         </FormProvider>
-      </Box>
+      </div>
     </section>
   )
 }

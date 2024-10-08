@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Group } from '@mantine/core'
+import {  Button, Flex, Group } from '@mantine/core'
 import React from 'react'
 import Services from './components/Services'
 import ChevronRightIcon from '@/public/svg/chevron-right.svg'
@@ -6,7 +6,7 @@ import ChevronRightIcon from '@/public/svg/chevron-right.svg'
 const Discover = () => {
     return (
         <section className='bg-White' >
-            <Box className='px-[20px] xl:px-[64px] pt-[50px] lg:pt-[80px] pb-[50px] lg:pb-0'>
+            <div className='px-[20px] xl:px-[64px] pt-[50px] lg:pt-[80px] pb-[50px] lg:pb-0'>
                 <Flex className='pb-[48px] lg:pb-[80px] flex-col md:flex-row gap-[20px] lg:gap-[80px] justify-between' >
                     <div className='md:w-[50%]'>
                         <h2 className='capitalize pb-[12px] lg:pb-[16px] text-[16px] leading-[24px] font-soraSemiBold text-Black' >discover</h2>
@@ -26,7 +26,7 @@ const Discover = () => {
                         Contact
                     </Button>
                 </Group>
-            </Box>
+            </div>
         </section>
     )
 }

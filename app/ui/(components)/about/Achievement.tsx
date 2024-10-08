@@ -1,4 +1,4 @@
-import { Badge, Box, Button, Flex } from '@mantine/core'
+import { Badge, Button, Flex } from '@mantine/core'
 import Medalicon from '@/public/svg/medal-star.svg'
 import ArrowUpIcon from '@/public/svg/white-arrow-up-right.svg'
 import '@mantine/core/styles/Badge.css';
@@ -6,7 +6,7 @@ import '@mantine/core/styles/Badge.css';
 const Achievement = () => {
     return (
         <section className='bg-EerieBlack text-White relative'>
-            <Box className='px-[20px] lg:px-[60px] xl:px-[120px] pt-[40px] md:pt-[80px] pb-[40px] lg:pb-[60px]'>
+            <div className='px-[20px] lg:px-[60px] xl:px-[120px] pt-[40px] md:pt-[80px] pb-[40px] lg:pb-[60px]'>
                 <Badge size='xl' color="#2D2843" className='h-[48px] px-[16px] text-[16px] leading-[24px]  text-White font-soraSemiBold uppercase' >
                     Achievement
                 </Badge>
@@ -33,12 +33,12 @@ const Achievement = () => {
                         <p className='text-[14px] leading-[20px] font-soraRegular text-Vodka '>Elit ornare nibh dictum viverra quam placerat. Lobortis eleifend risus pretium consectetur eros.</p>
                     </Flex>
                 </div>
-                <Box className='flex justify-center mt-[16px] lg:mt-[46px]' >
+                <div className='flex justify-center mt-[16px] lg:mt-[46px]' >
                     <Button variant='light' rightSection={<ArrowUpIcon />} className='h-[44px] md:h-[48px] py-[13px] px-[21px] w-full md:w-auto text-White capitalize rounded-[40px] text-[14px] leading-[20px] font-soraSemiBold '>
                         View All Project
                     </Button>
-                </Box>
-            </Box>
+                </div>
+            </div>
         </section>
     )
 }

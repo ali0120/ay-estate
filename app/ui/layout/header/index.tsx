@@ -4,13 +4,10 @@ import {
     Divider,
     Burger,
     Drawer,
-    ScrollArea,
-    rem,
     Flex,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link';
-import '@mantine/core/styles/ScrollArea.css';
 
 export function Header() {
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
@@ -55,7 +52,7 @@ export function Header() {
                 hiddenFrom="md"
                 zIndex={1000000}
             >
-                <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
+                <div className="h-[calc(100vh-80px)] overflow-y-auto">
                     <Divider my="sm" />
                     <Flex
                         px={'20px'}
@@ -82,7 +79,7 @@ export function Header() {
                         </Link>
                     </Flex>
                     <Button component={Link} href={'/contact-us'} title="Get in touch with us" onClick={closeDrawer} className=' h-[56px] mt-[30px] font-soraSemiBold w-full max-w-[95%] m-auto block text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
-                </ScrollArea>
+                </div>
             </Drawer>
         </div>
     );
