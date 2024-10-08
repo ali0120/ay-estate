@@ -13,7 +13,9 @@ const ContactUsHeader = () => {
                 />
                 <div className='relative pt-[20px]'>
                     <Image src={MapImage} priority alt='map-image' className='w-full h-[400px] lg:h-full object-cover' />
-                    <LocationIcon color="#B7E08A" className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2' />
+                    <div className='bg-YellowGreen absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-fit my-0 m-auto rounded-full p-[12px] md:p-[14px]'>
+                        <LocationIcon/>
+                    </div>
                 </div>
             </div>
         </section>
