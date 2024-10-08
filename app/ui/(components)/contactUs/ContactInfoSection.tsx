@@ -12,7 +12,7 @@ const ContactInfoSection = () => {
             <div className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
               <SmsIcon color="#F9F9F9" className='mx-auto mobile_YellowGreen' />
             </div>
-            <h3 className='text-[16px] lg:text-[24px] pt-[16px] lg:pt-[30px] pb-[8px] lg:pb-[16px] leading-[20.8px] lg:leading-[31.2px] font-soraBold' >Email Us</h3>
+            <h2 className='text-[16px] lg:text-[24px] pt-[16px] lg:pt-[30px] pb-[8px] lg:pb-[16px] leading-[20.8px] lg:leading-[31.2px] font-soraBold' >Email Us</h2>
             <p className='text-[14px] lg:text-[18px] leading-[22.4px] lg:leading-[28.8px] font-soraRegular text-RomanSilver '>Ask us a question by email and we will respond within a few days.</p>
             <Button className='text-[16px] font-soraBold leading-[20.8px] capitalize pt-[24px] !text-YellowGreen lg:!text-ChineseBlack !bg-transparent'>
               Leave a Messages
@@ -22,7 +22,7 @@ const ContactInfoSection = () => {
           <div className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
             <LocationIcon color="#F9F9F9" className='mx-auto mobile_YellowGreen' />
           </div>
-            <h3 className='text-[16px] lg:text-[24px] pt-[16px] lg:pt-[30px] pb-[8px] lg:pb-[16px] leading-[20.8px] lg:leading-[31.2px] font-soraBold' >Official Office</h3>
+            <h2 className='text-[16px] lg:text-[24px] pt-[16px] lg:pt-[30px] pb-[8px] lg:pb-[16px] leading-[20.8px] lg:leading-[31.2px] font-soraBold' >Official Office</h2>
             <p className='text-[14px] lg:text-[18px] leading-[22.4px] lg:leading-[28.8px] font-soraRegular text-RomanSilver '>You can meet us at our office and discuss the details of your question.</p>
             <Button className='text-[16px] font-soraBold leading-[20.8px] capitalize pt-[24px] !text-YellowGreen lg:!text-ChineseBlack !bg-transparent'>
               Get Directions
@@ -32,7 +32,7 @@ const ContactInfoSection = () => {
             <div className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
               <SupportIcon color="#F9F9F9" className='mx-auto mobile_YellowGreen' />
             </div>
-            <h3 className='text-[16px] lg:text-[24px] pt-[16px] lg:pt-[30px] pb-[8px] lg:pb-[16px] leading-[20.8px] lg:leading-[31.2px] font-soraBold' >Customer Support</h3>
+            <h2 className='text-[16px] lg:text-[24px] pt-[16px] lg:pt-[30px] pb-[8px] lg:pb-[16px] leading-[20.8px] lg:leading-[31.2px] font-soraBold' >Customer Support</h2>
             <p className='text-[14px] lg:text-[18px] leading-[22.4px] lg:leading-[28.8px] font-soraRegular text-RomanSilver '>Call us if your question requires an immediate response.</p>
             <Button className='text-[16px] font-soraBold leading-[20.8px] capitalize pt-[24px] !text-YellowGreen lg:!text-ChineseBlack !bg-transparent'>
               +(632) 3892402
