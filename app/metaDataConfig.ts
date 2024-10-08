@@ -74,10 +74,10 @@ export const aboutPageMetadata: Metadata = {
   keywords:
     "AyEstate, real estate, trusted experts, About AyEstate, Real Estate Team, Our Mission, Property Experts, Award-Winning Company, Real Estate Services, Trusted Agents, Company Achievements",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-real-estate-experts`,
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-creative-team`,
     languages: {
-      en: `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-real-estate-experts`,
-      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-real-estate-experts`,
+      en: `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-creative-team`,
+      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-creative-team`,
     },
   },
   openGraph: {
@@ -85,7 +85,7 @@ export const aboutPageMetadata: Metadata = {
     description:
       "Learn about AyEstate, our dedicated team, and our mission to help you find your dream home. Explore our achievements and industry-leading services.",
     images: "/png/about_hero.png",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-real-estate-experts`,
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-creative-team`,
     type: "website",
     siteName: "AyEstate",
   },

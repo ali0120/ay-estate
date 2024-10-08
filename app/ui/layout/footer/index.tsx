@@ -8,7 +8,7 @@ const data = [
         title: 'Pages',
         links: [
             { label: 'Listings', link: '/listings', title: 'View our property listings' },
-            { label: 'About us', link: '/about-ayestate-real-estate-experts', title: 'Learn more about AyEstate' },
+            { label: 'About us', link: '/about-ayestate-creative-team', title: 'Learn more about AyEstate' },
             { label: 'Blog', link: '/blog', title: 'Read our latest blog posts' }
         ],
     },

@@ -19,17 +19,17 @@ const Achievement = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[48px] md:gap-[28px] lg:gap-[48px] px-[20px] py-[24px]">
                     <Flex className='flex-col'>
                         <Medalicon />
-                        <h4 className='text-[20px] md:text-[28px] pt-[24px] pb-[12px] lg:pb-[16px] leading-[36px] font-soraBold' >Best Small Companies</h4>
+                        <h3 className='text-[20px] md:text-[28px] pt-[24px] pb-[12px] lg:pb-[16px] leading-[36px] font-soraBold' >Best Small Companies</h3>
                         <p className='text-[14px] leading-[20px] font-soraRegular text-Vodka '>Elit ornare nibh dictum viverra quam placerat. Lobortis eleifend risus pretium consectetur eros.</p>
                     </Flex>
                     <Flex className='flex-col'>
                         <Medalicon />
-                        <h4 className='text-[20px] md:text-[28px] pt-[24px] pb-[12px] lg:pb-[16px] leading-[36px] font-soraBold' >Fast Company Growth</h4>
+                        <h3 className='text-[20px] md:text-[28px] pt-[24px] pb-[12px] lg:pb-[16px] leading-[36px] font-soraBold' >Fast Company Growth</h3>
                         <p className='text-[14px] leading-[20px] font-soraRegular text-Vodka '>Elit ornare nibh dictum viverra quam placerat. Lobortis eleifend risus pretium consectetur eros.</p>
                     </Flex>
                     <Flex className='flex-col'>
                         <Medalicon />
-                        <h4 className='text-[20px] md:text-[28px] pt-[24px] pb-[12px] lg:pb-[16px] leading-[36px] font-soraBold' >Best Developer Team</h4>
+                        <h3 className='text-[20px] md:text-[28px] pt-[24px] pb-[12px] lg:pb-[16px] leading-[36px] font-soraBold' >Best Developer Team</h3>
                         <p className='text-[14px] leading-[20px] font-soraRegular text-Vodka '>Elit ornare nibh dictum viverra quam placerat. Lobortis eleifend risus pretium consectetur eros.</p>
                     </Flex>
                 </div>
