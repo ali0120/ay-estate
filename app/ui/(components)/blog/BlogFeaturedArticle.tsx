@@ -1,5 +1,5 @@
 "use client"
-import { BackgroundImage, Box, Flex } from '@mantine/core'
+import { BackgroundImage, Flex } from '@mantine/core'
 import EllipseIcon from '@/public/svg/Ellipse.svg'
 import { useQuery } from '@tanstack/react-query';
 import { usePathname } from 'next/navigation';
@@ -26,7 +26,7 @@ const BlogFeaturedArticle = () => {
 
     return (
         <section className='bg-White' >
-            <Box className='p-[20px] xl:p-[100px] pt-[50px] lg:pt-[100px] lg:pb-[100px]'>
+            <div className='p-[20px] xl:p-[100px] pt-[50px] lg:pt-[100px] lg:pb-[100px]'>
             <Flex className='gap-[30px] flex-col md:flex-row'>
                     {firstArticle && (
                         <BackgroundImage
@@ -36,7 +36,7 @@ const BlogFeaturedArticle = () => {
                             className="md:w-[57%] !h-[317px] md:!h-[350px] lg:!h-[588px]"
                             pos={"relative"}
                         >
-                            <Box className="text-White absolute w-full p-[16px] lg:p-[24px] bottom-0">
+                            <div className="text-White absolute w-full p-[16px] lg:p-[24px] bottom-0">
                                 <Flex className="text-[12px] gap-[10px] items-center lg:text-[18px] font-soraRegular md:font-soraSemiBold opacity-[70%] lg:opacity-1">
                                     <p>{firstArticle.date}</p>
                                     <EllipseIcon height={4} width={4} />
@@ -45,7 +45,7 @@ const BlogFeaturedArticle = () => {
                                 <p className="mt-[12px] text-[14px] lg:text-[28px] font-soraBold leading-[18.2px] lg:leading-[36.4px]">
                                     {firstArticle.title}
                                 </p>
-                            </Box>
+                            </div>
                         </BackgroundImage>
                     )}
                     <Flex className="md:w-[42.975%] flex-col gap-[20px] md:gap-[30px]">
@@ -66,7 +66,7 @@ const BlogFeaturedArticle = () => {
                         ))}
                     </Flex>
                 </Flex>
-            </Box>
+            </div>
         </section>
     )
 }

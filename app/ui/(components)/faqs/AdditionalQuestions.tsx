@@ -1,4 +1,4 @@
-import { Box, Flex } from '@mantine/core'
+import { Flex } from '@mantine/core'
 import UserIcon from '@/public/svg/user.svg'
 import SmsIcon from '@/public/svg/sms.svg'
 import WorldIcon from '@/public/svg/global.svg'
@@ -6,7 +6,7 @@ import WorldIcon from '@/public/svg/global.svg'
 const AdditionalQuestions = () => {
     return (
         <section className='bg-White text-YankeesBlue relative'>
-            <Box className='px-[20px] xl:px-[100px] pb-[100px] lg:pb-[200px] pt-[3px] lg:pt-[100px]'>
+            <div className='px-[20px] xl:px-[100px] pb-[100px] lg:pb-[200px] pt-[3px] lg:pt-[100px]'>
                 <div className="text-center mx-auto">
                     <h2 className='text-[24px] lg:text-[44px] font-soraBold text-YankeesBlue leading-[31.2px] lg:leading-[57.2px] capitalize'>
                         Still Have a question?
@@ -17,28 +17,28 @@ const AdditionalQuestions = () => {
                 </div>
                 <div className="grid md:grid-cols-3 gap-[48px] md:gap-[18px] lg:gap-[48px] mt-[36px] lg:mt-[44px]">
                     <Flex className='text-center flex-col'>
-                        <Box className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
+                        <div className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
                             <UserIcon color="#F9F9F9" className='mx-auto yellow_path' />
-                        </Box>
+                        </div>
                         <h4 className='text-[16px] lg:text-[24px] pt-[16px] lg:pt-[30px] pb-[8px] lg:pb-[16px] leading-[20.8px] lg:leading-[31.2px] font-soraBold' >+(+1) 2345 6789</h4>
                         <p className='text-[14px] lg:text-[18px] leading-[22.4px] lg:leading-[28.8px] font-soraRegular text-RomanSilver '>Our 24/7 Customer Services</p>
                     </Flex>
                     <Flex className='text-center flex-col'>
-                        <Box className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
+                        <div className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
                             <SmsIcon color="#F9F9F9" className='mx-auto yellow_path' />
-                        </Box>
+                        </div>
                         <h4 className='text-[16px] lg:text-[24px] pt-[16px] lg:pt-[30px] pb-[8px] lg:pb-[16px] leading-[20.8px] lg:leading-[31.2px] font-soraBold' >support@ayestate.com</h4>
                         <p className='text-[14px] lg:text-[18px] leading-[22.4px] lg:leading-[28.8px] font-soraRegular text-RomanSilver '>Alternative way to get anwser faster.</p>
                     </Flex>
                     <Flex className='text-center flex-col'>
-                        <Box className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
+                        <div className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
                             <WorldIcon color="#F9F9F9" className='mx-auto yellow_path' />
-                        </Box>
+                        </div>
                         <h4 className='text-[16px] lg:text-[24px] pt-[16px] lg:pt-[30px] pb-[8px] lg:pb-[16px] leading-[20.8px] lg:leading-[31.2px] font-soraBold' >Real Estate Management</h4>
                         <p className='text-[14px] lg:text-[18px] leading-[22.4px] lg:leading-[28.8px] font-soraRegular text-RomanSilver '>Our community ready to help you</p>
                     </Flex>
                 </div>
-            </Box>
+            </div>
         </section>
     )
 }

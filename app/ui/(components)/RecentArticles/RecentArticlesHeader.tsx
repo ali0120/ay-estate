@@ -1,10 +1,10 @@
-import { Box, Button, Flex } from '@mantine/core'
+import { Button, Flex } from '@mantine/core'
 import React from 'react'
 
 const RecentArticlesHeader = () => {
     return (
         <section className='bg-White' >
-            <Box className='px-[20px] xl:px-[100px] pt-[40px]'>
+            <div className='px-[20px] xl:px-[100px] pt-[40px]'>
                 <Flex align={'center'} justify={'space-between'}>
                     <div>
                     <h1 className='text-[16px] lg:text-[32px] text-DarkJungleGreentwo font-soraBold'>Recent Articles</h1>
@@ -15,7 +15,7 @@ const RecentArticlesHeader = () => {
                         >View All</Button>
                     </Flex>
                 </Flex>
-            </Box>
+            </div>
         </section>
     )
 }

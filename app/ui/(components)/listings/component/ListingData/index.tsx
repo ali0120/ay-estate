@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BackgroundImage, Box, Flex, Pagination, UnstyledButton } from '@mantine/core'
+import { BackgroundImage, Flex, Pagination, UnstyledButton } from '@mantine/core'
 import Link from 'next/link';
 import { properties } from '../../data/properties'
 import LikeIcon from '@/public/svg/heart.svg'
@@ -32,12 +32,12 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
 
     return (
         <section className='bg-White flex-1' >
-            <Box className={`grid gap-[16px] md:gap-[24px] ${type === 'grid' ? 'grid-cols-2' : 'grid-cols-1'}`} >
+            <div className={`grid gap-[16px] md:gap-[24px] ${type === 'grid' ? 'grid-cols-2' : 'grid-cols-1'}`} >
                 {properties.map((property) => {
                     const isLiked = liked[property.id] || false;
                     return (
-                        <Box key={property.id} className='lg:pb-[17px]'>
-                            <Box pos={"relative"}>
+                        <div key={property.id} className='lg:pb-[17px]'>
+                            <div className='relative'>
                                 <Link href={`listings/${property.details.type}`}  title={`View details for ${property.details.type}`} >
                                     <BackgroundImage
                                         src={property.image?.src}
@@ -46,7 +46,7 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                                     >
                                     </BackgroundImage>
                                 </Link>
-                                <Box className="text-White absolute w-full px-[8px] py-[12px] lg:px-[24px] lg:py-[16px] top-0">
+                                <div className="text-White absolute w-full px-[8px] py-[12px] lg:px-[24px] lg:py-[16px] top-0">
                                     <Flex className='justify-between items-center'>
                                         <UnstyledButton  aria-label="Featured property" className='text-[8px] md:text-[14px] text-White font-soraSemiBold
                                          bg-[#111111BF] py-[2px] lg:py-[8px] px-[4px] md:px-[20px] rounded-[24px]'>
@@ -57,9 +57,9 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                                             <HeartIcon className={`hidden md:block ${isLiked ? 'icon_liked' : 'icon'}`} />
                                         </UnstyledButton>
                                     </Flex>
-                                </Box>
-                            </Box>
-                            <Box className='mt-[16px]' >
+                                </div>
+                            </div>
+                            <div className='mt-[16px]' >
                                 <h3 className='max-w-[90%] md:max-w-full text-[12px] md:text-[22px] font-soraSemiBold leading-[18px] md:leading-[33px] whitespace-nowrap overflow-hidden text-ellipsis' >{property.price}</h3>
                                 <p className='text-[10px] md:text-[18px] font-soraSemiBold leading-[15px] md:leading-[27px] mt-[8px] mb-[4px]' >{property.title}</p>
                                 <span className='text-[8px] md:text-[14px] font-soraRegular leading-[21px] mb-[8px] text-[#333333]' >{property.location}</span>
@@ -90,11 +90,11 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                                         <span className='text-[10px] md:text-[14px] font-soraRegular text-[#A9A9A9] ' >{property.details.beds}</span>
                                     </Flex>
                                 </Flex>
-                            </Box>
-                        </Box>
+                            </div>
+                        </div>
                     )
                 })}
-            </Box>
+            </div>
             <Flex className='justify-center py-[33px] lg:py-[66px]'>
                 <Pagination
                     total={64}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { IArticleDetails, IBlogArticle } from "@/app/helper/interfaces/blog.interface";
-import { Box, Button, Flex } from "@mantine/core";
+import { Button, Flex } from "@mantine/core";
 import EllipseIcon from '@/public/svg/Ellipse.svg'
 import RectangleIcon from '@/public/svg/Rectangle.svg'
 import ArticleCard from "./ArticleCard";
@@ -8,7 +8,7 @@ import ArticleCard from "./ArticleCard";
 const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
    
     return (
-        <Box className='px-[20px] xl:px-[100px] pt-[50px] lg:pt-[120px]'>
+        <div className='px-[20px] xl:px-[100px] pt-[50px] lg:pt-[120px]'>
             <div className="text-center">
                 <Flex  align={'center'} justify={'center'} className="text-[12px] gap-[12px] lg:text-[16px] text-RomanSilver font-soraRegular md:font-soraSemiBold" >
                     <p>{article.date}</p>
@@ -19,7 +19,7 @@ const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
                 <p className="text-[14px] lg:text-[18px] text-RomanSilver font-soraRegular leading-[22.4px] lg:leading-[28.8px] mt-[12px] lg:mt-[6px] lg:w-[65%] m-auto" >{article.description}</p>
             </div>
             <Image src={article.image} alt={article.title} width={1240} height={660} className='w-full max-h-[660px] object-cover rounded-[16px] py-[30px] lg:py-[50px]' />
-            <Box className="lg:max-w-[76.2%] m-auto" >
+            <div className="lg:max-w-[76.2%] m-auto" >
                 <p className="text-[14px] lg:text-[18px] text-RomanSilver font-soraRegular">{article.intro}</p>
                 {article.additionalIntro ? <p className="text-[14px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[30px] lg:mt-[60px]">{article.additionalIntro}</p> : null}
                 {article.content?.map((block, index) => {
@@ -56,8 +56,8 @@ const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
                             return null;
                     }
                 })}
-            </Box>
-            <Box className='pt-[30px] pb-[50px] lg:pt-[42px] lg:pb-[100px]'>
+            </div>
+            <div className='pt-[30px] pb-[50px] lg:pt-[42px] lg:pb-[100px]'>
                 <Flex align={'center'} justify={'space-between'} className="mb-[30px] md:mb-[50px]">
                     <div className='w-[70%]' >
                         <h2 className='text-[16px] lg:text-[32px] text-DarkJungleGreentwo font-soraBold'>Related Articles</h2>
@@ -74,8 +74,8 @@ const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
                         )
                     })}
                 </Flex>
-            </Box>
-        </Box>
+            </div>
+        </div>
     );
 };
 

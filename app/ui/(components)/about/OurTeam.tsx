@@ -1,4 +1,4 @@
-import { Badge, Box, Flex } from '@mantine/core'
+import { Badge, Flex } from '@mantine/core'
 import React from 'react'
 import { ourTeamData, ourTeamMobileData } from './data/ourTeam'
 import Image from 'next/image'
@@ -11,7 +11,7 @@ import '@mantine/core/styles/Badge.css';
 const OurTeam = () => {
     return (
         <section className='bg-White' >
-            <Box className='px-[20px] xl:px-[64px] lg:pt-[100px] pb-[20px] lg:pb-[112px]'>
+            <div className='px-[20px] xl:px-[64px] lg:pt-[100px] pb-[20px] lg:pb-[112px]'>
                 <Flex className='text-center flex-col items-center justify-center pb-[15px] lg:pb-[80px]' >
                     <Badge size='xl' color="#F4F2FF" className='h-[48px] px-[16px] text-[16px] leading-[24px] text-ChineseBlack font-soraSemiBold uppercase' >
                         Our team
@@ -53,7 +53,7 @@ const OurTeam = () => {
                         )
                     })}
                 </Flex>
-            </Box>
+            </div>
         </section>
     )
 }

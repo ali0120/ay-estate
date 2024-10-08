@@ -1,6 +1,6 @@
 "use client"
 import React, { ReactNode, useEffect, useState } from "react";
-import { AppShell, Box, Group } from '@mantine/core';
+import { AppShell, Group } from '@mantine/core';
 import { useMediaQuery } from "@mantine/hooks";
 import { useIsFetching, useIsMutating } from "@tanstack/react-query";
 import { Header } from './header';
@@ -45,9 +45,9 @@ export default function Layout({ children }: LayoutProps) {
                 {isPartiallyLoading ? <LoadingPartially /> : children}
             </AppShell.Main>
             <AppShell.Footer className='border-none relative bg-ChineseBlack' >
-                <Box className="px-[20px]  xl:px-[100px]">
+                <div className="px-[20px]  xl:px-[100px]">
                     <Footer />
-                </Box>
+                </div>
             </AppShell.Footer>
         </AppShell>
     );

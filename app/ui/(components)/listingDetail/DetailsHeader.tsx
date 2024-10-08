@@ -1,11 +1,11 @@
-import { Badge, Box, Flex } from '@mantine/core'
+import { Badge, Flex } from '@mantine/core'
 import heroImage from '@/public/png/details.png'
 import Image from 'next/image'
 
 const DetailsHeader = () => {
     return (
         <section className='bg-White overflow-hidden' >
-            <Box className='px-[20px] xl:px-[64px] py-[50px] xl:py-[112px]'>
+            <div className='px-[20px] xl:px-[64px] py-[50px] xl:py-[112px]'>
                 <Flex className='gap-[48px] md:gap-[20px] flex-col lg:flex-row justify-between mb-[30px] md:mb-[80px]'>
                     <div className='lg:w-[70%] ' >
                         <h1 className='text-[40px] lg:text-[56px] leading-[48px] lg:leading-[67.2px] font-soraBold'>Luxury Beach Villa</h1>
@@ -36,7 +36,7 @@ const DetailsHeader = () => {
                     </div>
                 </Flex>
                 <Image src={heroImage} priority alt='hero-image' />
-            </Box>
+            </div>
         </section>
     )
 }

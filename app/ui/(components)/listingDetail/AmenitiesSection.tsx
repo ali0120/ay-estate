@@ -1,4 +1,4 @@
-import { Box, Flex, Group, Button } from '@mantine/core'
+import { Flex, Group, Button } from '@mantine/core'
 import Image from 'next/image'
 import imageOne from '@/public/png/blog/popular/two.png'
 import ChevronRightIcon from '@/public/svg/chevron-right.svg'
@@ -6,7 +6,7 @@ import ChevronRightIcon from '@/public/svg/chevron-right.svg'
 const AmenitiesSection = () => {
     return (
         <section className='bg-White overflow-hidden' >
-            <Box className='px-[20px] xl:px-[64px] py-[50px] xl:py-[112px]'>
+            <div className='px-[20px] xl:px-[64px] py-[50px] xl:py-[112px]'>
                 <Flex className='items-center gap-[48px] md:gap-[80px] justify-between flex-wrap'>
                     <div className='lg:w-[47.8%]' >
                         <h2 className='capitalize pb-[12px] lg:pb-[16px] text-[16px] leading-[24px] font-soraSemiBold text-Black' >Luxury</h2>
@@ -25,7 +25,7 @@ const AmenitiesSection = () => {
                         <Image src={imageOne} className="object-contain" alt='gallery-one' />
                     </Flex>
                 </Flex>
-            </Box>
+            </div>
         </section>
     )
 }

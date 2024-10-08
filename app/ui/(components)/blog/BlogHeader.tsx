@@ -1,6 +1,6 @@
 'use client'
 import { useMediaQuery } from '@mantine/hooks';
-import { Box, Button, Flex, Paper, TextInput } from '@mantine/core'
+import { Button, Flex, Paper, TextInput } from '@mantine/core'
 import IconSearch from '@/public/svg/search-normal.svg'
 import Link from 'next/link';
 
@@ -15,7 +15,7 @@ const BlogHeader = () => {
     const isDesktop = useMediaQuery('(min-width: 56.25em)');
     return (
         <section className='bg-White' >
-            <Box className='px-[20px] xl:px-[100px] pt-[30px] lg:pt-[120px]'>
+            <div className='px-[20px] xl:px-[100px] pt-[30px] lg:pt-[120px]'>
                 <div className="text-center mx-auto">
                     <h1 className='text-[24px] lg:text-[44px] font-soraBold text-YankeesBlue leading-[31.2px] lg:leading-[57.2px] capitalize' >Our Blog</h1>
                     <Paper shadow="xs" className='lg:max-w-[70%] m-auto mt-[16px] md:mt-[50px] rounded-[16px]'>
@@ -49,7 +49,7 @@ const BlogHeader = () => {
                         </Flex>
                     </Flex>
                 </div>
-            </Box>
+            </div>
         </section>
     )
 }

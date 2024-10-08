@@ -1,5 +1,5 @@
 "use client"
-import { Box, Checkbox, Collapse, Divider, Flex, NumberInput, Select, UnstyledButton } from '@mantine/core'
+import { Checkbox, Collapse, Divider, Flex, NumberInput, Select, UnstyledButton } from '@mantine/core'
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useDisclosure } from '@mantine/hooks';
 import ArrowUpIcon from '@/public/svg/arrow-up.svg'
@@ -30,23 +30,23 @@ const Filter = () => {
 
 
   return (
-    <Box className='w-[278px] p-[24px] border-[1px] rounded-[12px] border-BrightGray h-fit' >
+    <div className='w-[278px] p-[24px] border-[1px] rounded-[12px] border-BrightGray h-fit' >
       <h6 className='text-[20px] font-soraSemiBold leading-[28px]' >Filter Option</h6>
       <Divider className='mt-[16px] mb-[24px]' />
       <UnstyledButton aria-label={bestFilterOpened ? "Close best filter" : "Open best filter"} onClick={toggleBestFilter} className=' w-full text-[16px] font-bold ' >
-        <Box component='span' className='flex items-center justify-between w-full'>
+        <span className='flex items-center justify-between w-full'>
           <strong className='text-[16px] font-soraBold' >Best Filter</strong>
           <ArrowUpIcon className={`transition-transform ${!bestFilterOpened ? 'rotate-180' : 'rotate-0'}`} />
-        </Box>
+        </span>
       </UnstyledButton>
       <Collapse in={bestFilterOpened} className='mt-[12px] mb-[24px]'>
         <Flex className='flex-col gap-[13px]'>
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "rating", "4-stars")}
-            label={<Box component='span' className='flex gap-[4px]'>
+            label={<span className='flex gap-[4px]'>
               <StarIcon />
               <span className='text-[16px] font-soraRegular'>4 stars or upper</span>
-            </Box>}
+            </span>}
             classNames={{
               label: 'text-RomanSilver text-[16px] font-soraRegular',
               input: 'rounded-[6px] border-2 checked:!bg-ForestGreen checked:border-ForestGreen'
@@ -79,10 +79,10 @@ const Filter = () => {
       </Collapse>
       <Divider className='my-[24px]' />
       <UnstyledButton aria-label={locationOpened ? "Close location options" : "Open location options"} onClick={toggleLocation} className='text-[16px] font-bold  w-full' >
-        <Box component='span' className='flex items-center justify-between'>
+        <span className='flex items-center justify-between'>
           <strong className='text-[16px] font-soraBold' >Location</strong>
           <ArrowUpIcon className={`transition-transform ${!locationOpened ? 'rotate-180' : 'rotate-0'}`} />
-        </Box>
+        </span>
       </UnstyledButton>
       <Collapse in={locationOpened} className='mt-[12px] mb-[24px]'>
         <Flex className='flex-col gap-[13px]' >
@@ -141,20 +141,20 @@ const Filter = () => {
 
       <Divider className='my-[24px]' />
       <UnstyledButton aria-label={categoryOpened ? "Close category options" : "Open category options"} onClick={toggleCategory} className='text-[16px] font-bold w-full ' >
-        <Box component='span' className='flex items-center justify-between'>
+        <span className='flex items-center justify-between'>
           <strong className='text-[16px] font-soraBold' >Category</strong>
           <ArrowUpIcon className={`transition-transform ${!categoryOpened ? 'rotate-180' : 'rotate-0'}`} />
-        </Box>
+        </span>
       </UnstyledButton>
       <Collapse in={categoryOpened} className='mt-[12px] mb-[24px]'>
         <Flex className='flex-col gap-[13px]' >
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "category", "house")}
             label={
-              <Box component='span' className='flex justify-between'>
+              <span className='flex justify-between'>
                 <span>House</span>
                 <ArrowUpIcon className='gray_stroke' />
-              </Box>
+              </span>
             }
             classNames={{
               labelWrapper: 'w-full',
@@ -164,10 +164,10 @@ const Filter = () => {
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "category", "villa")}
             label={
-              <Box component='span' className='flex justify-between'>
+              <span className='flex justify-between'>
                 <span>Villa</span>
                 <ArrowUpIcon className='gray_stroke' />
-              </Box>
+              </span>
             }
             classNames={{
               labelWrapper: 'w-full',
@@ -178,10 +178,10 @@ const Filter = () => {
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "category", "apartment")}
             label={
-              <Box component='span' className='flex justify-between'>
+              <span className='flex justify-between'>
                 <span>Apartment</span>
                 <ArrowUpIcon className='gray_stroke' />
-              </Box>
+              </span>
             }
             classNames={{
               labelWrapper: 'w-full',
@@ -192,10 +192,10 @@ const Filter = () => {
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "category", "hotel")}
             label={
-              <Box component='span' className='flex justify-between'>
+              <span className='flex justify-between'>
                 <span>Hotel</span>
                 <ArrowUpIcon className='gray_stroke' />
-              </Box>
+              </span>
             }
             classNames={{
               labelWrapper: 'w-full',
@@ -206,10 +206,10 @@ const Filter = () => {
           <Checkbox
             onChange={(e) => handleCheckboxChange(e.target.checked, "category", "real-estate")}
             label={
-              <Box component='span' className='flex justify-between'>
+              <span className='flex justify-between'>
                 <span>Real Estate</span>
                 <ArrowUpIcon className='gray_stroke' />
-              </Box>
+              </span>
             }
             classNames={{
               labelWrapper: 'w-full',
@@ -225,10 +225,10 @@ const Filter = () => {
 
       <Divider my={24} />
       <UnstyledButton aria-label={priceOpened ? "Close price range options" : "Open price range options"} onClick={togglePrice} className='text-[16px] font-bold w-full' >
-        <Box component='span' className='flex items-center justify-between'>
+        <span className='flex items-center justify-between'>
           <strong className='text-[16px] font-soraBold' >Price Range</strong>
           <ArrowUpIcon className={`transition-transform ${!priceOpened ? 'rotate-180' : 'rotate-0'}`} />
-        </Box>
+        </span>
       </UnstyledButton>
       <Collapse in={priceOpened} className='mt-[12px] mb-[24px]'>
         <Flex className='flex-col gap-[13px]' >
@@ -285,7 +285,7 @@ const Filter = () => {
           </UnstyledButton>
         </Flex>
       </Collapse>
-    </Box>
+    </div>
   )
 }
 

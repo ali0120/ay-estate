@@ -1,5 +1,5 @@
 "use client"
-import { Box, Button, Flex } from '@mantine/core'
+import {  Button, Flex } from '@mantine/core'
 import { useQuery } from '@tanstack/react-query';
 import LoadingPartially from '../../loading';
 import { IBlogArticle } from '@/app/helper/interfaces/blog.interface';
@@ -20,7 +20,7 @@ const BlogRecentArticle = () => {
 
     return (
         <section className='bg-White' >
-            <Box className='px-[20px] xl:px-[100px] pb-[50px] lg:pb-[100px]'>
+            <div className='px-[20px] xl:px-[100px] pb-[50px] lg:pb-[100px]'>
                 <Flex align={'center'} justify={'space-between'} className='pb-[30px] lg:pb-[50px]'>
                     <div className='w-[70%]' >
                         <h2 className='text-[16px] lg:text-[32px] text-DarkJungleGreentwo font-soraBold'>Recent Articles</h2>
@@ -39,7 +39,7 @@ const BlogRecentArticle = () => {
                         )
                     })}
                 </Flex>
-            </Box>
+            </div>
         </section>
     )
 }

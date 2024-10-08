@@ -1,11 +1,11 @@
-import { Box, Button, Flex } from '@mantine/core'
+import { Button, Flex } from '@mantine/core'
 import React from 'react'
 import Stats from './components/Stats'
 
 const Innovative = () => {
     return (
         <section className='bg-ChineseBlack text-White'>
-            <Box className='px-[20px] xl:px-[64px] py-[50px] lg:py-[80px]'>
+            <div className='px-[20px] xl:px-[64px] py-[50px] lg:py-[80px]'>
                 <Flex className='flex-col md:flex-row gap-[20px] lg:gap-[80px] pb-[48px] lg:pb-[80px] justify-between'>
                     <div className='md:w-[50%]'>
                         <h2 className='capitalize pb-[12px] lg:pb-[16px] text-[16px] leading-[24px] font-soraSemiBold' >Innovative</h2>
@@ -23,7 +23,7 @@ const Innovative = () => {
                     </div>
                 </Flex>
                 <Stats />
-            </Box>
+            </div>
         </section>
     )
 }

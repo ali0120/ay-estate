@@ -1,4 +1,4 @@
-import { Box, Flex } from '@mantine/core'
+import { Flex } from '@mantine/core'
 import imageOne from '@/public/png/gallery-three.png'
 import imageTwo from '@/public/png/gallery-two.png'
 import imageThree from '@/public/png/gallery-one.png'
@@ -7,7 +7,7 @@ import Image from 'next/image'
 const ImageGallery = () => {
     return (
         <section className='bg-White overflow-hidden' >
-            <Box className='px-[20px] xl:px-[64px] py-[50px] xl:py-[112px]'>
+            <div className='px-[20px] xl:px-[64px] py-[50px] xl:py-[112px]'>
                 <Flex className='items-start justify-between flex-wrap gap-[48px] md:gap-[80px]'>
                     <div className='xl:w-[35.4%]' >
                         <h2 className='text-[36px] lg:text-[48px] leading-[43.2px] lg:leading-[57.6px] text-Black font-soraBold'>Stunning Property with Luxurious Amenities</h2>
@@ -23,7 +23,7 @@ const ImageGallery = () => {
                         <Image src={imageThree} className="lg:w-[768px] lg:h-[768px] object-contain" alt='gallery-three' />
                     </Flex>
                 </Flex>
-            </Box>
+            </div>
         </section>
     )
 }

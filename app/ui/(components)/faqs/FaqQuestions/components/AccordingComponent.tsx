@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { Accordion, Box } from '@mantine/core';
+import { Accordion } from '@mantine/core';
 import IconPlus from '@/public/svg/add.svg';
 import IconMinus from '@/public/svg/minus.svg';
 import Link from 'next/link';
@@ -36,9 +36,9 @@ const AccordingComponent = () => {
             {item.title}
           </Accordion.Control>
           <Accordion.Panel>
-            <Box>
+            <div>
               {item.description}
-            </Box>
+            </div>
             <Link href={"#"} className='text-YellowGreen lg:text-RoyalBlue text-[16px] md:text-[18px] font-soraBold leading-[20.8px] md:leading-[23.4px] inline-block mt-[20px] lg:mt-[24px]' >Read More</Link>
           </Accordion.Panel>
         </Accordion.Item>
