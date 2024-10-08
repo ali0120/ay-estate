@@ -17,15 +17,15 @@ const OurTeam = () => {
                         Our team
                     </Badge>
                     <h1 className='text-[28px] lg:text-[36px] text-EerieBlack leading-[36px] lg:leading-[54px] font-soraBold py-[16px] uppercase w-[80%] lg:w-full' >meet our creative team</h1>
-                    <p className='text-[14px] lg:text-[18px] leading-[20px] text-Independence lg:leading-[28px] font-soraRegular' >Magna metus, adipiscing dictumst magna fringilla metus fermentum tristique. Enim vitae purus lectus augue maecenas</p>
+                    <p className='text-[14px] lg:text-[18px] leading-[20px] text-Independence lg:leading-[28px] font-soraRegular' >Meet our diverse and talented creative team, who work together to deliver innovative real estate solutions. Our team of experts is dedicated to providing you with creative strategies and personalized solutions for your real estate needs.</p>
                 </Flex>
                 <Flex className='flex-wrap gap-[32px]' visibleFrom='md'>
                     {ourTeamData?.map((item, index) => {
                         return (
                             <Flex key={index} className="flex-col items-center text-center md:w-[45%] lg:w-[21%]">
                                 <Image src={item.avatar} alt={item.name} />
-                                <h3 className='text-[20px] leading-[30px] font-soraSemiBold mt-[24px]' >{item.name}</h3>
-                                <h4 className='text-[18px] leading-[27px] font-soraRegular '>{item.title}</h4>
+                                <h2 className='text-[20px] leading-[30px] font-soraSemiBold mt-[24px]' >{item.name}</h2>
+                                <h3 className='text-[18px] leading-[27px] font-soraRegular '>{item.title}</h3>
                                 <p className='text-[16px] pt-[16px] pb-[24px] leading-[24px] font-soraRegular '>{item.description}</p>
                                 <Flex className='items-center gap-[14px]'>
                                     <Link href={item.links.linkedin} title="Follow us on LinkedIn">

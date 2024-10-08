@@ -72,12 +72,12 @@ export const aboutPageMetadata: Metadata = {
     "Learn about AyEstate, our dedicated team, and our mission to help you find your dream home. Explore our achievements and industry-leading services.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
   keywords:
-    "AyEstate, About AyEstate, Real Estate Team, Our Mission, Property Experts, Award-Winning Company, Real Estate Services, Trusted Agents, Company Achievements",
+    "AyEstate, real estate, trusted experts, About AyEstate, Real Estate Team, Our Mission, Property Experts, Award-Winning Company, Real Estate Services, Trusted Agents, Company Achievements",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-real-estate-experts`,
     languages: {
-      en: `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
-      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
+      en: `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-real-estate-experts`,
+      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-real-estate-experts`,
     },
   },
   openGraph: {
@@ -85,7 +85,7 @@ export const aboutPageMetadata: Metadata = {
     description:
       "Learn about AyEstate, our dedicated team, and our mission to help you find your dream home. Explore our achievements and industry-leading services.",
     images: "/png/about_hero.png",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/about-us`,
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/about-ayestate-real-estate-experts`,
     type: "website",
     siteName: "AyEstate",
   },

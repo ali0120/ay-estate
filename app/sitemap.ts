@@ -25,7 +25,7 @@ export default function sitemap() {
             priority: 0.5,
         },
         {
-          url: 'https://ay-estate-two.vercel.app/about-us',
+          url: 'https://ay-estate-two.vercel.app/about-ayestate-real-estate-experts',
           lastModified: new Date(),
           changeFrequency: 'monthly',
           priority: 0.8,
