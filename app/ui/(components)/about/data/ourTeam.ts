@@ -116,32 +116,32 @@ export const ourTeamData = [
 export const ourTeamMobileData = [
   {
     avatar: smMemberOne,
-    name: "Muhammad Abubakar A.",
+    name: "Muhammad Abubakar An.",
     title: "Director",
   },
   {
     avatar: smMemberTwo,
-    name: "Alexander Isak",
+    name: "Alexander Isaks",
     title: "CEO",
   },
   {
     avatar: smMemberThree,
-    name: "Christina W.",
+    name: "Christina Ws.",
     title: "Manager",
   },
   {
     avatar: smMemberFour,
-    name: "Brian Oconner",
+    name: "Brian Oconners",
     title: "Supervisor",
   },
   {
     avatar: smMemberFive,
-    name: "Natalie A.",
+    name: "Natalie A.s",
     title: "Creative Director",
   },
   {
     avatar: smMemberSix,
-    name: "Hengky Doe",
+    name: "Hengky Does",
     title: "Developers",
   },
 ];
