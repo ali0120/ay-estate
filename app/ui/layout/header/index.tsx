@@ -34,7 +34,7 @@ export function Header() {
                     <Link href="/blog" title="Read our latest blog posts"  className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Blog
                     </Link>
-                    <Link href="/about-us" title="Learn more about AyEstate" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
+                    <Link href="/about-ayestate-real-estate-experts" title="Learn more about AyEstate" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         About Us
                     </Link>
                 </Group>
@@ -77,7 +77,7 @@ export function Header() {
                         <Link href="/blog" title="Read our latest blog posts"  className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Blog
                         </Link>
-                        <Link href="/about-us" title="Learn more about AyEstate" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
+                        <Link href="/about-ayestate-real-estate-experts" title="Learn more about AyEstate" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             About Us
                         </Link>
                     </Flex>

@@ -13,7 +13,7 @@ const Achievement = () => {
                 <Flex className='justify-between gap-[16x] md:gap-[60px] flex-wrap py-[16px] lg:py-[60px]'>
                     <h2 className='uppercase md:w-[45%] text-[28px] md:text-[36px] font-soraBold leading-[36px] md:leading-[54px] tracking-[-1px]' >Our award this year</h2>
                     <p className='text-[14px] md:text-[18px] md:w-[45%] leading-[20px] md:leading-[28px] font-soraRegular text-Vodka'>
-                        We’re happy to receive this award so that it motivates us to grow and provide the best service for you.
+                    Our creative team has helped us achieve awards in various categories, including Best Small Companies and Fast Company Growth. Our teamwork and creative solutions drive our success.
                     </p>
                 </Flex>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[48px] md:gap-[28px] lg:gap-[48px] px-[20px] py-[24px]">

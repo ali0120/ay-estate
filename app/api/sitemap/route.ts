@@ -54,7 +54,7 @@ export async function GET() {
     "/listings",
     "/blog",
     "/blog/recent-articles",
-    "/about-us",
+    "/about-ayestate-real-estate-experts",
     "/contact-us",
     "/faqs",
   ];

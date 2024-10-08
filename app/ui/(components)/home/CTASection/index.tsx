@@ -10,7 +10,7 @@ const CTASection = () => {
             <Box className='px-[20px] xl:px-[60px] py-[40px] lg:py-[60px]'>
                 <div className="text-center">
                     <h2 className='uppercase text-[20px] lg:text-[36px] leading-[30px] lg:leading-[54px] font-soraBold' >Let’s start a <br /> successful project</h2>
-                    <p className='text-[12px] lg:text-[18px] m-auto md:w-[53%] text-center leading-[18px] lg:leading-[28px] font-soraRegular py-[12px] lg:py-[24px]' >We deliver immediate business impact and long-term ROI for your brand. Find out why Astheris are Australia&#39;s trusted Digital Agency.</p>
+                    <p className='text-[12px] lg:text-[18px] m-auto md:w-[53%] text-center leading-[18px] lg:leading-[28px] font-soraRegular py-[12px] lg:py-[24px]' >Meet with our creative team today and start a successful real estate project. Our expert team is here to bring your ideas to life with innovative solutions.</p>
                 </div>
                 <Box className='flex justify-center' >
                     <Button rightSection={<ArrowUpIcon />} className='h-[44px] md:h-[56px] w-full md:w-auto py-[9.2px] lg:py-[13px] px-[21px] text-EerieBlack capitalize rounded-[40px] text-[14px] md:text-[18px] leading-[20px] md:leading-[28px] font-soraSemiBold '>

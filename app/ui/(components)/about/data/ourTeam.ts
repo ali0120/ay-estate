@@ -43,7 +43,7 @@ export const ourTeamData = [
     name: "Christina W.",
     title: "Manager",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Christina leads our creative team with expertise, ensuring that every project is tailored to meet client needs.",
     avatar: memberThree,
     links: {
       dribble: "#",
