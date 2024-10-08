@@ -7,7 +7,7 @@ const AboutHeader = () => {
     return (
         <section className='bg-White' >
             <Box>
-                <Image src={Aboutheder} alt='herp-image' className='w-full h-[240px] lg:h-full object-cover' />
+                <Image src={Aboutheder} alt='herp-image' priority className='w-full h-[240px] lg:h-full object-cover' />
             </Box>
             <Box className='px-[20px] xl:px-[120px] pt-[20px] lg:pt-[100px] pb-[40px] lg:pb-[80px]'>
                 <Flex className='flex-col lg:flex-row justify-between gap-[20px] lg:gap-[180px]'>

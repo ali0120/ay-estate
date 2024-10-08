@@ -5,6 +5,7 @@ import { useDisclosure } from '@mantine/hooks';
 import ArrowUpIcon from '@/public/svg/arrow-up.svg'
 import StarIcon from '@/public/svg/star.svg'
 import LineIcon from '@/public/svg/Line.svg';
+
 const Filter = () => {
   const [bestFilterOpened, { toggle: toggleBestFilter }] = useDisclosure(true);
   const [locationOpened, { toggle: toggleLocation }] = useDisclosure(true);

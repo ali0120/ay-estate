@@ -35,7 +35,7 @@ const DetailsHeader = () => {
                         </Flex>
                     </div>
                 </Flex>
-                <Image src={heroImage} alt='hero-image' />
+                <Image src={heroImage} priority alt='hero-image' />
             </Box>
         </section>
     )

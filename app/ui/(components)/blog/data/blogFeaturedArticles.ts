@@ -1,7 +1,7 @@
-import blogOne from "@/public/png/blog/one.png";
-import blogTwo from "@/public/png/blog/two.png";
-import blogThree from "@/public/png/blog/three.png";
-import blogFour from "@/public/png/blog/four.png";
+import blogOne from "@/public/webp/blog/one.webp"
+import blogTwo from "@/public/webp/blog/two.webp";
+import blogThree from "@/public/webp/blog/three.webp";
+import blogFour from "@/public/webp/blog/four.webp";
 
 export const blogFeaturedArticles = [
   {

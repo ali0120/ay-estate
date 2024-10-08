@@ -1,6 +1,7 @@
 import { Badge, Box, Button, Flex } from '@mantine/core'
 import Medalicon from '@/public/svg/medal-star.svg'
 import ArrowUpIcon from '@/public/svg/white-arrow-up-right.svg'
+import '@mantine/core/styles/Badge.css';
 
 const Achievement = () => {
     return (

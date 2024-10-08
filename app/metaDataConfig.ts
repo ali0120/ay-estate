@@ -178,14 +178,14 @@ export const recentArticlePageMetadata: Metadata = {
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/recent-articles`,
     type: "website",
     siteName: "AyEstate",
-    images: "/png/blog/recent/one.png",
+    images: "/png/blog/recent/one.webp",
   },
   twitter: {
     card: "summary_large_image",
     title: "Recent Articles - AyEstate Blog | Real Estate Insights",
     description:
       "Discover real estate trends, investment strategies, and expert advice at AyEstate. Stay informed and make smarter property decisions.",
-    images: "/png/blog/recent/one.png",
+    images: "/png/blog/recent/one.webp",
     site: "@AyEstate",
   },
   alternates: {
