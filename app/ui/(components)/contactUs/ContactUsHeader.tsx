@@ -8,8 +8,8 @@ const ContactUsHeader = () => {
         <section className='bg-White' >
             <div className='px-[20px] xl:px-[100px] pt-[30px] lg:pt-[120px] pb-[16px] lg:pb-[100px]'>
                 <CenteredTextBlock
-                    heading="Excellent Customer Service"
-                    paragraph="If you have any questions you can report them below with the following information, so that it is easy for us to reply to your message."
+                    heading="Contact AyEstate for Expert Real Estate Support"
+                    paragraph="If you have any questions or need support, don’t hesitate to contact us. We specialize in delivering exceptional service tailored to your real estate needs."
                 />
                 <div className='relative pt-[20px]'>
                     <Image src={MapImage} priority alt='map-image' className='w-full h-[400px] lg:h-full object-cover' />

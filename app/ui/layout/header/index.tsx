@@ -35,7 +35,7 @@ export function Header() {
                         About Us
                     </Link>
                 </Group>
-                <Button component={Link} href={'/contact-us'} title="Get in touch with us" visibleFrom="md" className='h-[56px] font-soraSemiBold text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
+                <Button component={Link} href={'/contact-ayestate-excellent-customer-service'} title="Get in touch with us" visibleFrom="md" className='h-[56px] font-soraSemiBold text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
                 <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" />
             </Group>
 
@@ -78,7 +78,7 @@ export function Header() {
                             About Us
                         </Link>
                     </Flex>
-                    <Button component={Link} href={'/contact-us'} title="Get in touch with us" onClick={closeDrawer} className=' h-[56px] mt-[30px] font-soraSemiBold w-full max-w-[95%] m-auto block text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
+                    <Button component={Link} href={'/contact-ayestate-excellent-customer-service'} title="Get in touch with us" onClick={closeDrawer} className=' h-[56px] mt-[30px] font-soraSemiBold w-full max-w-[95%] m-auto block text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
                 </div>
             </Drawer>
         </div>

@@ -55,7 +55,7 @@ export async function GET() {
     "/blog",
     "/blog/recent-articles",
     "/about-ayestate-creative-team",
-    "/contact-us",
+    "/contact-ayestate-excellent-customer-service",
     "/faqs",
   ];
 

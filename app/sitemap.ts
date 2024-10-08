@@ -31,7 +31,7 @@ export default function sitemap() {
           priority: 0.8,
         },
         {
-          url: 'https://ay-estate-two.vercel.app/contact-us',
+          url: 'https://ay-estate-two.vercel.app/contact-ayestate-excellent-customer-service',
           lastModified: new Date(),
           changeFrequency: 'monthly',
           priority: 0.8,
