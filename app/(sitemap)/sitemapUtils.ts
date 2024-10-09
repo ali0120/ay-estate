@@ -1,5 +1,4 @@
-import { properties } from "../ui/(components)/luxury-villa-listings/data/properties";
-
+import { properties } from "../ui/(components)/listings/data/properties";
 interface Sitemap {
   id: number;
   url: string;
