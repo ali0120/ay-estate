@@ -38,7 +38,7 @@ export default function RootLayout({
       "https://www.x.com/ay-estate",
     ],
     "urlLinks": [
-      "https://ay-estate-two.vercel.app/listings",
+      "https://ay-estate-two.vercel.app/luxury-villa-listings",
       "https://ay-estate-two.vercel.app/blog",
       "https://ay-estate-two.vercel.app/about-ayestate-creative-team",
       "https://ay-estate-two.vercel.app/contact-ayestate-excellent-customer-service",

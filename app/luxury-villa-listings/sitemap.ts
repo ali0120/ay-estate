@@ -1,4 +1,4 @@
-import { properties } from "../ui/(components)/listings/data/properties";
+import { properties } from "../ui/(components)/luxury-villa-listings/data/properties";
 
 interface SitemapParams {
   id: number;
@@ -29,7 +29,7 @@ export default async function sitemap({ id }: SitemapParams) {
   // Get a slice of properties for the current page
   const currentProperties = properties.slice(startIndex, endIndex);
   const propertyPaths = currentProperties.map((property) => ({
-    url: `${baseUrl}/listings/${property.details.type}`,
+    url: `${baseUrl}/luxury-villa-listings/${property.details.type}`,
     lastModified: new Date().toISOString(),
     changefreq: "daily",
     priority: 0.7,

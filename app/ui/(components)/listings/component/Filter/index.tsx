@@ -25,7 +25,7 @@ const Filter = () => {
     }
 
     const queryString = params.toString();
-    router.push(`/listings?${queryString}`, { scroll: false });
+    router.push(`/luxury-villa-listings?${queryString}`, { scroll: false });
   };
 
 

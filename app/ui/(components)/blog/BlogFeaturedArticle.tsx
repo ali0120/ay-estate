@@ -7,6 +7,7 @@ import { fetchBlogFeaturedArticles } from '@/app/helper/services/blog.api';
 import LoadingPartially from '../../loading';
 import Image from 'next/image';
 import { IBlogArticle } from '@/app/helper/interfaces/blog.interface';
+import blogOne from "@/public/webp/blog/one.webp"
 import '@mantine/core/styles/BackgroundImage.css';
 
 const BlogFeaturedArticle = () => {
@@ -21,7 +22,15 @@ const BlogFeaturedArticle = () => {
     if (isLoading) return <LoadingPartially />;
     if (error) return <p>Error fetching articles</p>;
 
-    const firstArticle = featuredArticles?.[0]; // First item
+    const firstArticle = {
+        id: 1,
+        title: "From $0 to $40 Million: How a 10-Year-Old Orphan Became a Successful Investor",
+        image:blogOne,
+        description: "This is the inspiring story of a young orphan who made millions through smart investments.",
+        category: "success-stories",
+        date: "July 20, 2024"
+    };
+
     const remainingArticles = featuredArticles?.slice(1); // Items after the first
 
     return (

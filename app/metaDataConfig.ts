@@ -34,31 +34,31 @@ export const homePageMetadata: Metadata = {
 };
 
 export const villaListingsMetadata: Metadata = {
-  title: "AyEstate - Villa Listings | Discover Luxury Villas and Homes",
+  title: "AyEstate - Discover Luxury Villas & Homes | Villa Listings",
   description:
     "Explore the finest luxury villas at AyEstate. Whether you're looking to rent or buy, our curated listings offer you the best properties in prime locations.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
   keywords:
     "Villa Listings, Luxury Villas, Real Estate, Property Rentals, Dream Villas, Modern Villas, High-End Villas, Property Investment, Villa for Sale, Villa for Rent",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/listings`,
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/luxury-villa-listings`,
     languages: {
-      en: `${process.env.NEXT_PUBLIC_BASE_URL}/listings`,
-      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/listings`,
+      en: `${process.env.NEXT_PUBLIC_BASE_URL}/luxury-villa-listings`,
+      "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/luxury-villa-listings`,
     },
   },
   openGraph: {
-    title: "AyEstate - Villa Listings | Discover Luxury Villas and Homes",
+    title: "AyEstate - Discover Luxury Villas & Homes | Villa Listings",
     description:
       "Explore the finest luxury villas at AyEstate. Whether you're looking to rent or buy, our curated listings offer you the best properties in prime locations.",
     images: "/png/product-7.png",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/listings`,
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/luxury-villa-listings`,
     type: "website",
     siteName: "AyEstate",
   },
   twitter: {
     card: "summary",
-    title: "AyEstate - Villa Listings | Discover Luxury Villas and Homes",
+    title: "AyEstate - Discover Luxury Villas & Homes | Villa Listings",
     description:
       "Explore the finest luxury villas at AyEstate. Whether you're looking to rent or buy, our curated listings offer you the best properties in prime locations.",
     images: "/png/product-7.png",
@@ -132,7 +132,7 @@ export const contactPageMetadata: Metadata = {
 };
 
 export const blogPageMetadata: Metadata = {
-  title: "AyEstate Blog - Real Estate Tips & Market Trends",
+  title: "AyEstate Blog: Real Estate Tips, Market Trends, and Insights",
   description:
     "Stay updated with AyEstate's blog for real estate tips, market trends, investment strategies, and success stories to guide your property journey.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
@@ -146,7 +146,7 @@ export const blogPageMetadata: Metadata = {
     },
   },
   openGraph: {
-    title: "AyEstate Blog - Real Estate Tips, Market Trends & Success Stories",
+    title: "AyEstate Blog: Real Estate Tips, Market Trends, and Insights",
     description:
       "Stay updated with AyEstate's blog for real estate tips, market trends, investment strategies, and success stories to guide your property journey.",
     images: "/png/blog/one.png",
@@ -156,7 +156,7 @@ export const blogPageMetadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "AyEstate Blog - Real Estate Tips, Market Trends & Success Stories",
+    title: "AyEstate Blog: Real Estate Tips, Market Trends, and Insights",
     description:
       "Stay updated with AyEstate's blog for real estate tips, market trends, investment strategies, and success stories to guide your property journey.",
     images: "/png/blog/one.png",
