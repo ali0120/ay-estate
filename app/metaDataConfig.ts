@@ -34,9 +34,9 @@ export const homePageMetadata: Metadata = {
 };
 
 export const villaListingsMetadata: Metadata = {
-  title: "AyEstate - Discover Luxury Villas & Homes | Villa Listings",
+  title: "AyEstate - Luxury Villa Listings | Explore Villas and Homes",
   description:
-    "Explore the finest luxury villas at AyEstate. Whether you're looking to rent or buy, our curated listings offer you the best properties in prime locations.",
+    "Discover luxury villas and homes with AyEstate. Browse our extensive villa listings to find your dream property.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
   keywords:
     "Villa Listings, Luxury Villas, Real Estate, Property Rentals, Dream Villas, Modern Villas, High-End Villas, Property Investment, Villa for Sale, Villa for Rent",
@@ -48,9 +48,9 @@ export const villaListingsMetadata: Metadata = {
     },
   },
   openGraph: {
-    title: "AyEstate - Discover Luxury Villas & Homes | Villa Listings",
+    title: "AyEstate - Luxury Villa Listings | Explore Villas and Homes",
     description:
-      "Explore the finest luxury villas at AyEstate. Whether you're looking to rent or buy, our curated listings offer you the best properties in prime locations.",
+      "Discover luxury villas and homes with AyEstate. Browse our extensive villa listings to find your dream property.",
     images: "/png/product-7.png",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/luxury-villa-listings`,
     type: "website",
@@ -58,9 +58,9 @@ export const villaListingsMetadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "AyEstate - Discover Luxury Villas & Homes | Villa Listings",
+    title: "AyEstate - Luxury Villa Listings | Explore Villas and Homes",
     description:
-      "Explore the finest luxury villas at AyEstate. Whether you're looking to rent or buy, our curated listings offer you the best properties in prime locations.",
+      "Discover luxury villas and homes with AyEstate. Browse our extensive villa listings to find your dream property.",
     images: "/png/product-7.png",
     site: "@AyEstate",
   },
