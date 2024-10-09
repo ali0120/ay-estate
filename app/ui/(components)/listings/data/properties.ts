@@ -23,7 +23,7 @@ export const properties = [
   },
   {
     id: 2,
-    price: "$300,000,000 / year / leasehold",
+    price: "$400,000,000 / year / leasehold",
     title: "Villa Cozy Cottage",
     location: "Bali, Indonesia",
     featured: true,
@@ -39,7 +39,7 @@ export const properties = [
   },
   {
     id: 3,
-    price: "$300,000,000 / year / leasehold",
+    price: "$200,000,000 / year / leasehold",
     title: "Villa Cozy Cottage",
     location: "Bali, Indonesia",
     featured: true,
@@ -55,7 +55,7 @@ export const properties = [
   },
   {
     id: 4,
-    price: "$300,000,000 / year / leasehold",
+    price: "$500,000,000 / year / leasehold",
     title: "Villa Cozy Cottage",
     location: "Bali, Indonesia",
     featured: true,
@@ -71,7 +71,7 @@ export const properties = [
   },
   {
     id: 5,
-    price: "$300,000,000 / year / leasehold",
+    price: "$600,000,000 / year / leasehold",
     title: "Villa Cozy Cottage",
     location: "Bali, Indonesia",
     featured: true,
@@ -87,7 +87,7 @@ export const properties = [
   },
   {
     id: 6,
-    price: "$300,000,000 / year / leasehold",
+    price: "$700,000,000 / year / leasehold",
     title: "Villa Cozy Cottage",
     location: "Bali, Indonesia",
     featured: true,
