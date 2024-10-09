@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BackgroundImage, Flex, Pagination, UnstyledButton } from '@mantine/core'
+import { Flex, Pagination, UnstyledButton } from '@mantine/core'
 import Link from 'next/link';
 import { properties } from '../../data/properties'
 import LikeIcon from '@/public/svg/heart.svg'
@@ -41,26 +41,14 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                             <div key={property.id} className='lg:pb-[17px]'>
                                 <div className='relative'>
                                     <Link href={`luxury-villa-listings/${property.details.type}`} title={`View details for ${property.details.type}`} >
-                                        {index === 0
-                                            ?
-                                            <Image
-                                                src={property.image?.src}
-                                                className="!h-[130px] md:!h-[400px]"
-                                                alt={property.details.type}
-                                                priority
-                                                width={429}
-                                                height={400}
-                                            />
-                                            :
-                                            <BackgroundImage
-                                                src={property.image?.src}
-                                                radius={12}
-                                                className="!h-[130px] md:!h-[400px]"
-                                            >
-                                            </BackgroundImage>
-                                        }
-
-
+                                        <Image
+                                            src={property.image?.src}
+                                            className="!h-[130px] md:!h-[400px]"
+                                            alt={property.details.type}
+                                            priority={index === 0}
+                                            width={429}
+                                            height={400}
+                                        />
                                     </Link>
                                     <div className="text-White absolute w-full px-[8px] py-[12px] lg:px-[24px] lg:py-[16px] top-0">
                                         <Flex className='justify-between items-center'>
