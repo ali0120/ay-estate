@@ -1,4 +1,4 @@
-import { properties } from "@/app/ui/(components)/listings/data/properties";
+import { properties } from "@/app/ui/(components)/luxury-villa-listings/data/properties";
 import { NextResponse } from "next/server";
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
@@ -46,12 +46,12 @@ export async function GET() {
   );
 
   const listingsPaths = properties.map(
-    (property) => `/listings/${property.details.type}`
+    (property) => `/luxury-villa-listings/${property.details.type}`
   );
 
   const staticPaths = [
     "/",
-    "/listings",
+    "/luxury-villa-listings",
     "/blog",
     "/blog/recent-articles",
     "/about-ayestate-creative-team",

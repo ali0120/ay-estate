@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DetailsHeader from '@/app/ui/(components)/listingDetail/DetailsHeader'
 import ImageGallery from '@/app/ui/(components)/listingDetail/ImageGallery'
 import AmenitiesSection from '@/app/ui/(components)/listingDetail/AmenitiesSection'
-import { properties } from '@/app/ui/(components)/listings/data/properties';
+import { properties } from '@/app/ui/(components)/luxury-villa-listings/data/properties';
 
 export async function generateStaticParams() {
   return properties?.map((property) => ({
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: { type: string } })
       title,
       description:
         `Discover this luxurious ${type} in Bali featuring modern design, spacious rooms, and breathtaking ocean views. Perfect for your dream vacation or investment opportunity that you won’t want to miss.`,
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/listings/${type}`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/luxury-villa-listings/${type}`,
       type: 'website',
       images: imageUrl,
     },
@@ -41,10 +41,10 @@ export async function generateMetadata({ params }: { params: { type: string } })
       images: imageUrl,
     },
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/listings/${type}`,
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/luxury-villa-listings/${type}`,
       languages: {
-        en: `${process.env.NEXT_PUBLIC_BASE_URL}/listings/${type}`,
-        "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/listings/${type}`,
+        en: `${process.env.NEXT_PUBLIC_BASE_URL}/luxury-villa-listings/${type}`,
+        "x-default": `${process.env.NEXT_PUBLIC_BASE_URL}/luxury-villa-listings/${type}`,
       },
     },
   };

@@ -7,7 +7,7 @@ export default function sitemap() {
         priority: 1,
       },
       {
-          url: 'https://ay-estate-two.vercel.app/listings',
+          url: 'https://ay-estate-two.vercel.app/luxury-villa-listings',
           lastModified: new Date(),
           changeFrequency: 'monthly',
           priority: 0.8,

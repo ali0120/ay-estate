@@ -22,7 +22,7 @@ export function Header() {
                     <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Home
                     </Link>
-                    <Link href="/listings" title="View our property listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
+                    <Link href="/luxury-villa-listings" title="View our property listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
                         Listings
                     </Link>
                     <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' >
@@ -65,7 +65,7 @@ export function Header() {
                         <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Home
                         </Link>
-                        <Link href="/listings" title="View our property listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
+                        <Link href="/luxury-villa-listings" title="View our property listings" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
                             Listings
                         </Link>
                         <Link href="/" className='capitalize md:text-[18px] font-soraSemiBold text-RomanSilver ' onClick={closeDrawer} >
