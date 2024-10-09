@@ -1,4 +1,4 @@
-import { properties } from "@/app/ui/(components)/luxury-villa-listings/data/properties";
+import { properties } from "@/app/ui/(components)/listings/data/properties";
 import { NextResponse } from "next/server";
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
