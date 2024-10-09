@@ -33,8 +33,8 @@ const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) =>
                 </Breadcrumbs>
                 <Flex className='mb-[24px] md:mb-[52px] gap-[24px] md:gap-[20px] flex-col md:flex-row justify-between'>
                     <div className='w-[78.2%] lg:w-[50%] ' >
-                        <h1 className='text-[16px] lg:text-[24px] text-DarkJungleGreentwo font-soraBold'>Explore AyEstate&#39;s Luxury Villa Listings for Dream Homes</h1>
-                        <h2 className='text-[12px] lg:text-[16px] text-RomanSilver font-soraRegular mt-[4px]' >Showing 1 - 60 Properties</h2>
+                        <h1 className='text-[16px] lg:text-[24px] text-DarkJungleGreentwo font-soraBold'>Luxury Villa Listings at AyEstate</h1>
+                        <h2 className='text-[12px] lg:text-[16px] text-RomanSilver font-soraRegular mt-[4px]' >Explore Our Collection of Luxury Villas</h2>
                     </div>
                     <Flex className='w-full lg:w-[50%] justify-between md:justify-end items-center gap-[15px] md:gap-[24px]'>
                         <Flex className='items-center gap-[4px]' >
