@@ -38,7 +38,7 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                     return (
                         <div key={property.id} className='lg:pb-[17px]'>
                             <div className='relative'>
-                                <Link href={`listings/${property.details.type}`}  title={`View details for ${property.details.type}`} >
+                                <Link href={`luxury-villa-listings/${property.details.type}`}  title={`View details for ${property.details.type}`} >
                                     <BackgroundImage
                                         src={property.image?.src}
                                         radius={12}
