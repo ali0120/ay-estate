@@ -19,7 +19,7 @@ const ArticlesListings: React.FC<ArticlesListingsProps> = ({ initialArticles }) 
     const currentPage = Number(searchParams.get('pn')) || 1;
 
     const { data: popularArticles, isLoading, error } = useQuery({
-        queryKey: ["recentArticles", searchParams.toString()],
+        queryKey: ["recentArticles", currentPage],
         queryFn: () => fetchBlogRecentArticles(`${currentPage}`),
         initialData: initialArticles,
     });

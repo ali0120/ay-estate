@@ -9,19 +9,19 @@ export const metadata: Metadata = recentArticlePageMetadata;
 
 // Fetch recent articles on the server side
 async function fetchRecentArticles(page: number) {
-    return await fetchBlogRecentArticles(`${page}`);
+  return await fetchBlogRecentArticles(`${page}`);
 }
 
-const Page = async () => {
-    const initialPage = 1; // You can change this to dynamically get the page number if needed
-    const initialArticles = await fetchRecentArticles(initialPage);
+const Page = async ({ searchParams }: { searchParams: { pn?: string } }) => {
+  const pageNumber = searchParams.pn ? parseInt(searchParams.pn) : 1;
+  const initialArticles = await fetchRecentArticles(pageNumber);
 
-    return (
-        <>
-            <RecentArticlesHeader />
-            <ArticlesListings initialArticles={initialArticles} />
-        </>
-    );
+  return (
+    <>
+      <RecentArticlesHeader />
+      <ArticlesListings initialArticles={initialArticles} />
+    </>
+  );
 }
 
 export default Page;
