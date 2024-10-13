@@ -1,14 +1,15 @@
-import { BackgroundImage, Button, Flex } from '@mantine/core'
+import { BackgroundImage, Button, Flex } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import { Carousel } from '@mantine/carousel';
 import EllipseIcon from '@/public/svg/Ellipse.svg'
 import { IBlogArticle } from '@/app/helper/interfaces/blog.interface';
 import '@mantine/carousel/styles.css';
 import '@mantine/core/styles/BackgroundImage.css';
 interface BlogPopularArticleProps {
-    articles: IBlogArticle[]; 
+    articles: IBlogArticle[];
 }
 const BlogPopularArticle: React.FC<BlogPopularArticleProps> = ({ articles }) => {
-
+    const isSmallScreen = useMediaQuery('(max-width: 767px)');
 
     return (
         <section className='bg-White' >
@@ -22,70 +23,74 @@ const BlogPopularArticle: React.FC<BlogPopularArticleProps> = ({ articles }) => 
                         <Button variant='default' className='h-[30px] md:h-[47px] px-[12px] md:px-[16px] text-[14px] md:text-[18px] text-ChineseBlack font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'>View All</Button>
                     </Flex>
                 </Flex>
-                <Flex visibleFrom='sm' className='gap-[30px] flex-col md:flex-row'>
-                    {articles.map((article: IBlogArticle) => {
-                        return (
-                            <BackgroundImage
-                                key={article.id}
-                                src={article.image?.src}
-                                radius={16}
-                                h={588}
-                                className="md:w-[50%] !h-[317px] lg:!h-[502px]"
-                                pos={"relative"}
-                            >
-                                <div className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
-                                    <Flex align={"center"} className="text-[12px] gap-[10px] lg:text-[18px] font-soraRegular md:font-soraSemiBold opacity-[70%] lg:opacity-1">
-                                        <p>{article.date}</p>
-                                        <EllipseIcon height={4} width={4} />
-                                        <p>{article.category.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>
-                                    </Flex>
-                                    <h3 className="mt-[12px] text-[14px] lg:text-[28px] font-soraBold leading-[18.2px] lg:leading-[36.4px]">
-                                        {article.title}
-                                    </h3>
-                                    <p className='text-[12px] lg:text-[18px] mt-[8px] font-soraSemiBold leading-[15.6px] lg:leading-[32.4px] opacity-[70%] whitespace-nowrap overflow-hidden text-ellipsis' >{article.description}</p>
-                                </div>
-                            </BackgroundImage>
-                        )
-                    })}
-                </Flex>
-                <Flex hiddenFrom='sm' className='gap-[30px] flex-col lg:flex-row'>
-                    <Carousel
-                        withControls={false}
-                        withIndicators
-                        height={317}
-                        loop
-                        slideGap="5px"
-                        classNames={{
-                            indicators: '!bottom-[-16px]',
-                            indicator: '!h-[8px] !w-[8px] !bg-[#F3F3F3] data-[active]:!bg-[#B7E08A]'
-                        }}>
+                {!isSmallScreen ? (
+                    <Flex className='gap-[30px] flex-col md:flex-row'>
                         {articles.map((article: IBlogArticle) => {
                             return (
-                                <Carousel.Slide key={article.id}>
-                                    <BackgroundImage
-                                        src={article.image?.src}
-                                        radius={16}
-                                        h={588}
-                                        className="md:w-[50%] !h-[317px] lg:!h-[502px]"
-                                        pos={"relative"}
-                                    >
-                                        <div className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
-                                            <Flex align={"center"} className="text-[12px] gap-[10px] lg:text-[18px] font-soraRegular md:font-soraRegular opacity-[70%] lg:opacity-1">
-                                                <p>{article.date}</p>
-                                                <EllipseIcon height={4} width={4} />
-                                                <p>{article.category.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>
-                                            </Flex>
-                                            <h3 className="mt-[6px] md:mt-[12px] text-[14px] lg:text-[28px] font-soraBold leading-[18.2px] lg:leading-[36.4px]">
-                                                {article.title}
-                                            </h3>
-                                            <p className='text-[12px] lg:text-[18px] mt-[8px] font-soraRegular md:font-soraSemiBold leading-[15.6px] lg:leading-[32.4px] opacity-[70%] whitespace-nowrap overflow-hidden text-ellipsis' >{article.description}</p>
-                                        </div>
-                                    </BackgroundImage>
-                                </Carousel.Slide>
+                                <BackgroundImage
+                                    key={article.id}
+                                    src={article.image?.src}
+                                    radius={16}
+                                    h={588}
+                                    className="md:w-[50%] !h-[317px] lg:!h-[502px]"
+                                    pos={"relative"}
+                                >
+                                    <div className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
+                                        <Flex align={"center"} className="text-[12px] gap-[10px] lg:text-[18px] font-soraRegular md:font-soraSemiBold opacity-[70%] lg:opacity-1">
+                                            <p>{article.date}</p>
+                                            <EllipseIcon height={4} width={4} />
+                                            <p>{article.category.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>
+                                        </Flex>
+                                        <h3 className="mt-[12px] text-[14px] lg:text-[28px] font-soraBold leading-[18.2px] lg:leading-[36.4px]">
+                                            {article.title}
+                                        </h3>
+                                        <p className='text-[12px] lg:text-[18px] mt-[8px] font-soraSemiBold leading-[15.6px] lg:leading-[32.4px] opacity-[70%] whitespace-nowrap overflow-hidden text-ellipsis' >{article.description}</p>
+                                    </div>
+                                </BackgroundImage>
                             )
                         })}
-                    </Carousel>
-                </Flex>
+                    </Flex>
+                ) : (
+
+                    <Flex className='gap-[30px] flex-col lg:flex-row'>
+                        <Carousel
+                            withControls={false}
+                            withIndicators
+                            height={317}
+                            loop
+                            slideGap="5px"
+                            classNames={{
+                                indicators: '!bottom-[-16px]',
+                                indicator: '!h-[8px] !w-[8px] !bg-[#F3F3F3] data-[active]:!bg-[#B7E08A]'
+                            }}>
+                            {articles.map((article: IBlogArticle) => {
+                                return (
+                                    <Carousel.Slide key={article.id}>
+                                        <BackgroundImage
+                                            src={article.image?.src}
+                                            radius={16}
+                                            h={588}
+                                            className="md:w-[50%] !h-[317px] lg:!h-[502px]"
+                                            pos={"relative"}
+                                        >
+                                            <div className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
+                                                <Flex align={"center"} className="text-[12px] gap-[10px] lg:text-[18px] font-soraRegular md:font-soraRegular opacity-[70%] lg:opacity-1">
+                                                    <p>{article.date}</p>
+                                                    <EllipseIcon height={4} width={4} />
+                                                    <p>{article.category.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>
+                                                </Flex>
+                                                <h3 className="mt-[6px] md:mt-[12px] text-[14px] lg:text-[28px] font-soraBold leading-[18.2px] lg:leading-[36.4px]">
+                                                    {article.title}
+                                                </h3>
+                                                <p className='text-[12px] lg:text-[18px] mt-[8px] font-soraRegular md:font-soraSemiBold leading-[15.6px] lg:leading-[32.4px] opacity-[70%] whitespace-nowrap overflow-hidden text-ellipsis' >{article.description}</p>
+                                            </div>
+                                        </BackgroundImage>
+                                    </Carousel.Slide>
+                                )
+                            })}
+                        </Carousel>
+                    </Flex>
+                )}
             </div>
         </section>
     )
