@@ -18,9 +18,6 @@ const BlogHeader = () => {
             <div className='px-[20px] xl:px-[100px] pt-[30px] lg:pt-[120px]'>
                 <div className="text-center mx-auto">
                     <h1 className='text-[24px] lg:text-[44px] font-soraBold text-YankeesBlue leading-[31.2px] lg:leading-[57.2px] capitalize' >AyEstate  Blog</h1>
-                    <p className='text-[16px] lg:text-[20px] text-RomanSilver leading-[26px] lg:leading-[30px] mt-4'>
-                        Welcome to the AyEstate blog, where we share valuable insights and tips for navigating the real estate market. Here, you will find expert advice on market trends and essential tips for buying and selling properties.
-                    </p>
                     <Paper shadow="xs" className='lg:max-w-[70%] m-auto mt-[16px] md:mt-[50px] rounded-[16px]'>
                         <TextInput
                             placeholder="Search article name"
