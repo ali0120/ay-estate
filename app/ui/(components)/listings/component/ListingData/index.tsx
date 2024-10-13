@@ -44,11 +44,12 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                                     <Link href={`luxury-villa-listings/${property.details.type}`} title={`View details for ${property.details.type}`} >
                                         <Image
                                             src={property.image?.src}
-                                            className="!h-[130px] md:!h-[400px]"
+                                            className="!h-[130px] md:!h-[400px] w-full object-cover rounded-[12px]"
                                             alt={property.details.type}
                                             priority={index === 0}
                                             width={429}
                                             height={400}
+                                            objectFit='cover'
                                         />
                                     </Link>
                                     <div className="text-White absolute w-full px-[8px] py-[12px] lg:px-[24px] lg:py-[16px] top-0">
