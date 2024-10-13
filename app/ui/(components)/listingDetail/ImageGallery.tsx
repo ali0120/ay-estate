@@ -1,10 +1,16 @@
+"use client"
 import { Flex } from '@mantine/core'
-import imageOne from '@/public/webp/gallery-three.webp'
-import imageTwo from '@/public/webp/gallery-two.webp'
-import imageThree from '@/public/webp/gallery-one.webp'
+import imageOneLarge from '@/public/webp/gallery-one.webp';
+import imageOneSmall from '@/public/webp/sm_gallery-one.webp';
+import imageTwoLarge from '@/public/webp/gallery-two.webp';
+import imageTwoSmall from '@/public/webp/sm_gallery-two.webp';
+import imageThreeLarge from '@/public/webp/gallery-three.webp';
+import imageThreeSmall from '@/public/webp/sm_gallery-three.webp';
 import Image from 'next/image'
+import { useMediaQuery } from '@mantine/hooks';
 
 const ImageGallery = () => {
+    const isLargeScreen = useMediaQuery('(min-width: 768px)');
     return (
         <section className='bg-White overflow-hidden' >
             <div className='px-[20px] xl:px-[64px] py-[50px] xl:py-[112px]'>
@@ -18,9 +24,9 @@ const ImageGallery = () => {
                         </ul>
                     </div>
                     <Flex className="flex-1 flex-col gap-[24px] md:gap-[32px]" >
-                        <Image src={imageOne} className="lg:w-[768px] lg:h-[768px] object-contain" alt='gallery-one' />
-                        <Image src={imageTwo} className="lg:w-[768px] lg:h-[768px] object-contain" alt='gallery-two' />
-                        <Image src={imageThree} className="lg:w-[768px] lg:h-[768px] object-contain" alt='gallery-three' />
+                        <Image src={isLargeScreen ? imageOneLarge : imageOneSmall} className="lg:w-[768px] lg:h-[768px] object-contain" alt='gallery-one' />
+                        <Image src={isLargeScreen ? imageTwoLarge : imageTwoSmall} className="lg:w-[768px] lg:h-[768px] object-contain" alt='gallery-two' />
+                        <Image src={isLargeScreen ? imageThreeLarge : imageThreeSmall} className="lg:w-[768px] lg:h-[768px] object-contain" alt='gallery-three' />
                     </Flex>
                 </Flex>
             </div>
