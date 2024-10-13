@@ -43,3 +43,18 @@ export interface IArticleDetails {
   author: string;
   recentArticles: IBlogArticle[];
 }
+export interface IBlogArticle {
+  id: number;
+  title: string;
+  image: { src: string };
+  category: string;
+  date: string;
+}
+
+export interface IBlogResponse {
+  page: number;
+  limit: number;
+  totalArticles: number;
+  totalPages: number;
+  articles: IBlogArticle[];
+}

@@ -1,7 +1,7 @@
 import { Flex } from '@mantine/core'
-import imageOne from '@/public/png/gallery-three.png'
-import imageTwo from '@/public/png/gallery-two.png'
-import imageThree from '@/public/png/gallery-one.png'
+import imageOne from '@/public/webp/gallery-three.webp'
+import imageTwo from '@/public/webp/gallery-two.webp'
+import imageThree from '@/public/webp/gallery-one.webp'
 import Image from 'next/image'
 
 const ImageGallery = () => {

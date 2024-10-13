@@ -1,23 +1,14 @@
-"use client"
 import { BackgroundImage, Button, Flex } from '@mantine/core'
 import { Carousel } from '@mantine/carousel';
 import EllipseIcon from '@/public/svg/Ellipse.svg'
-import { useQuery } from '@tanstack/react-query';
-import LoadingPartially from '../../loading';
 import { IBlogArticle } from '@/app/helper/interfaces/blog.interface';
-import { fetchBlogPopularArticles } from '@/app/helper/services/blog.api';
 import '@mantine/carousel/styles.css';
 import '@mantine/core/styles/BackgroundImage.css';
+interface BlogPopularArticleProps {
+    articles: IBlogArticle[]; 
+}
+const BlogPopularArticle: React.FC<BlogPopularArticleProps> = ({ articles }) => {
 
-const BlogPopularArticle = () => {
-    const { data: popularArticles, isLoading, error } = useQuery({
-        queryKey: ["popularArticles"],
-        queryFn: () => fetchBlogPopularArticles(),
-        staleTime: 1000 * 60 * 5, // 5 minutes
-    });
-
-    if (isLoading) return <LoadingPartially />;
-    if (error) return <p>Error fetching articles</p>;
 
     return (
         <section className='bg-White' >
@@ -32,7 +23,7 @@ const BlogPopularArticle = () => {
                     </Flex>
                 </Flex>
                 <Flex visibleFrom='sm' className='gap-[30px] flex-col md:flex-row'>
-                    {popularArticles.map((article: IBlogArticle) => {
+                    {articles.map((article: IBlogArticle) => {
                         return (
                             <BackgroundImage
                                 key={article.id}
@@ -68,7 +59,7 @@ const BlogPopularArticle = () => {
                             indicators: '!bottom-[-16px]',
                             indicator: '!h-[8px] !w-[8px] !bg-[#F3F3F3] data-[active]:!bg-[#B7E08A]'
                         }}>
-                        {popularArticles.map((article: IBlogArticle) => {
+                        {articles.map((article: IBlogArticle) => {
                             return (
                                 <Carousel.Slide key={article.id}>
                                     <BackgroundImage

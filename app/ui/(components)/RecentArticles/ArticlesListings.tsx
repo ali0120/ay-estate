@@ -8,7 +8,11 @@ import LoadingPartially from '../../loading';
 import ArticleCard from '../blog/ArticleCard';
 import '@mantine/core/styles/Pagination.css';
 
-const ArticlesListings = () => {
+interface ArticlesListingsProps {
+    initialArticles: { articles: IBlogArticle[]; totalPages: number }; // Define the type for initial articles
+}
+
+const ArticlesListings: React.FC<ArticlesListingsProps> = ({ initialArticles }) => {
     const searchParams = useSearchParams();
     const router = useRouter();  // To manipulate URL
 
@@ -16,8 +20,9 @@ const ArticlesListings = () => {
 
     const { data: popularArticles, isLoading, error } = useQuery({
         queryKey: ["recentArticles", searchParams.toString()],
-        queryFn: () => fetchBlogRecentArticles(`${currentPage}` ?? ''),
+        queryFn: () => fetchBlogRecentArticles(`${currentPage}`),
         staleTime: 1000 * 60 * 5, // 5 minutes
+        initialData: initialArticles,
     });
 
     const handlePageChange = (page: number) => {

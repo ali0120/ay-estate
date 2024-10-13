@@ -1,27 +1,14 @@
-"use client"
 import { BackgroundImage, Flex } from '@mantine/core'
 import EllipseIcon from '@/public/svg/Ellipse.svg'
-import { useQuery } from '@tanstack/react-query';
-import { usePathname } from 'next/navigation';
-import { fetchBlogFeaturedArticles } from '@/app/helper/services/blog.api';
-import LoadingPartially from '../../loading';
 import Image from 'next/image';
 import { IBlogArticle } from '@/app/helper/interfaces/blog.interface';
 import blogOne from "@/public/webp/blog/one.webp"
 import '@mantine/core/styles/BackgroundImage.css';
+interface BlogFeaturedArticleProps {
+    articles: IBlogArticle[]; // Accept articles as a prop
+}
 
-const BlogFeaturedArticle = () => {
-    const pathname = usePathname();
-    const segments = pathname.split('/');
-    const lastSegment = segments.length > 2 ? segments.pop() : 'success-stories';
-    const { data: featuredArticles, isLoading, error } = useQuery({
-        queryKey: ["featuredArticles", lastSegment],
-        queryFn: () => fetchBlogFeaturedArticles(lastSegment),
-    });
-
-    if (isLoading) return <LoadingPartially />;
-    if (error) return <p>Error fetching articles</p>;
-
+const BlogFeaturedArticle: React.FC<BlogFeaturedArticleProps> = ({ articles }) => {
     const firstArticle = {
         id: 1,
         title: "From $0 to $40 Million: How a 10-Year-Old Orphan Became a Successful Investor",
@@ -31,7 +18,7 @@ const BlogFeaturedArticle = () => {
         date: "July 20, 2024"
     };
 
-    const remainingArticles = featuredArticles?.slice(1); // Items after the first
+    const remainingArticles = articles?.slice(1); // Items after the first
 
     return (
         <section className='bg-White' >

@@ -1,22 +1,12 @@
-"use client"
 import {  Button, Flex } from '@mantine/core'
-import { useQuery } from '@tanstack/react-query';
-import LoadingPartially from '../../loading';
-import { IBlogArticle } from '@/app/helper/interfaces/blog.interface';
-import { fetchBlogRecentArticles } from '@/app/helper/services/blog.api';
+import { IBlogResponse,IBlogArticle } from '@/app/helper/interfaces/blog.interface';
 import ArticleCard from './ArticleCard';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+interface BlogrecentArticleProps {
+    articles: IBlogResponse; 
+}
 
-const BlogRecentArticle = () => {
-    const router = useRouter();
-    const { data: popularArticles, isLoading, error } = useQuery({
-        queryKey: ["recentArticles"],
-        queryFn: () => fetchBlogRecentArticles(),
-        staleTime: 1000 * 60 * 5, // 5 minutes
-    });
-
-    if (isLoading) return <LoadingPartially />;
-    if (error) return <p>Error fetching articles</p>;
+const BlogRecentArticle: React.FC<BlogrecentArticleProps> = ({ articles }) => {
 
     return (
         <section className='bg-White' >
@@ -27,13 +17,12 @@ const BlogRecentArticle = () => {
                         <p className='text-[12px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[8px] lg:mt-[12px]' >Newest update article from AyEstate</p>
                     </div>
                     <Flex justify={'flex-end'} className='w-[30%]' >
-                        <Button variant='default'className='h-[30px] md:h-[47px] px-[12px] md:px-[16px] text-[14px] md:text-[18px] text-ChineseBlack font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'
-                            onClick={() => router.push('/blog/recent-articles')}
+                        <Button component={Link} prefetch={true} href={'/blog/recent-articles'} variant='default'className='h-[30px] md:h-[47px] px-[12px] md:px-[16px] text-[14px] md:text-[18px] text-ChineseBlack font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'
                         >View All</Button>
                     </Flex>
                 </Flex>
                 <Flex wrap={'wrap'} className='gap-[20px] md:gap-[29px]' >
-                    {popularArticles?.articles?.slice(0, 3).map((article: IBlogArticle) => {
+                    {articles?.articles?.slice(0, 3).map((article: IBlogArticle) => {
                         return (
                             <ArticleCard key={article.id} article={article} />
                         )

@@ -1,5 +1,5 @@
 import { Badge, Flex } from '@mantine/core'
-import heroImage from '@/public/png/details.png'
+import heroImage from '@/public/webp/details.webp'
 import Image from 'next/image'
 
 const DetailsHeader = () => {
