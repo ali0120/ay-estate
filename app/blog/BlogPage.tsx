@@ -31,7 +31,6 @@ const BlogPage: React.FC<BlogPageProps> = ({ initialFeaturedArticles, initialPop
                 queryKey: ['featuredArticles', lastSegment],
                 queryFn: () => fetchBlogFeaturedArticles(lastSegment),
                 initialData: initialFeaturedArticles, // Use initial data
-                staleTime: 1000 * 60 * 5, // 5 minutes
             },
             {
                 queryKey: ['popularArticles'],

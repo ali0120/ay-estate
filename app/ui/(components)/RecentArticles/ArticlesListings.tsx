@@ -21,7 +21,6 @@ const ArticlesListings: React.FC<ArticlesListingsProps> = ({ initialArticles }) 
     const { data: popularArticles, isLoading, error } = useQuery({
         queryKey: ["recentArticles", searchParams.toString()],
         queryFn: () => fetchBlogRecentArticles(`${currentPage}`),
-        staleTime: 1000 * 60 * 5, // 5 minutes
         initialData: initialArticles,
     });
 

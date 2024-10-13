@@ -6,7 +6,6 @@ export async function GET(request: Request) {
   const url = new URL(request.url);
   const category = url.searchParams.get("category");
   const defaultCategory = "success-story";
-
   // If a category is provided, filter the articles based on the category
   if (category) {
     const filteredArticles = blogFeaturedArticles.filter(

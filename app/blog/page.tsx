@@ -1,4 +1,3 @@
-
 import { Metadata } from 'next';
 import BlogPage from './BlogPage';
 import { blogPageMetadata } from '../metaDataConfig';
@@ -10,7 +9,6 @@ export const metadata: Metadata = blogPageMetadata;
 // Fetch data on the server side
 async function fetchBlogData() {
     const lastSegment = 'success-stories';
-
     const [featuredArticles, popularArticles, recentArticles] = await Promise.all([
         fetchBlogFeaturedArticles(lastSegment),
         fetchBlogPopularArticles(),
@@ -30,7 +28,7 @@ export default async function Home() {
 
     return (
         <>
-            <BlogPage 
+            <BlogPage
                 initialFeaturedArticles={initialFeaturedArticles}
                 initialPopularArticles={initialPopularArticles}
                 initialRecentArticles={initialRecentArticles}
