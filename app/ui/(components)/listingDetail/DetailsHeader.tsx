@@ -1,13 +1,17 @@
+"use client"
 import { Badge, Flex } from '@mantine/core'
-import heroImage from '@/public/webp/details.webp'
+import heroImageLarge from '@/public/webp/details.webp'
+import heroImageSmall from '@/public/webp/sm_details.webp'
 import Image from 'next/image'
+import { useMediaQuery } from '@mantine/hooks';
 
 const DetailsHeader = () => {
+    const isLargeScreen = useMediaQuery('(min-width: 768px)');
     return (
         <section className='bg-White overflow-hidden' >
             <div className='px-[20px] xl:px-[64px] py-[50px] xl:py-[112px]'>
                 <Flex className='gap-[48px] md:gap-[20px] flex-col lg:flex-row justify-between mb-[30px] md:mb-[80px]'>
-                    <div className='lg:w-[70%] ' >
+                    <div className='lg:w-[70%]' >
                         <h1 className='text-[40px] lg:text-[56px] leading-[48px] lg:leading-[67.2px] font-soraBold'>Luxury Beach Villa</h1>
                         <p className='text-[16px] lg:text-[18px] leading-[24px] lg:leading-[27px] text-Black font-soraRegular mt-[20px] mb-[24px]' >Experience the ultimate in beachfront luxury with breathtaking ocean views.</p>
                         <Flex className='gap-[8px]'>
@@ -35,7 +39,11 @@ const DetailsHeader = () => {
                         </Flex>
                     </div>
                 </Flex>
-                <Image src={heroImage} priority alt='hero-image' />
+                <Image
+                    src={isLargeScreen ? heroImageLarge : heroImageSmall}
+                    priority
+                    objectFit="cover"
+                    alt='hero-image' />
             </div>
         </section>
     )
