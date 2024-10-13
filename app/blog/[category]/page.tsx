@@ -1,16 +1,10 @@
-import { Metadata } from 'next'
-import BlogPage from './../BlogPage'
-import { blogPageMetadata } from '../../metaDataConfig'
+import BlogPage from './../BlogPage';
 import { fetchBlogRecentArticles, fetchBlogPopularArticles, fetchBlogFeaturedArticles } from '@/app/helper/services/blog.api';
 
-export const metadata: Metadata = blogPageMetadata;
-
-// Fetch data on the server side
-async function fetchBlogData() {
-    const lastSegment = 'success-stories';
+async function fetchBlogData(pathname: string) {
 
     const [featuredArticles, popularArticles, recentArticles] = await Promise.all([
-        fetchBlogFeaturedArticles(lastSegment),
+        fetchBlogFeaturedArticles(pathname),
         fetchBlogPopularArticles(),
         fetchBlogRecentArticles('1'),
     ]);
@@ -22,17 +16,17 @@ async function fetchBlogData() {
     };
 }
 
-export default async function Home() {
-    // Fetch blog data
-    const { initialFeaturedArticles, initialPopularArticles, initialRecentArticles } = await fetchBlogData();
+export default async function Page({ params }: { params: { category: string } }) {
+    const category = params.category;
+    const { initialFeaturedArticles, initialPopularArticles, initialRecentArticles } = await fetchBlogData(category);
+
     return (
         <>
-        <BlogPage 
-            initialFeaturedArticles={initialFeaturedArticles}
-            initialPopularArticles={initialPopularArticles}
-            initialRecentArticles={initialRecentArticles}
-        />
-    </>
-    )
+            <BlogPage
+                initialFeaturedArticles={initialFeaturedArticles}
+                initialPopularArticles={initialPopularArticles}
+                initialRecentArticles={initialRecentArticles}
+            />
+        </>
+    );
 }
-

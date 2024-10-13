@@ -2,23 +2,14 @@ import { BackgroundImage, Flex } from '@mantine/core'
 import EllipseIcon from '@/public/svg/Ellipse.svg'
 import Image from 'next/image';
 import { IBlogArticle } from '@/app/helper/interfaces/blog.interface';
-import blogOne from "@/public/webp/blog/one.webp"
 import '@mantine/core/styles/BackgroundImage.css';
 interface BlogFeaturedArticleProps {
     articles: IBlogArticle[]; // Accept articles as a prop
 }
 
 const BlogFeaturedArticle: React.FC<BlogFeaturedArticleProps> = ({ articles }) => {
-    const firstArticle = {
-        id: 1,
-        title: "From $0 to $40 Million: How a 10-Year-Old Orphan Became a Successful Investor",
-        image:blogOne,
-        description: "This is the inspiring story of a young orphan who made millions through smart investments.",
-        category: "success-stories",
-        date: "July 20, 2024"
-    };
-
-    const remainingArticles = articles?.slice(1); // Items after the first
+    const firstArticle = articles?.[0]; // First item
+    const remainingArticles = articles?.slice(1);
 
     return (
         <section className='bg-White' >
@@ -29,7 +20,7 @@ const BlogFeaturedArticle: React.FC<BlogFeaturedArticleProps> = ({ articles }) =
                             src={firstArticle.image?.src} // Image of the first article
                             radius={16}
                             h={588}
-                            className="md:w-[57%] !h-[317px] md:!h-[350px] lg:!h-[588px]"
+                            className="md:!w-[57%] !h-[317px] md:!h-[350px] lg:!h-[588px]"
                             pos={"relative"}
                         >
                             <div className="text-White absolute w-full p-[16px] lg:p-[24px] bottom-0">

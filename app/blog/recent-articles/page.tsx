@@ -1,4 +1,3 @@
-// app/recent-articles/page.tsx
 import { Metadata } from 'next';
 import RecentArticlesHeader from '@/app/ui/(components)/RecentArticles/RecentArticlesHeader';
 import ArticlesListings from '@/app/ui/(components)/RecentArticles/ArticlesListings';
