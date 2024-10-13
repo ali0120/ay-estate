@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: { type: string } })
   const keywords =
     `${capitalize(type)}, Bali Property, Beachfront Villa, Bali Real Estate, Modern Villa, Spacious Villa, Ocean View Property, Bali Luxury Homes`;
 
-  const imageUrl = '/png/details.png';
+  const imageUrl = '/webp/details.webp';
 
   return {
     title,

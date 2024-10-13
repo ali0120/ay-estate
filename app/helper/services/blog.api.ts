@@ -5,7 +5,7 @@ process.env.NODE_ENV === 'production'
   
 export async function fetchBlogFeaturedArticles(category?: string) {
   const response = await fetch(
-    `/api/blogFeaturedArticles${category ? `?category=${category}` : ""}`
+    `${baseUrl}/api/blogFeaturedArticles${category ? `?category=${category}` : ""}`
   );
   const articles = await response.json();
   return articles;
