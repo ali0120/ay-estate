@@ -18,19 +18,19 @@ const DetailsHeader = () => {
                     </div>
                     <div className="grid grid-cols-2 justify-between gap-[32px]">
                         <Flex className='gap-[8px] flex-col w-[216px]' >
-                            <h6 className='text-[18px] lg:text-[20px] leading-[28px] font-soraBold' >Client</h6>
+                            <p className='text-[18px] lg:text-[20px] leading-[28px] font-soraBold' >Client</p>
                             <p className='text-[16px] leading-[24px] font-soraRegular' >John Doe</p>
                         </Flex>
                         <Flex className='gap-[8px] flex-col w-[216px]' >
-                            <h6 className='text-[18px] lg:text-[20px] leading-[28px] font-soraBold' >Date</h6>
+                            <p className='text-[18px] lg:text-[20px] leading-[28px] font-soraBold' >Date</p>
                             <p className='text-[16px] leading-[24px] font-soraRegular' >March 2023</p>
                         </Flex>
                         <Flex className='gap-[8px] flex-col w-[216px]' >
-                            <h6 className='text-[18px] lg:text-[20px] leading-[28px] font-soraBold' >Location</h6>
+                            <p className='text-[18px] lg:text-[20px] leading-[28px] font-soraBold' >Location</p>
                             <p className='text-[16px] leading-[24px] font-soraRegular' >Bali, Indonesia</p>
                         </Flex>
                         <Flex className='gap-[8px] flex-col w-[216px]' >
-                            <h6 className='text-[18px] lg:text-[20px] leading-[28px] font-soraBold' >Price</h6>
+                            <p className='text-[18px] lg:text-[20px] leading-[28px] font-soraBold' >Price</p>
                             <p className='text-[16px] leading-[24px] font-soraRegular' >$3,000,000</p>
                         </Flex>
                     </div>
