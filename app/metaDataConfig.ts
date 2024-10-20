@@ -34,7 +34,7 @@ export const homePageMetadata: Metadata = {
 };
 
 export const villaListingsMetadata: Metadata = {
-  title: "AyEstate - Luxury Villa Listings | Explore Villas and Homes",
+  title: "AyEstate | Luxury Villas and Homes Listings - Explore Exclusive Properties",
   description:
     "Discover luxury villas and homes with AyEstate. Browse our extensive villa listings to find your dream property.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
@@ -48,7 +48,7 @@ export const villaListingsMetadata: Metadata = {
     },
   },
   openGraph: {
-    title: "AyEstate - Luxury Villa Listings | Explore Villas and Homes",
+    title: "AyEstate | Luxury Villas and Homes Listings - Explore Exclusive Properties",
     description:
       "Discover luxury villas and homes with AyEstate. Browse our extensive villa listings to find your dream property.",
     images: "/png/product-7.png",
@@ -58,7 +58,7 @@ export const villaListingsMetadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "AyEstate - Luxury Villa Listings | Explore Villas and Homes",
+    title: "AyEstate | Luxury Villas and Homes Listings - Explore Exclusive Properties",
     description:
       "Discover luxury villas and homes with AyEstate. Browse our extensive villa listings to find your dream property.",
     images: "/png/product-7.png",
