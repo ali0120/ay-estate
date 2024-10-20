@@ -32,16 +32,14 @@ export default function Layout({ children }: LayoutProps) {
     const headerBgColor = isHomePage && isMdScreen ? "#F6F3F3" : "#FFFFFF";
 
     return (
-        <AppShell
-            header={{ height: { base: 74, lg: 100 } }}
-        >
-            <AppShell.Header bg={headerBgColor} withBorder={false} >
+        <AppShell >
+            <AppShell.Header bg={headerBgColor} withBorder={false} className="h-[74px] lg:h-[100px]" >
                 <Group className='h-full px-[20px]  xl:px-[100px]'>
                     <Header />
                 </Group>
             </AppShell.Header>
 
-            <AppShell.Main>
+            <AppShell.Main className="pt-[74px] lg:pt-[100px]">
                 {isPartiallyLoading ? <LoadingPartially /> : children}
             </AppShell.Main>
             <AppShell.Footer className='border-none relative bg-ChineseBlack' >

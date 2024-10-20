@@ -13,7 +13,7 @@ const CTASection = () => {
                     <p className='text-[12px] lg:text-[18px] m-auto md:w-[53%] text-center leading-[18px] lg:leading-[28px] font-soraRegular py-[12px] lg:py-[24px]' >Meet with our creative team today and start a successful real estate project. Our expert team is here to bring your ideas to life with innovative solutions.</p>
                 </div>
                 <div className='flex justify-center' >
-                    <Button rightSection={<ArrowUpIcon />} className='h-[44px] md:h-[56px] w-full md:w-auto py-[9.2px] lg:py-[13px] px-[21px] text-EerieBlack capitalize rounded-[40px] text-[14px] md:text-[18px] leading-[20px] md:leading-[28px] font-soraSemiBold '>
+                    <Button rightSection={<ArrowUpIcon />} className='relative z-10 h-[44px] md:h-[56px] w-full md:w-auto py-[9.2px] lg:py-[13px] px-[21px] text-EerieBlack capitalize rounded-[40px] text-[14px] md:text-[18px] leading-[20px] md:leading-[28px] font-soraSemiBold '>
                         Start A Project
                     </Button>
                 </div>
