@@ -45,6 +45,9 @@ function Select({
                     rightSection={icon}
                     onSearchChange={handleOnSearch}
                     searchable={searchable}
+                    classNames={{
+                        input:'h-[46px] lg:h-[58px]'
+                    }}
                 />
             {!!errors && !!errors[name] && (
                 <div className="ErrorMessageStyle">

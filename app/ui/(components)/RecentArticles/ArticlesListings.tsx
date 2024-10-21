@@ -52,10 +52,11 @@ const ArticlesListings: React.FC<ArticlesListingsProps> = ({ initialArticles }) 
                         boundaries={3}
                         value={currentPage}
                         onChange={handlePageChange}
-                        defaultValue={1} radius={8} color="#B7E08A"
+                        defaultValue={1}
+                        radius={8}
                         className='text-[14px] text-RomanSilver font-soraSemiBold'
                         classNames={{
-                            control: 'border-none text-RomanSilver data-[active]:!text-ChineseBlack',
+                            control: '!text-RomanSilver !border-none !bg-GhostWhite data-[active]:!bg-YellowGreen data-[active]:!text-ChineseBlack w-[44px] !h-[44px]',
                         }}
                     />
                 </Flex>

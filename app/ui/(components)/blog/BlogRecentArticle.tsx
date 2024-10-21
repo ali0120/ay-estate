@@ -17,7 +17,7 @@ const BlogRecentArticle: React.FC<BlogrecentArticleProps> = ({ articles }) => {
                         <p className='text-[12px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[8px] lg:mt-[12px]' >Newest update article from AyEstate</p>
                     </div>
                     <Flex justify={'flex-end'} className='w-[30%]' >
-                        <Button component={Link} prefetch={true} href={'/blog/recent-articles'} variant='default'className='h-[30px] md:h-[47px] px-[12px] md:px-[16px] text-[14px] md:text-[18px] text-ChineseBlack font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'
+                        <Button component={Link} prefetch={true} href={'/blog/recent-articles'} variant='default'className='w-[82px] md:w-[107px] h-[30px] md:h-[47px] px-[12px] md:px-[16px] text-[14px] md:text-[18px] text-ChineseBlack font-soraMedium md:font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'
                         >View All</Button>
                     </Flex>
                 </Flex>

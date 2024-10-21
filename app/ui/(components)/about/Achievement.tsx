@@ -7,12 +7,12 @@ const Achievement = () => {
     return (
         <section className='bg-EerieBlack text-White relative'>
             <div className='px-[20px] lg:px-[60px] xl:px-[120px] pt-[40px] md:pt-[80px] pb-[40px] lg:pb-[60px]'>
-                <Badge size='xl' color="#2D2843" className='h-[48px] px-[16px] text-[16px] leading-[24px]  text-White font-soraSemiBold uppercase' >
+                <Badge size='xl' color="#2D2843" className='!h-[32px] lg:!h-[48px] !px-[16px] !text-[16px] !leading-[24px]  !text-White !font-soraSemiBold !uppercase' >
                     Achievement
                 </Badge>
                 <Flex className='justify-between gap-[16x] md:gap-[60px] flex-wrap py-[16px] lg:py-[60px]'>
                     <h2 className='uppercase md:w-[45%] text-[28px] md:text-[36px] font-soraBold leading-[36px] md:leading-[54px] tracking-[-1px]' >Our award this year</h2>
-                    <p className='text-[14px] md:text-[18px] md:w-[45%] leading-[20px] md:leading-[28px] font-soraRegular text-Vodka'>
+                    <p className='pt-[16px] md:pt-0 text-[14px] md:text-[18px] md:w-[45%] leading-[20px] md:leading-[28px] font-soraRegular text-Vodka'>
                     Our creative team has helped us achieve awards in various categories, including Best Small Companies and Fast Company Growth. Our teamwork and creative solutions drive our success.
                     </p>
                 </Flex>

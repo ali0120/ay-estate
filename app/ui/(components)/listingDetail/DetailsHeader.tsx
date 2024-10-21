@@ -15,9 +15,9 @@ const DetailsHeader = () => {
                         <h1 className='text-[40px] lg:text-[56px] leading-[48px] lg:leading-[67.2px] font-soraBold'>Luxury Beach Villa</h1>
                         <p className='text-[16px] lg:text-[18px] leading-[24px] lg:leading-[27px] text-Black font-soraRegular mt-[20px] mb-[24px]' >Experience the ultimate in beachfront luxury with breathtaking ocean views.</p>
                         <Flex className='gap-[8px]'>
-                            <Badge className='text-Black h-[29px] rounded-none' color="#EEEEEE">Beachfront</Badge>
-                            <Badge className='text-Black h-[29px] rounded-none' color="#EEEEEE">Modern</Badge>
-                            <Badge className='text-Black h-[29px] rounded-none' color="#EEEEEE">Spacious</Badge>
+                            <Badge className='!text-Black !h-[29px] !rounded-none !font-soraSemiBold' color="#EEEEEE">Beachfront</Badge>
+                            <Badge className='!text-Black !h-[29px] !rounded-none !font-soraSemiBold' color="#EEEEEE">Modern</Badge>
+                            <Badge className='!text-Black !h-[29px] !rounded-none !font-soraSemiBold' color="#EEEEEE">Spacious</Badge>
                         </Flex>
                     </div>
                     <div className="grid grid-cols-2 justify-between gap-[32px]">
@@ -35,7 +35,7 @@ const DetailsHeader = () => {
                         </Flex>
                         <Flex className='gap-[8px] flex-col w-[216px]' >
                             <p className='text-[18px] lg:text-[20px] leading-[28px] font-soraBold' >Price</p>
-                            <p className='text-[16px] leading-[24px] font-soraRegular' >$3,000,000</p>
+                            <p className='text-[16px] leading-[18px] font-soraRegular border-b border-black w-fit' >$3,000,000</p>
                         </Flex>
                     </div>
                 </Flex>
@@ -43,6 +43,7 @@ const DetailsHeader = () => {
                     src={isLargeScreen ? heroImageLarge : heroImageSmall}
                     priority
                     objectFit="cover"
+                    layout='responsive'
                     alt='hero-image' />
             </div>
         </section>

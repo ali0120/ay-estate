@@ -11,16 +11,16 @@ const Hero = () => {
                         <h1 className='text-center md:text-start text-[36px] lg:text-[56px] font-soraBold leading-[43.2px] lg:leading-[67.2px]' >Discover Your Dream <br className='hidden lg:block' /> Home Today</h1>
                         <p className='pt-[20px] lg:pt-[40px] pb-[24px] lg:pb-[64px] text-center md:text-start text-[14px] lg:text-[18px] font-soraRegular leading-[22.4px] lg:leading-[28.8px] ' >Find the perfect property that suits your lifestyle. Our real estate service offers unique selling propositions that set us apart from the competition. Find your perfect home today!</p>
                         <Flex className='gap-[16px] justify-center md:justify-start'>
-                            <Button className='text-[16px] h-[48px] py-[12px] px-[24px] font-soraSemiBold leading-[23px]' >
+                            <Button className='text-[16px] h-[48px] w-[153px] font-soraSemiBold leading-[23px]' >
                                 Explore Now
                             </Button>
-                            <Button variant="default" className='h-[48px] py-[12px] px-[24px] text-[16px] font-robotoRegular lg:font-[300] leading-[23px]'>
+                            <Button variant="default" className='h-[48px] w-[140px] md:w-[129px] text-[16px] font-robotoRegular lg:font-[300] leading-[23px]'>
                                 Learn More
                             </Button>
                         </Flex>
                     </div>
                     <div className='w-full lg:w-1/2'>
-                        <Image className='w-full lg:h-[500px]  object-cover rounded-[16px]'
+                        <Image className='w-full h-[348px] lg:h-[500px] object-cover rounded-[16px]'
                             width={904}
                             height={500}
                             priority

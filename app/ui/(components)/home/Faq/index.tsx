@@ -12,7 +12,7 @@ const FAQ = () => {
                 </div>
                 <AccordingComponent />
                 <div className='mt-[50px] flex justify-center pb-[30px] lg:pb-0' >
-                    <Button className='h-[48px] md:h-[56px] w-full md:w-auto py-[15.5px] px-[35px] text-[12px] md:text-[18px] leading-[15.6px] md:leading-[23.4px] font-soraBold md:font-soraSemiBold text-ChineseBlack capitalize'>
+                    <Button className='h-[48px] md:h-[56px] md:w-[190px] w-full text-[12px] md:text-[18px] leading-[15.6px] md:leading-[23.4px] font-soraBold md:font-soraSemiBold text-ChineseBlack capitalize'>
                         Give a Quote
                     </Button>
                 </div>
