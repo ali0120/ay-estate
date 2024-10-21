@@ -70,6 +70,9 @@ function Input({
                     value={value}
                     defaultValue={defaultValue}
                     onChange={onChangeHandler}
+                    classNames={{
+                        input:'h-[46px] lg:h-[58px]'
+                    }}
                 />
                 {iconPlaceholder && (
                     <span className={`icon ${label ? 'label' : 'no_label'}`}>{iconPlaceholder}</span>

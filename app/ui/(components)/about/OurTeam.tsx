@@ -17,7 +17,7 @@ const OurTeam = () => {
         <section className='bg-White' >
             <div className='px-[20px] xl:px-[64px] lg:pt-[100px] pb-[20px] lg:pb-[112px]'>
                 <Flex className='text-center flex-col items-center justify-center pb-[15px] lg:pb-[80px]' >
-                    <Badge size='xl' color="#F4F2FF" className='h-[48px] px-[16px] text-[16px] leading-[24px] text-ChineseBlack font-soraSemiBold uppercase' >
+                    <Badge size='xl' color="#F4F2FF" className='!h-[32px] lg:!h-[48px] !px-[16px] !text-[16px] !leading-[24px] !text-ChineseBlack !font-soraSemiBold uppercase' >
                         Our team
                     </Badge>
                     <h1 className='text-[28px] lg:text-[36px] text-EerieBlack leading-[36px] lg:leading-[54px] font-soraBold py-[16px] uppercase w-[80%] lg:w-full' >meet our creative team</h1>

@@ -38,7 +38,7 @@ const ContactUsForm = () => {
           </h2>
           <p className='text-[14px] lg:text-[18px] font-soraRegular text-RomanSilver leading-[22.4px] lg:leading-[28.8px] lg:w-[62%] lg:m-auto pt-[16px] lg:pt-[30px] pb-[30px]'>
             Built for every team across your company, Jobify Enterprise boosts productivity with
-            upgraded security and account support. Contact us today to unlock:
+            upgraded security and account support. Contact us today <br className='md:hidden'/> to unlock:
           </p>
         </div>
         <FormProvider {...methods}>
@@ -128,7 +128,7 @@ const ContactUsForm = () => {
                   },
                 }}
               />
-              <Button type="submit" className='h-[48px] md:h-[52px] px-[23px] w-full md:w-auto text-[12px] lg:text-[16px] font-soraBold lg:font-soraSemiBold leading-[15.6px] lg:leading-[21px]' >
+              <Button type="submit" className='h-[48px] md:h-[52px] md:w-[160px] w-full text-[12px] lg:text-[16px] font-soraBold lg:font-soraSemiBold leading-[15.6px] lg:leading-[21px]' >
                 Contact Sales
               </Button>
             </Flex>

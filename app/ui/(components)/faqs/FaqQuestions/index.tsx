@@ -15,7 +15,7 @@ const FaqsQuestions = () => {
                 </div>
                 <AccordingComponent />
                 <div className='mt-[20px] md:mt-[50px] flex justify-center' >
-                    <Button className='w-full h-[48px] md:h-[56px] md:w-auto py-[16px] px-[35px] text-[12px] md:text-[18px] leading-[15.6px] md:leading-[23.4px] font-soraBold md:font-soraSemiBold text-ChineseBlack capitalize'>
+                    <Button className='w-full h-[48px] md:h-[56px] md:w-[190px] text-[12px] md:text-[18px] leading-[15.6px] md:leading-[23.4px] font-soraBold md:font-soraSemiBold text-ChineseBlack capitalize'>
                         Give a Quote
                     </Button>
                 </div>

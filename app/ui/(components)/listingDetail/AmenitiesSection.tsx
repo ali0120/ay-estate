@@ -22,7 +22,7 @@ const AmenitiesSection = () => {
                         </Group>
                     </div>
                     <Flex className="flex-1 flex-col" >
-                        <Image src={imageOne} className="object-contain" alt='gallery-one' />
+                        <Image src={imageOne} width={605} height={605} className="object-cover rounded-[12px] w-[335px] h-[348px] lg:w-[605px] lg:h-[605px]" alt='amenities-img' />
                     </Flex>
                 </Flex>
             </div>

@@ -16,7 +16,7 @@ const Innovative = () => {
                             At our company, we take pride in our exceptional success rate, having listed thousands of properties, and ensuring client satisfaction is our top priority.
                         </p>
                         <Flex className='justify-center md:justify-start'>
-                            <Button className='h-[48px] md:h-[56px] py-[13px] lg:py-[17px] px-[24px] md:px-[34px] mt-[24px] md:mt-[32px] text-[16px] font-soraSemiBold leading-[21px]' >
+                            <Button className='h-[48px] w-[140px] md:h-[56px] md:w-[160px] mt-[24px] md:mt-[32px] text-[16px] font-soraSemiBold leading-[21px]' >
                                 Learn More
                             </Button>
                         </Flex>

@@ -9,7 +9,7 @@ export const theme = createTheme({
         input: {
           backgroundColor: "#F6F8F9",
           borderColor: "#F6F8F9",
-          padding: "25px 16px",
+          padding: "0 16px",
         },
       }),
     },
@@ -18,7 +18,7 @@ export const theme = createTheme({
         input: {
           backgroundColor: "#F6F8F9",
           borderColor: "#F6F8F9",
-          padding: "25px 16px",
+          padding: "0 16px",
         },
       }),
     },

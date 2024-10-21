@@ -27,7 +27,7 @@ interface ListingHeaderProps {
 const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) => {
     return (
         <section className='bg-White' >
-            <div className='px-[20px] xl:px-[100px]'>
+            <div className='px-[24px] xl:px-[120px]'>
                 <Breadcrumbs className='pt-[30px] lg:pt-[48px] pb-[24px] lg:pb-[32px]' separator={<ArrowRightIcon />} separatorMargin="md">
                     {items}
                 </Breadcrumbs>
@@ -44,7 +44,7 @@ const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) =>
                                 data={['Relevant Products', 'Name (A-Z)', 'Name (Z-A)', 'Price(Lowest)', 'Price(Highest)']}
                                 defaultValue='Relevant Products'
                                 classNames={{
-                                    input: '!h-[32px] md:!h-[44px] !w-[170px] md:!w-[180px] text-[12px] md:text-[14px] font-soraMedium !bg-transparent !p-[10px] md:!px-[16px] !rounded-[8px] !border-BrightGray md:font-soraSemiBold',
+                                    input: '!h-[32px] md:!h-[44px] !w-[155px] md:!w-[180px] text-[12px] md:text-[14px] font-soraMedium !bg-transparent !p-[10px] md:!px-[16px] !rounded-[8px] !border-BrightGray md:font-soraSemiBold',
                                     section: 'h-[33px] md:h-[42px]'
                                 }}
                             />
@@ -59,10 +59,10 @@ const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) =>
                             <div className="block md:hidden">
                                 <LineIcon />
                             </div>
-                            <UnstyledButton aria-label="Switch to grid view" className={`switch_view p-[6px] rounded-[8px] ${type === 'grid' ? 'bg-[#1E4C2F]' : 'border-[1px] border-solid border-[#E4E9EE]'}`} onClick={() => setType('grid')}>
+                            <UnstyledButton aria-label="Switch to grid view" className={`switch_view p-[6px] lg:p-[12px] rounded-[8px] ${type === 'grid' ? 'bg-[#1E4C2F]' : 'border-[1px] border-solid border-[#E4E9EE]'}`} onClick={() => setType('grid')}>
                                 <GridIcon className={`${type === 'grid' ? 'active' : 'not_active'}`} />
                             </UnstyledButton>
-                            <UnstyledButton aria-label="Switch to flex view" className={`switch_view p-[6px] rounded-[8px] ${type === 'flex' ? 'bg-[#1E4C2F]' : 'border-[1px] border-solid border-[#E4E9EE]'}`} onClick={() => setType('flex')}>
+                            <UnstyledButton aria-label="Switch to flex view" className={`switch_view p-[6px] lg:p-[12px] rounded-[8px] ${type === 'flex' ? 'bg-[#1E4C2F]' : 'border-[1px] border-solid border-[#E4E9EE]'}`} onClick={() => setType('flex')}>
                                 <ColumnIcon className={`${type === 'flex' ? 'active' : 'not_active'}`} />
                             </UnstyledButton>
                         </Flex>

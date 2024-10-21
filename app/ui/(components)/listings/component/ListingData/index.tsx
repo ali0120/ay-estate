@@ -72,7 +72,7 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                                     <h3 className='max-w-[90%] md:max-w-full text-[12px] md:text-[22px] font-soraSemiBold leading-[18px] md:leading-[33px] whitespace-nowrap overflow-hidden text-ellipsis' >{property.price}</h3>
                                     <p className='text-[10px] md:text-[18px] font-soraSemiBold leading-[15px] md:leading-[27px] mt-[8px] mb-[4px]' >{property.title}</p>
                                     <span className='text-[8px] md:text-[14px] font-soraRegular leading-[21px] mb-[8px] text-[#333333]' >{property.location}</span>
-                                    <Flex className='gap-[4px] gap-y-[8px] md:gap-y-[14px] md:gap-[14px] items-center flex-wrap'>
+                                    <Flex className='pt-[8px] gap-[4px] gap-y-[8px] md:gap-y-[14px] md:gap-[14px] items-center flex-wrap'>
                                         <Flex className='gap-[2px] md:gap-[8px] items-center'>
                                             {isMdScreen ? <HomeIcon /> : <MhomeIcon />}
                                             <span className='capitalize text-[10px] md:text-[14px] font-soraRegular text-[#A9A9A9] ' >{property.details.type}</span>
@@ -109,10 +109,9 @@ export const ListingData: React.FC<ListingContentProps> = ({ type }) => {
                         onChange={setPage}
                         defaultValue={1}
                         radius={8}
-                        color="#B7E08A"
-                        className='text-[14px] text-RomanSilver font-soraSemiBold '
+                        className='text-[14px] text-RomanSilver font-soraSemiBold md:font-soraRegular'
                         classNames={{
-                            control: 'border-none text-RomanSilver bg-GhostWhite data-[active]:bg-YellowGreen data-[active]:!text-ChineseBlack',
+                            control: '!text-RomanSilver md:!text-[#818B9C] !border-none md:border md:!border-BrightGray md:!border-solid !bg-GhostWhite md:!bg-[#fff] data-[active]:!bg-YellowGreen md:data-[active]:!border-BrightGray md:data-[active]:!bg-[#fff] data-[active]:!text-ChineseBlack md:data-[active]:!text-ForestGreen w-[44px] !h-[44px]',
                         }}
                     />
                 </Flex>

@@ -20,7 +20,7 @@ const BlogPopularArticle: React.FC<BlogPopularArticleProps> = ({ articles }) => 
                         <p className='text-[12px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[8px] lg:mt-[12px]' >We provide blog that help start your career on AyEstate</p>
                     </div>
                     <Flex justify={'flex-end'} className='w-[30%]' >
-                        <Button variant='default' className='h-[30px] md:h-[47px] px-[12px] md:px-[16px] text-[14px] md:text-[18px] text-ChineseBlack font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'>View All</Button>
+                        <Button variant='default' className='w-[82px] md:w-[107px] h-[30px] md:h-[47px] px-[12px] md:px-[16px] text-[14px] md:text-[18px] text-ChineseBlack font-soraMedium md:font-soraSemiBold !border-YellowGreen lg:!border-ChineseBlack'>View All</Button>
                     </Flex>
                 </Flex>
                 {!isSmallScreen ? (
@@ -36,7 +36,7 @@ const BlogPopularArticle: React.FC<BlogPopularArticleProps> = ({ articles }) => 
                                     pos={"relative"}
                                 >
                                     <div className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
-                                        <Flex align={"center"} className="text-[12px] gap-[10px] lg:text-[18px] font-soraRegular md:font-soraSemiBold opacity-[70%] lg:opacity-1">
+                                        <Flex align={"center"} className="text-[12px] gap-[12px] md:gap-[10px] lg:text-[18px] font-soraRegular md:font-soraSemiBold opacity-[70%] lg:opacity-1">
                                             <p>{article.date}</p>
                                             <EllipseIcon height={4} width={4} />
                                             <p>{article.category.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>
@@ -73,8 +73,8 @@ const BlogPopularArticle: React.FC<BlogPopularArticleProps> = ({ articles }) => 
                                             className="md:w-[50%] !h-[317px] lg:!h-[502px]"
                                             pos={"relative"}
                                         >
-                                            <div className="text-White absolute w-full p-[16px] md:p-[24px] bottom-0">
-                                                <Flex align={"center"} className="text-[12px] gap-[10px] lg:text-[18px] font-soraRegular md:font-soraRegular opacity-[70%] lg:opacity-1">
+                                            <div className="text-White absolute w-full p-[16px] pr-[2px] md:p-[24px] bottom-0">
+                                                <Flex align={"center"} className="text-[12px] gap-[12px] md:gap-[10px] lg:text-[18px] font-soraRegular md:font-soraRegular opacity-[70%] lg:opacity-1">
                                                     <p>{article.date}</p>
                                                     <EllipseIcon height={4} width={4} />
                                                     <p>{article.category.replace(/-/g, ' ').split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>

@@ -19,7 +19,7 @@ const Discover = () => {
                 </Flex>
                 <Services />
                 <Group className='gap-[24px] py-[50px] lg:py-[44px] lg:pt-[64px]' >
-                    <Button className='h-[48px] md:h-[56px] px-[24px] md:px-[34px] text-[16px] font-soraSemiBold leading-[24px]' >
+                    <Button className='h-[48px] w-[140px] md:h-[56px] md:w-[160px] text-[16px] font-soraSemiBold leading-[24px]' >
                         Learn More
                     </Button>
                     <Button rightSection={<ChevronRightIcon />} variant="default" className='h-[48px] md:h-[56px] px-[0] text-[16px] !border-none font-robotoRegular lg:font-[300] leading-[24px]'>

@@ -11,10 +11,11 @@ interface ListingContentProps {
 }
 
 const ListingContent: React.FC<ListingContentProps> = ({ type, opened, close }) => {
-  const isLgScreen = useMediaQuery('(min-width: 1024)');
+  const isLgScreen = useMediaQuery('(min-width: 1024px)');
+ 
   return (
     <section className='bg-White' >
-      <div className='px-[20px] xl:px-[100px]'>
+      <div className='px-[23px] xl:px-[120px]'>
         <Flex className='gap-[40px]'>
           {isLgScreen ? (
             <div>

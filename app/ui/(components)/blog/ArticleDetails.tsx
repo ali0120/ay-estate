@@ -18,7 +18,7 @@ const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
                 <h1 className="text-[20px] lg:text-[48px] capitalize font-soraBold leading-[26px] lg:leading-[62.4px] mt-[24px] lg:mt-[30px] lg:w-[80%] m-auto" >{article.title}</h1>
                 <p className="text-[14px] lg:text-[18px] text-RomanSilver font-soraRegular leading-[22.4px] lg:leading-[28.8px] mt-[12px] lg:mt-[6px] lg:w-[65%] m-auto" >{article.description}</p>
             </div>
-            <Image src={article.image} alt={article.title} width={1240} height={660} className='w-full max-h-[660px] object-cover rounded-[16px] py-[30px] lg:py-[50px]' />
+            <Image src={article.image} alt={article.title} width={1240} height={660} className='w-full h-[260px] md:h-full max-h-[660px] rounded-[16px] my-[30px] lg:my-[50px]' />
             <div className="lg:max-w-[76.2%] m-auto" >
                 <p className="text-[14px] lg:text-[18px] text-RomanSilver font-soraRegular">{article.intro}</p>
                 {article.additionalIntro ? <p className="text-[14px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[30px] lg:mt-[60px]">{article.additionalIntro}</p> : null}
@@ -35,7 +35,7 @@ const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
                         case 'image':
                             return (
                                 <div key={index}>
-                                    <Image src={block.src || ''} alt={block.alt || ''} width={946} height={520} className='w-full max-h-[520px] object-cover pt-[21px] pb-[50px]' />
+                                    <Image src={block.src || ''} alt={block.alt || ''} width={946} height={520} className='w-full h-[200px] md:h-full max-h-[520px] rounded-[16px] mt-[96px] mb-[30px] md:mt-[21px] md:mb-[50px]' />
                                 </div>
                             );
                         case 'list':
@@ -64,7 +64,7 @@ const ArticleDetails = ({ article }: { article: IArticleDetails }) => {
                         <p className='hidden md:block text-[12px] lg:text-[18px] text-RomanSilver font-soraRegular mt-[8px] lg:mt-[12px]' >Newest update article from AyEstate</p>
                     </div>
                     <Flex justify={'flex-end'} className='w-[30%]' >
-                        <Button variant='default' className=' px-[16px] py-[12px] text-[14px] lg:text-[18px] !border-none lg:!border-ChineseBlack lg:!border-solid lg:!text-ChineseBlack font-soraSemiBold !text-YellowGreen'>View All</Button>
+                        <Button variant='default' className='p-0 text-[14px] lg:text-[18px] !border-none lg:!border-ChineseBlack lg:!border-solid lg:!text-ChineseBlack font-soraSemiBold !text-YellowGreen w-[107px] h-[30px] md:h-[47px]'>View All</Button>
                     </Flex>
                 </Flex>
                 <Flex wrap={'wrap'} className='gap-[29px]'>
