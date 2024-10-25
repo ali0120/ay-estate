@@ -12,20 +12,20 @@ interface ListingContentProps {
 
 const ListingContent: React.FC<ListingContentProps> = ({ type, opened, close }) => {
   const isLgScreen = useMediaQuery('(min-width: 1024px)');
- 
+
   return (
     <section className='bg-White' >
       <div className='px-[23px] xl:px-[120px]'>
         <Flex className='gap-[40px]'>
-          {isLgScreen ? (
-            <div>
+          <div className='w-0 mr-[-40px] lg:mr-0 lg:w-[275px]'> {/* Fixed width to avoid CLS */}
+            {isLgScreen ? (
               <Filter />
-            </div>
-          ) :
-            <Drawer opened={opened} onClose={close} withCloseButton={false} p={0} size={312}>
-              <Filter />
-            </Drawer>
-          }
+            ) : (
+              <Drawer opened={opened} onClose={close} withCloseButton={false} p={0} size={312}>
+                <Filter />
+              </Drawer>
+            )}
+          </div>
           <ListingData type={type} />
         </Flex>
       </div>
