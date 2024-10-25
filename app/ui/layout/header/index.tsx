@@ -10,7 +10,7 @@ import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import Link from 'next/link';
 
 export function Header() {
-    const isMobile = useMediaQuery('(max-width: 768px)');
+    const isMobile = useMediaQuery('(max-width: 991px)');
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 
     return (
