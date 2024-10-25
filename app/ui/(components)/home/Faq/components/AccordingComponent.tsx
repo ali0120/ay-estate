@@ -25,7 +25,7 @@ const AccordingComponent = () => {
   const secondAccordionData = faqData.slice(Math.ceil(faqData.length / 2));
 
   return (
-    <div className="w-full flex flex-col lg:flex-row gap-[20px]" >
+    <div className="w-full mt-[24px] lg:mt-[53px] flex flex-col lg:flex-row gap-[20px]" >
       {/* First Accordion */}
       <Accordion
         chevronPosition="left"
