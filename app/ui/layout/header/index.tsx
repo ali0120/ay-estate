@@ -10,7 +10,7 @@ import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import Link from 'next/link';
 
 export function Header() {
-    const isMobile = useMediaQuery('(max-width: 991px)');
+    const showDrawer = useMediaQuery('(max-width: 992px)');
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 
     return (
@@ -39,7 +39,7 @@ export function Header() {
                 <Button component={Link} href={'/contact-ayestate-excellent-customer-service'} title="Get in touch with us" visibleFrom="md" className='h-[56px] font-soraSemiBold text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
                 <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" />
             </Group>
-            {isMobile && (
+            {showDrawer && (
                 <Drawer
                     opened={drawerOpened}
                     onClose={closeDrawer}
