@@ -15,7 +15,7 @@ const AdditionalQuestions = () => {
                         If you cannot find answer to your question in our FAQ, you can always contact us. We wil answer to you shortly!
                     </p>
                 </div>
-                <div className="grid md:grid-cols-3 gap-[48px] md:gap-[18px] lg:gap-[48px] mt-[36px] lg:mt-[44px]">
+                <div className="grid md:grid-cols-3 gap-[20px] mt-[36px] lg:mt-[44px]">
                     <Flex className='text-center flex-col'>
                         <div className='bg-GhostWhite w-fit my-0 m-auto rounded-full p-[12px] md:p-[25px]'>
                             <UserIcon color="#F9F9F9" className='mx-auto yellow_path' />
