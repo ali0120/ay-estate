@@ -19,8 +19,7 @@ const BlogFeaturedArticle: React.FC<BlogFeaturedArticleProps> = ({ articles }) =
                         <BackgroundImage
                             src={firstArticle.image?.src} // Image of the first article
                             radius={16}
-                            h={588}
-                            className="md:!w-[57%] !h-[317px] md:!h-[350px] lg:!h-[588px]"
+                            className="md:!w-[57%] !h-[317px] md:!h-auto"
                             pos={"relative"}
                         >
                             <div className="text-White absolute w-full p-[16px] lg:p-[24px] bottom-0">
