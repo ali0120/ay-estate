@@ -38,7 +38,7 @@ const AccordingComponent = () => {
           root:'w-full flex flex-col gap-[20px]',
           item: 'w-full rounded-[18px] border-2 border-[#F6F8F9] py-[20px] lg:py-[27px] px-[20px] xl:px-[24px]',
           label: 'text-[14px] md:text-[20px] font-soraBold text-DarkJungleGreentwo p-0 capitalize',
-          content: 'text-[14px] md:text-[18px] font-soraRegular md:font-soraSemiBold text-RomanSilver mt-[11px]',
+          content: 'text-[14px] md:text-[18px] font-soraRegular md:font-soraSemiBold text-RomanSilver mt-[11px] px-0',
         }}
       >
         {secondAccordionData.map((item, index) => (
@@ -70,7 +70,7 @@ const AccordingComponent = () => {
           root:'w-full flex flex-col gap-[20px]',
           item: 'w-full  rounded-[18px] border-2 border-[#F6F8F9] py-[20px] lg:py-[27px] px-[20px] xl:px-[24px]',
           label: 'text-[14px] md:text-[20px] font-soraBold text-DarkJungleGreentwo p-0 capitalize',
-          content: 'text-[14px] md:text-[18px] font-soraRegular md:font-soraSemiBold text-RomanSilver mt-[11px]',
+          content: 'text-[14px] md:text-[18px] font-soraRegular md:font-soraSemiBold text-RomanSilver mt-[11px] px-0',
         }}
       >
         {firstAccordionData.map((item, index) => (
