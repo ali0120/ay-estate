@@ -1,3 +1,4 @@
+import { numberToWords } from "@/utils/numberToWords";
 import { properties } from "../ui/(components)/listings/data/properties";
 interface Sitemap {
   id: number;
@@ -17,7 +18,7 @@ export async function generateSitemaps(): Promise<Sitemap[]> {
     { length: numberOfPropertySitemaps },
     (_, index) => ({
       id: index,
-      url: `${process.env.NEXT_WEBSITE_URL}/luxury-villa-listings/sitemap.xml/${index}`,
+      url: `${process.env.NEXT_WEBSITE_URL}/luxury-villa-listings/sitemap/${numberToWords(index + 1)}.xml`,
     })
   );
 
@@ -31,7 +32,7 @@ export async function generateSitemaps(): Promise<Sitemap[]> {
     { length: numberOfBlogSitemaps },
     (_, index) => ({
       id: index,
-      url: `${process.env.NEXT_WEBSITE_URL}/blog/recent-articles/sitemap.xml/${index}`,
+      url: `${process.env.NEXT_WEBSITE_URL}/blog/recent-articles/sitemap/${numberToWords(index + 1)}.xml`,
     })
   );
 

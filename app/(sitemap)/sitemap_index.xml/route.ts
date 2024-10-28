@@ -13,7 +13,7 @@ export async function GET() {
     ];
 
     const sitemapIndexXML = await buildSitemapIndex(sitemaps);
-
+    console.log("Generated sitemap index XML:", sitemapIndexXML); // Debugging log
     return new NextResponse(sitemapIndexXML, {
       headers: {
         "Content-Type": "application/xml",

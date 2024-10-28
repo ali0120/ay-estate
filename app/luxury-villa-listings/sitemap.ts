@@ -1,4 +1,6 @@
+import { numberToWords } from "@/utils/numberToWords";
 import { properties } from "../ui/(components)/listings/data/properties";
+import { wordToNumber } from "@/utils/wordToNumber";
 interface SitemapParams {
   id: number;
 }
@@ -14,15 +16,18 @@ export async function generateSitemaps() {
 
   // Generate an array of sitemaps with ids [0, 1, 2, ...]
   const sitemaps = Array.from({ length: numberOfSitemaps }, (_, index) => ({
-    id: index, 
+    id: numberToWords(index + 1),
   }));
-  
-  return sitemaps; 
+  return sitemaps;
 }
 
 export default async function sitemap({ id }: SitemapParams) {
+  const numericId = wordToNumber[id];
+  if (numericId === undefined) {
+    throw new Error(`Invalid id parameter: ${id}`);
+  }
   const propertiesPerPage = 10;
-  const startIndex = id * propertiesPerPage;
+  const startIndex = (numericId - 1) * propertiesPerPage;
   const endIndex = startIndex + propertiesPerPage;
 
   // Get a slice of properties for the current page
