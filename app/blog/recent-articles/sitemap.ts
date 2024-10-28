@@ -1,3 +1,6 @@
+import { numberToWords } from "@/utils/numberToWords";
+import { wordToNumber } from "@/utils/wordToNumber";
+
 interface SitemapParams {
   id: number;
 }
@@ -20,14 +23,18 @@ export async function generateSitemaps() {
   
   // Generate an array of sitemap objects
   const sitemaps = Array.from({ length: numberOfSitemaps }, (_, index) => ({
-    id: index,
+    id: numberToWords(index + 1),
   }));
   
   return sitemaps;
 }
 
 export default async function sitemap({ id }: SitemapParams) {
-  const pageNumber = id + 1; // Assuming page number starts from 1, adjust the id to match that
+  const numericId = wordToNumber[id]; // Convert the id from words to number
+  if (numericId === undefined) {
+    throw new Error(`Invalid id parameter: ${id}`);
+  }
+  const pageNumber = numericId; 
   
   // Fetch paginated blog data using the page number and limit
   const response = await fetch(`${baseUrl}/api/blogRecentArticles?pn=${pageNumber}`);
