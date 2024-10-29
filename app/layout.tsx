@@ -14,7 +14,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const schemaData = {
+  const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "AyEstate",
@@ -52,10 +52,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="google-site-verification" content="qAoUOPqAKJ57RcqjhgsS18uRfsCXB2kFAk1_nJKdaaM" />
+        <meta name="google-site-verification" content="qAoUOPqAKJ57RcqjhgsS18uRfsCXB2kFAk1_nJKdaaM" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body >

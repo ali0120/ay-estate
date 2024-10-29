@@ -55,9 +55,36 @@ function capitalize(word: string) {
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
-const page = () => {
+const page = ({ params }: { params: { type: string } }) => {
+  const { type } = params;
+  const imageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/webp/details.webp`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Luxury Villa in Bali", // You can dynamically set this based on property details
+    "description": "Explore this luxury villa in Bali. Spacious, modern, and equipped with top amenities, this property offers stunning ocean views and ultimate comfort.",
+    "image": `${imageUrl}`,
+    "url": `${process.env.NEXT_PUBLIC_BASE_URL}/luxury-villa-listings/${type}`, // Adjust as necessary
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bali",
+      "addressRegion": "Bali",
+      "addressCountry": "Indonesia"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "300000",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+  
   return (
     <>
+      <script type="application/ld+json">
+        {JSON.stringify(jsonLd)}
+      </script>
       <DetailsHeader />
       <ImageGallery />
       <AmenitiesSection />

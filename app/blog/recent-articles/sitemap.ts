@@ -1,4 +1,5 @@
 import { numberToWords } from "@/utils/numberToWords";
+import { refactorTitleToSlug } from "@/utils/refactorTitle";
 import { wordToNumber } from "@/utils/wordToNumber";
 
 interface SitemapParams {
@@ -7,6 +8,7 @@ interface SitemapParams {
 
 interface Blog {
   id: string;
+  title: string;
   updated_at?: string;
   created_at?: string;
 }
@@ -42,7 +44,7 @@ export default async function sitemap({ id }: SitemapParams) {
   
   const blogPaths = articles.map(
     (blog: Blog) => ({
-      url: `/blog/recent-articles/${blog.id}`,
+      url: `${baseUrl}/blog/recent-articles/${refactorTitleToSlug(blog.title)}`,
       lastModified: blog.updated_at || blog.created_at || new Date().toISOString(),
       changefreq: "daily",
       priority: 0.7,
