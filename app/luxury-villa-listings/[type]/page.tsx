@@ -4,6 +4,8 @@ import ImageGallery from '@/app/ui/(components)/listingDetail/ImageGallery'
 import AmenitiesSection from '@/app/ui/(components)/listingDetail/AmenitiesSection'
 import { properties } from '@/app/ui/(components)/listings/data/properties';
 
+export const revalidate = 60
+
 export async function generateStaticParams() {
   return properties?.map((property) => ({
     type: property.details.type

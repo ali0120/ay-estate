@@ -1,28 +1,12 @@
 "use client"
-import React, { ReactNode, useMemo } from 'react'
-import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
-import { useRouter } from 'next/navigation';
+import React, { ReactNode } from 'react'
+import { QueryClientProvider } from '@tanstack/react-query';
+import { getQueryClient } from './get-query-client';
 interface ChildrenProps {
     children: ReactNode;
 }
 const QueryProvider = ({ children }: ChildrenProps) => {
-    const router = useRouter();
-
-    const queryClient = useMemo(
-        () =>
-            new QueryClient({
-                defaultOptions: {
-                    queries: {
-                        refetchOnWindowFocus: false,
-                        retry: false,
-                        staleTime: 6 * 1000,
-                        // refetchInterval: 6 * 1000,
-                    },
-                }
-            }),
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        [router]
-    );
+    const queryClient = getQueryClient()
     return (
         <QueryClientProvider client={queryClient}>
             {children}
