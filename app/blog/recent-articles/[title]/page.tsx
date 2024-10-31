@@ -14,7 +14,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { title: string } }): Promise<Metadata> {
     const { title } = params;
     if (!title) {
-        notFound();
+        return {
+            title: "Article Not Found",
+            description: "The requested article does not exist.",
+            openGraph: {
+                title: "Article Not Found",
+                description: "The requested article does not exist.",
+            },
+        };
     }
 
     const article = await fetchBlogArticleDetails(title);

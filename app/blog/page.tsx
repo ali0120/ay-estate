@@ -2,9 +2,10 @@ import { Metadata } from 'next';
 import BlogPage from './BlogPage';
 import { blogPageMetadata } from '../metaDataConfig';
 import { fetchBlogRecentArticles, fetchBlogPopularArticles, fetchBlogFeaturedArticles } from '@/app/helper/services/blog.api';
-
 // Define metadata
 export const metadata: Metadata = blogPageMetadata;
+
+export const revalidate = 60
 
 // Fetch data on the server side
 async function fetchBlogData() {
