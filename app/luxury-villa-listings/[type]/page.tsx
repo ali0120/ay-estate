@@ -57,36 +57,98 @@ function capitalize(word: string) {
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
-const page = ({ params }: { params: { type: string } }) => {
-  const { type } = params;
-  const imageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/webp/details.webp`;
+const page = () => {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Luxury Villa in Bali", // You can dynamically set this based on property details
-    "description": "Explore this luxury villa in Bali. Spacious, modern, and equipped with top amenities, this property offers stunning ocean views and ultimate comfort.",
-    "image": `${imageUrl}`,
-    "url": `${process.env.NEXT_PUBLIC_BASE_URL}/luxury-villa-listings/${type}`, // Adjust as necessary
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Bali",
-      "addressRegion": "Bali",
-      "addressCountry": "Indonesia"
+    "@type": "WebPage",
+    "name": "Luxury Beach Villa - AyEstate",
+    "description": "Experience the ultimate in beachfront luxury with breathtaking ocean views in this luxury beach villa located in Bali, Indonesia.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "AyEstate",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${baseUrl}/logo.png`,
+        "width": 250,
+        "height": 60
+      }
     },
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "USD",
-      "price": "300000",
-      "itemCondition": "https://schema.org/NewCondition",
-      "availability": "https://schema.org/InStock"
+    "mainEntity": {
+      "@type": "LodgingBusiness",
+      "name": "Luxury Beach Villa",
+      "description": "Stunning property with luxurious amenities and breathtaking views. The perfect blend of comfort and style, located in Bali, Indonesia.",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": `${baseUrl}/images/villa-main.jpg`,
+          "caption": "Luxury Beach Villa with stunning ocean view"
+        },
+        {
+          "@type": "ImageObject",
+          "url": `${baseUrl}/images/villa-pool.jpg`,
+          "caption": "Beautiful pool area with beachfront access"
+        },
+        {
+          "@type": "ImageObject",
+          "url": `${baseUrl}/images/villa-interior.jpg`,
+          "caption": "Spacious and modern interior"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bali",
+        "addressCountry": "Indonesia"
+      },
+      "priceRange": "$3,000,000",
+      "amenities": ["Beachfront", "Modern", "Spacious"],
+      "telephone": "+123456789",
+      "email": "hello.ayestate@example.com",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "53"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "Luxury Beach Villa",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -8.3405,
+          "longitude": 115.092
+        }
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": `${baseUrl}/contact`,
+        "actionStatus": "PotentialActionStatus"
+      }
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": `${baseUrl}/` },
+        { "@type": "ListItem", "position": 2, "name": "Listings", "item": `${baseUrl}/listings` },
+        { "@type": "ListItem", "position": 3, "name": "Luxury Beach Villa", "item": `${baseUrl}/listings/luxury-beach-villa` }
+      ]
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+123456789",
+      "contactType": "Customer Service",
+      "areaServed": "Worldwide",
+      "availableLanguage": "English"
     }
   };
-  
+
+
   return (
     <>
-      <script type="application/ld+json">
-        {JSON.stringify(jsonLd)}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <DetailsHeader />
       <ImageGallery />
       <AmenitiesSection />

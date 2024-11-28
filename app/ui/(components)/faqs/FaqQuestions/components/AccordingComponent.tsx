@@ -21,10 +21,10 @@ const AccordingComponent = () => {
       multiple={false}
       classNames={{
         chevron: 'hidden',
-        control: 'hover:bg-transparent',
-        item: 'w-full rounded-[18px] border-2 border-[#F6F8F9] p-[20px] lg:p-[24px]',
+        control: 'hover:bg-transparent p-[20px] pb-[16px] lg:pb-[24px] lg:p-[24px]',
+        item: 'w-full rounded-[18px] border-2 border-[#F6F8F9]',
         label: 'text-[14px] md:text-[20px] leading-[18.2px] md:leading-[26px] font-soraBold text-DarkJungleGreentwo p-0 capitalize ',
-        content: 'pb-0 text-[14px] md:text-[18px] leading-[22.4px] md:leading-[32.4px] font-soraRegular md:font-soraSemiBold text-RomanSilver px-[0] mt-[11px]'
+        content: 'px-[20px] lg:px-[24px] pb-[20px] lg:pb-[24px] pt-0 text-[14px] md:text-[18px] leading-[22.4px] md:leading-[32.4px] font-soraRegular md:font-soraSemiBold text-RomanSilver'
       }}
       className="flex flex-col gap-[20px] md:gap-[30px] md:mt-[20px]"
     >
