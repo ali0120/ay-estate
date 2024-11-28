@@ -34,17 +34,18 @@ const AccordingComponent = () => {
         multiple={false}
         classNames={{
           chevron: 'hidden',
-          control: 'hover:bg-transparent',
-          root:'w-full flex flex-col gap-[20px]',
-          item: 'w-full rounded-[18px] border-2 border-[#F6F8F9] py-[20px] lg:py-[27px] px-[20px] xl:px-[24px]',
+          control: 'hover:bg-transparent py-[17px] lg:py-[25px] px-[20px] xl:px-[24px]',
+          root: 'w-full flex flex-col gap-[20px]',
+          item: 'w-full rounded-[18px] border-2 border-[#F6F8F9]',
           label: 'text-[14px] md:text-[20px] font-soraBold text-DarkJungleGreentwo p-0 capitalize',
-          content: 'text-[14px] md:text-[18px] font-soraRegular md:font-soraSemiBold text-RomanSilver mt-[11px] px-0',
+          content: 'pt-0 pb-[20px] lg:pb-[27px] px-[20px] xl:px-[24px] text-[14px] md:text-[18px] font-soraRegular md:font-soraSemiBold text-RomanSilver',
         }}
       >
         {secondAccordionData.map((item, index) => (
           <Accordion.Item key={index} value={item.title.replace(/\s+/g, '-')}>
             <Accordion.Control
               icon={openedFirst === item.title.replace(/\s+/g, '-') ? <IconMinus /> : <IconPlus />}
+              className={openedFirst === item.title.replace(/\s+/g, '-') ? '!pb-[16px]' : 'pb-[17px] lg:pb-[25px]'}
             >
               {item.title}
             </Accordion.Control>
@@ -66,17 +67,18 @@ const AccordingComponent = () => {
         multiple={false}
         classNames={{
           chevron: 'hidden',
-          control: 'hover:bg-transparent',
-          root:'w-full flex flex-col gap-[20px]',
-          item: 'w-full  rounded-[18px] border-2 border-[#F6F8F9] py-[20px] lg:py-[27px] px-[20px] xl:px-[24px]',
+          control: 'hover:bg-transparent py-[17px] lg:py-[25px] px-[20px] xl:px-[24px]',
+          root: 'w-full flex flex-col gap-[20px]',
+          item: 'w-full  rounded-[18px] border-2 border-[#F6F8F9]',
           label: 'text-[14px] md:text-[20px] font-soraBold text-DarkJungleGreentwo p-0 capitalize',
-          content: 'text-[14px] md:text-[18px] font-soraRegular md:font-soraSemiBold text-RomanSilver mt-[11px] px-0',
+          content: 'pt-0 pb-[20px] lg:pb-[27px] px-[20px] xl:px-[24px] text-[14px] md:text-[18px] font-soraRegular md:font-soraSemiBold text-RomanSilver',
         }}
       >
         {firstAccordionData.map((item, index) => (
           <Accordion.Item key={index} value={item.title.replace(/\s+/g, '-')}>
             <Accordion.Control
               icon={openedSecond === item.title.replace(/\s+/g, '-') ? <IconMinus /> : <IconPlus />}
+              className={openedSecond === item.title.replace(/\s+/g, '-') ? '!pb-[16px]' : 'pb-[17px] lg:pb-[25px]'}
             >
               {item.title}
             </Accordion.Control>
