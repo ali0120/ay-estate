@@ -75,7 +75,7 @@ export function Footer() {
                     </ul>
                 </div>
                 <Divider hiddenFrom='md' color='#2E334B' className='my-[30px]' />
-                <Flex visibleFrom='md' className='gap-[80px]' >{groups}</Flex>
+                <Flex visibleFrom='md' className='gap-[80px] justify-between' >{groups}</Flex>
                 <div className="block md:hidden">
                     <div className="grid grid-cols-2 gap-[30px] md:gap-[60px] mb-[30px]">
                         {groups}

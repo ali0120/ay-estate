@@ -32,7 +32,7 @@ export default function Layout({ children }: LayoutProps) {
     const headerBgColor = isHomePage && isMdScreen ? "#F6F3F3" : "#FFFFFF";
 
     return (
-        <AppShell >
+        <AppShell>
             <AppShell.Header bg={headerBgColor} withBorder={false} className="h-[74px] lg:h-[100px]" >
                 <Group className='h-full px-[20px]  xl:px-[100px]'>
                     <Header />

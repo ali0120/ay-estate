@@ -1,4 +1,4 @@
-import {  Breadcrumbs, Flex, Select, UnstyledButton } from '@mantine/core'
+import { Breadcrumbs, Flex, Select, UnstyledButton } from '@mantine/core'
 import Link from 'next/link';
 import ArrowRightIcon from '@/public/svg/arrow-right.svg'
 import ArrowDownIcon from '@/public/svg/arrow-down.svg';
@@ -7,13 +7,14 @@ import FilterIcon from '@/public/svg/filter.svg';
 import GridIcon from '@/public/svg/gridBox.svg';
 import ColumnIcon from '@/public/svg/columnBox.svg';
 import '@mantine/core/styles/Breadcrumbs.css';
+import { useMediaQuery } from '@mantine/hooks';
 
 const items = [
     { title: 'Home', href: '#' },
     { title: 'Real Estate', href: '#' },
     { title: 'Villa', href: '#' },
 ].map((item, index) => (
-    <Link href={item.href} key={index} title={`Go to ${item.title}`}  className="text-[16px] font-soraRegular text-ForestGreen">
+    <Link href={item.href} key={index} title={`Go to ${item.title}`} className="text-[16px] font-soraRegular text-ForestGreen">
         {item.title}
     </Link>
 ));
@@ -25,6 +26,8 @@ interface ListingHeaderProps {
 }
 
 const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) => {
+    const isLgScreen = useMediaQuery('(min-width: 1024px)');
+
     return (
         <section className='bg-White' >
             <div className='px-[24px] xl:px-[120px]'>
@@ -53,9 +56,9 @@ const ListingHeader: React.FC<ListingHeaderProps> = ({ type, setType, open }) =>
                             <div className="hidden md:block">
                                 <LineIcon />
                             </div>
-                            <UnstyledButton aria-label="Open filter options" onClick={() => open()} hiddenFrom='md'>
+                            {!isLgScreen ? <UnstyledButton aria-label="Open filter options" onClick={() => open()}>
                                 <FilterIcon />
-                            </UnstyledButton>
+                            </UnstyledButton> : null}
                             <div className="block md:hidden">
                                 <LineIcon />
                             </div>
