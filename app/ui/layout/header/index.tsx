@@ -37,7 +37,7 @@ export function Header() {
                     </Link>
                 </Group>
                 <Button component={Link} href={'/contact-ayestate-excellent-customer-service'} title="Get in touch with us" visibleFrom="md" className='h-[56px] font-soraSemiBold text-[16px] leading-[20px] py-[17px] px-[34px]' >Contact Us</Button>
-                <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" />
+                {showDrawer ? <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" /> : null}
             </Group>
             {showDrawer && (
                 <Drawer

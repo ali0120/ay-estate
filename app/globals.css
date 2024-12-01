@@ -1,28 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import '@mantine/core/styles/global.css';
-@import '@mantine/core/styles/AppShell.css';
-@import '@mantine/core/styles/UnstyledButton.css';
-@import '@mantine/core/styles/Button.css';
-@import '@mantine/core/styles/CloseButton.css';
-@import '@mantine/core/styles/Group.css';
-@import '@mantine/core/styles/Flex.css';
-@import '@mantine/core/styles/Overlay.css';
-@import '@mantine/core/styles/Burger.css';
-@import '@mantine/core/styles/Dialog.css';
-@import '@mantine/core/styles/Drawer.css';
-@import '@mantine/core/styles/ModalBase.css';
-@import '@mantine/core/styles/Paper.css';
-@import '@mantine/core/styles/Accordion.css';
-@import '@mantine/core/styles/Badge.css';
-@import '@mantine/core/styles/Divider.css';
-@import '@mantine/core/styles/NumberInput.css';
-@import '@mantine/core/styles/InlineInput.css';
-@import '@mantine/core/styles/Checkbox.css';
-@import '@mantine/core/styles/Input.css';
-@import '@mantine/core/styles/Popover.css';
-@import '@mantine/core/styles/Combobox.css';
+@import "@mantine/core/styles/global.css";
+@import "@mantine/core/styles/AppShell.css";
+@import "@mantine/core/styles/UnstyledButton.css";
+@import "@mantine/core/styles/Button.css";
+@import "@mantine/core/styles/CloseButton.css";
+@import "@mantine/core/styles/Group.css";
+@import "@mantine/core/styles/Flex.css";
+@import "@mantine/core/styles/Overlay.css";
+@import "@mantine/core/styles/Burger.css";
+@import "@mantine/core/styles/Dialog.css";
+@import "@mantine/core/styles/Drawer.css";
+@import "@mantine/core/styles/ModalBase.css";
+@import "@mantine/core/styles/Paper.css";
+@import "@mantine/core/styles/Accordion.css";
+@import "@mantine/core/styles/Badge.css";
+@import "@mantine/core/styles/Divider.css";
+@import "@mantine/core/styles/NumberInput.css";
+@import "@mantine/core/styles/InlineInput.css";
+@import "@mantine/core/styles/Checkbox.css";
+@import "@mantine/core/styles/Input.css";
+@import "@mantine/core/styles/Popover.css";
+@import "@mantine/core/styles/Combobox.css";
 @font-face {
     font-family: "Playball";
     src: url("./../public/fonts/Playball-Regular.woff2") format("woff2"), url("./../public/fonts/Playball-Regular.woff") format("woff");
@@ -87,6 +87,66 @@
     font-display: swap;
 }
 
+@media (max-width: 35.99375em) {
+    .mantine-visible-from-xs {
+        display: none !important;
+    }
+}
+
+@media (min-width: 36em) {
+    .mantine-hidden-from-xs {
+        display: none !important;
+    }
+}
+
+@media (max-width: 47.99375em) {
+    .mantine-visible-from-sm {
+        display: none !important;
+    }
+}
+
+@media (min-width: 48em) {
+    .mantine-hidden-from-sm {
+        display: none !important;
+    }
+}
+
+@media (max-width: 61.99375em) {
+    .mantine-visible-from-md {
+        display: none !important;
+    }
+}
+
+@media (min-width: 62em) {
+    .mantine-hidden-from-md {
+        display: none !important;
+    }
+}
+
+@media (max-width: 74.99375em) {
+    .mantine-visible-from-lg {
+        display: none !important;
+    }
+}
+
+@media (min-width: 75em) {
+    .mantine-hidden-from-lg {
+        display: none !important;
+    }
+}
+
+@media (max-width: 87.99375em) {
+    .mantine-visible-from-xl {
+        display: none !important;
+    }
+}
+
+@media (min-width: 88em) {
+    .mantine-hidden-from-xl {
+        display: none !important;
+    }
+}
+
 body {
     font-family: "Regular", sans-serif;
 }
@@ -125,12 +185,12 @@ svg.not_active rect {
 }
 
 svg.not_active path {
-    stroke: #0B0F0E;
+    stroke: #0b0f0e;
 }
 
 svg.icon_liked path {
-    fill: #FFA439;
-    stroke: #FFA439;
+    fill: #ffa439;
+    stroke: #ffa439;
 }
 
 button.switch_view svg.active {

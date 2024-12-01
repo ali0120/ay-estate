@@ -60,7 +60,7 @@ export default function RootLayout({
       </head>
       <body >
         <QueryProvider>
-          <MantineProvider theme={theme} defaultColorScheme={'light'}>
+          <MantineProvider withGlobalClasses={false} theme={theme} defaultColorScheme={'light'}>
             <Suspense fallback={<h2>loading...</h2>}>
               <Layout>
                 {children}
