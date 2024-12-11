@@ -36,7 +36,7 @@ const OurTeam = () => {
                         })}
                     </Flex>
                     :
-                    <Flex className='flex-wrap gap-[32px]' visibleFrom='md'>
+                    <Flex className='flex-wrap gap-[32px]' visibleFrom='sm'>
                         {ourTeamData?.map((item, index) => {
                             return (
                                 <Flex key={index} className="flex-col items-center text-center md:w-[45%] lg:w-[21%]">
